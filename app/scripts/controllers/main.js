@@ -8,10 +8,6 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope) {
+    $scope.pageClass = "page-home"
   });
