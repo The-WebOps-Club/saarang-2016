@@ -1,4 +1,10 @@
-.browsehappy {
+#sun{
+    position: relative;
+}
+#moon{
+    position:relative;
+}
+    .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
@@ -9,6 +15,9 @@ body {
   padding: 0;
 }
 
+#transit {
+    height:100vh;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
