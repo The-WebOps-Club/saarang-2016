@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Parallax.js | Interactive Example</title>
+
+  <!-- Behavioral Meta Data -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+</head>
+<body>
+
+  <div id="container" class="container">
+    <div id="scene">
+        <div class="layer expand-width" data-depth="0.60"><img id="c1" class="i" src="cloud_1.png"></div>
+        <div class="layer expand-width" data-depth="0.70"><img id="c2" class="i" src="cloud_3.png"></div>
+        <div class="layer expand-width" data-depth="0.30"><img id="c3" class="i" src="cloud_3.png"></div>
+        <div class="layer expand-width" data-depth="0.50"><img id="c4" class="i" src="cloud_4.png"></div>
+        <!-- <div class="layer expand-width" data-depth="0.40"><img class="text" id="saarang" src="Full_Saarang.png"></div> -->
+        <!-- <div class="layer expand-width" data-depth="0.40"><img class="text" id="year" src="2016_full.png"></div> -->
+        <div class="layer expand-width" data-depth="0.30"><img id="c5" class="i" src="cloud_5.png"></div>
+        <div class="layer expand-width" data-depth="0.80"><img id="c6" class="i" src="cloud_6.png"></div>
+        <div class="layer expand-width" data-depth="0.30"><img id="c7" class="i" src="cloud_7.png"></div>
+
+        <div class="layer expand-width" data-depth="0.50"><img id="w5" class="w" src="wave5.png"></div>
+        <div class="layer expand-width" data-depth="0.60"><img id="w1" class="w" src="wave3.png"></div>
+        <div class="layer expand-width" data-depth="0.70"><img id="w2" class="w" src="wave2.png"></div>
+        <div class="layer expand-width" data-depth="0.80"><img id="w3" class="w" src="wave3.png"></div>
+        <div class="layer expand-width" data-depth="0.90"><img id="w4" class="w" src="wave4.png"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="deploy/parallax.js"></script>
+  
+  <script>
+  // Nothing new here...it's all in the CSS!
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+  </script>
+
+</body>
+</html>
