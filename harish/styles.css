@@ -1,5 +1,4 @@
-body {
-    background: -webkit-linear-gradient(top,#92D7E7,#C1E6EF);
+	body {
   margin: 0;
 }
 
@@ -14,11 +13,12 @@ img {
 }
 
 .container {
-  position: relative;
+	    background: -webkit-linear-gradient(top,#92D7E7,#C1E6EF); 
+  position: absolute;
   overflow-x:hidden;
   overflow-y:hidden; 
   width: 100%;
-  height: 41em;
+  height: 100%;
 }
 
 .scene {
@@ -26,7 +26,7 @@ img {
   margin: 0;
 }
 
-#saarang
+/*#saarang
 {
 	width:643px;
 	height:77px;
@@ -35,7 +35,7 @@ img {
 {
 	width:356px;
 	height:82px;
-}
+}*/
 
 @-webkit-keyframes move1{
 	 0% {margin-left:46.875em;}
