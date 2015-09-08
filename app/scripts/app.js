@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angular-carousel'
   ])
   .config(function ($routeProvider) {
     $routeProvider
