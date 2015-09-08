@@ -238,12 +238,12 @@ img {
 50%{margin-top:200px;margin-left:-290px;}
 75%{margin-top: 205px;margin-left:-270px;}
 100%{margin-top:200px;margin-left:-250px;}
-}
+}*/
 #w1
 {
-	margin-left: -250px;
-	margin-top: 200px;
-	width: 130%;
+	margin-left: -11%;
+	margin-top: 16%;
+	width: 150%;
 	-webkit-animation-name:wave1;
 	-webkit-animation-duration:6s;
 	-webkit-animation-iteration-count:infinite;
@@ -255,9 +255,9 @@ img {
 }
 #w2
 {
-	margin-left: -280px;
-	margin-top: 220px;
-	width: 130%;
+	margin-left: -12%;
+	margin-top: 17%;
+	width: 150%;
 	-webkit-animation-name:wave2;
 	-webkit-animation-duration:5s;
 	-webkit-animation-iteration-count:infinite;
@@ -269,9 +269,9 @@ img {
 }
 #w3
 {
-	margin-left: -250px;
-	margin-top: 250px;
-	width: 130%;
+	margin-left: -10%;
+	margin-top: 18%;
+	width: 150%;
 	-webkit-animation-name:wave3;
 	-webkit-animation-duration:4s;
 	-webkit-animation-iteration-count:infinite;
@@ -283,9 +283,9 @@ img {
 }
 #w4
 {
-	margin-left: -250px;
-	margin-top: 280px;
-	width: 130%;
+	margin-left: -12%;
+	margin-top: 19%;
+	width: 150%;
 	-webkit-animation-name:wave4;
 	-webkit-animation-duration:3s;
 	-webkit-animation-iteration-count:infinite;
@@ -294,12 +294,12 @@ img {
 	animation-name: wave4;
     animation-duration:3s;
     animation-iteration-count:infinite;
-}*/
+}
 #w5
 {
-	margin-left: -250px;
-	margin-top: 10%;
-	width: 130%;
+	margin-left: -10%;
+	margin-top: 15%;
+	width: 150%;
 	-webkit-animation-name:wave5;
 	-webkit-animation-duration:3s;
 	-webkit-animation-iteration-count:infinite;
