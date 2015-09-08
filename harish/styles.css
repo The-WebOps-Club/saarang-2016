@@ -205,39 +205,39 @@ img {
     animation-iteration-count:infinite;
 }
 @-webkit-keyframes wave1{
-0%{margin-top:200px;margin-left:-250px;}
-25%{margin-top:210px;margin-left:-255px;}
-50%{margin-top:200px;margin-left:-260px;}
-75%{margin-top:190px;margin-left:-255px;}
-100%{margin-top:200px;margin-left:-250px;}
+0%{margin-top:16%;margin-left:-15%;}
+25%{margin-top:16.5%;margin-left:-15.5%;}
+50%{margin-top:16%;margin-left:-16%;}
+75%{margin-top:15.5%;margin-left:-15.5%;}
+100%{margin-top:16%;margin-left:-15%;}
 }
 @-webkit-keyframes wave2{
-0%{margin-top:220px;margin-left:-280px;}
-25%{margin-top:240px;margin-left:-290px}
-50%{margin-top:220px;margin-left:-300px;}
-75%{margin-top:200px;margin-left:-290px;}
-100%{margin-top:220px;margin-left:-280px;}
+0%{margin-top:18%;margin-left:-12%;}
+25%{margin-top:19%;margin-left:-12.5%}
+50%{margin-top:18%;margin-left:-13%;}
+75%{margin-top:17%;margin-left:-12.5%;}
+100%{margin-top:18%;margin-left:-12%;}
 }
 @-webkit-keyframes wave3{
-0%{margin-top:250px;margin-left:-250px;}
-25%{margin-top:270px;margin-left:-270px;}
-50%{margin-top:250px;margin-left:-290px;}
-75%{margin-top:230px;margin-left:-270px;}
-100%{margin-top:250px;margin-left:-250px;}
+0%{margin-top:20%;margin-left:-10%;}
+25%{margin-top:21%;margin-left:-10.5%;}
+50%{margin-top:20%;margin-left:-11%;}
+75%{margin-top:19%;margin-left:-10.5%;}
+100%{margin-top:20%;margin-left:-10%;}
 }
 @-webkit-keyframes wave4{
-0%{margin-top:280px;margin-left:-250px;}
-25%{margin-top:310px;margin-left:-270px;}
-50%{margin-top:280px;margin-left:-290px;}
-75%{margin-top: 250px;margin-left:-270px;}
-100%{margin-top:280px;margin-left:-250px;}
+0%{margin-top:22%;margin-left:-15%;}
+25%{margin-top:23%;margin-left:-15.5%;}
+50%{margin-top:22%;margin-left:-16%;}
+75%{margin-top: 21%;margin-left:-15.5%;}
+100%{margin-top:22%;margin-left:-15%;}
 }
 @-webkit-keyframes wave5{
-0%{margin-top:200px;margin-left:-250px;}
-25%{margin-top:205px;margin-left:-270px;}
-50%{margin-top:200px;margin-left:-290px;}
-75%{margin-top: 205px;margin-left:-270px;}
-100%{margin-top:200px;margin-left:-250px;}
+0%{margin-top:15%;margin-left:-10%;}
+25%{margin-top:16%;margin-left:-10.5%;}
+50%{margin-top:15%;margin-left:-11%;}
+75%{margin-top: 14%;margin-left:-10.5%;}
+100%{margin-top:15%;margin-left:-10%;}
 }
 #w1
 {
