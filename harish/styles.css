@@ -29,58 +29,72 @@ img {
 @-webkit-keyframes move1{
 	 0% {margin-left: 57%;}
 	 20% {margin-left: 125%;}
-	 40% {margin-left: 62.5%;}
-	 60% {margin-left:0%;}
+	 39%{margin-left: 125%;opacity: 1;}
+	 40% {margin-left: 62.5%;opacity: 0;}
+	 59% {margin-left:-15%;opacity: 0;}
+	 60% {margin-left:-15%;opacity: 1;}
 	 80% {margin-left:25%;}
 	 100% {margin-left:57%;}
 }
 @-webkit-keyframes move2{
  0% {margin-left: 0%;}
  20% {margin-left: 62.5%;}
- 40% {margin-left: 125%;}
+ 39% {margin-left: 125%;opacity: 1;}
+ 40% {margin-left: 125%; opacity: 0;}
  60% {margin-left:62.5%;}
- 80% {margin-left:-31.25%;}
-	100% {margin-left: 0%;}
+ 79% {margin-left:-31.25%;opacity: 0;}
+ 80% {margin-left:-31.25%;opacity: 1;}
+100% {margin-left: 0%;}
 }
 @-webkit-keyframes move3{
   0% {margin-left:85%;}
-	 20% {margin-left:125%;}
-	 40% {margin-left:62.5%;}
-	 60% {margin-left: 0%;}
-	 80% {margin-left: 62.5%;}
+  19% {margin-left:140%;opacity: 1}
+	 20% {margin-left:140%;opacity: 0}
+	 40% {margin-left:40%;}
+	 59% {margin-left: -15%;opacity: 0}
+	 60% {margin-left: -15%;opacity: 1}
+	 80% {margin-left: 40%;}
 	 100% {margin-left:85%;}
 }
 @-webkit-keyframes move4{
-   0% {margin-left:80%;}
-	 20% {margin-left:112.5%;}
+     0% {margin-left:80%;}
+     19% {margin-left:112.5%;opacity: 1}
+	 20% {margin-left:112.5%;opacity: 0}
 	 40% {margin-left:50%;}
-	 60% {margin-left: -31.25%;}
+	 59% {margin-left: -31.25%;opacity: 0}
+	 60% {margin-left: -31.25%;opacity: 1}
 	 80% {margin-left: 50%;}
 	 100% {margin-left: 80%;}
 }
 @-webkit-keyframes move5{
 	 0% {margin-left: 70%;}
-	 20% {margin-left: 125%;}
+	 19% {margin-left: 125%;opacity: 1}
+	 20% {margin-left: 125%;opacity: 0}
 	 40% {margin-left: 62.5%;}
-	 60% {margin-left:0%;}
+	 59% {margin-left:-15%;opacity: 0}
+	 60% {margin-left:-15%;opacity: 1}
 	 80% {margin-left:25%;}
-   100% {margin-left:70%;}
+    100% {margin-left:70%;}
 }
 @-webkit-keyframes move6{
 	 0% {margin-left: 23.43%;}
 	 20% {margin-left: 75%;}
-	 40% {margin-left: 125%;}
+	 39% {margin-left: 125%;opacity: 1}
+	 40% {margin-left: 125%;opacity: 0}
 	 60% {margin-left:93.75%;}
-	 80% {margin-left:0%;}
- 100% {margin-left:23.43%;}
+	 79% {margin-left:-15%;opacity: 0}
+	 80% {margin-left:-15%;opacity: 1}
+     100% {margin-left:23.43%;}
 }
 @-webkit-keyframes move7{
 	 0% {margin-left: 13%;}
 	 20% {margin-left: 37.5%;}
 	 40% {margin-left: 75%;}
-	 60% {margin-left:112.5%;}
-	 80% {margin-left:75%;}
-   100% {margin-left:13%;}
+	 59% {margin-left:112.5%;opacity: 1}
+	 60% {margin-left:112.5%;opacity: 0}
+	 79% {margin-left:-15%;opacity: 0}
+	 80% {margin-left:-15%;opacity: 1}
+    	 100% {margin-left:13%;}
 }
 
 #c1
