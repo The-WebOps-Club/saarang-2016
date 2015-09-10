@@ -124,14 +124,17 @@ position: absolute !important;
 
 /* BASE STYLES
 ============================================================================= */
-html         { overflow-y:hidden; }
+html         {  }
 .page        { 
-  bottom:0; 
+  
   padding-top:200px;
   position:absolute; 
   text-align:center;
   top:0;  
   width:100%; 
+  height: 100%;
+  left:0px;
+  
 }
 
 .page h1  { font-size:60px; }
@@ -142,7 +145,7 @@ html         { overflow-y:hidden; }
 ============================================================================= */
 .page-home    { background:#00D0BC; color:#00907c; }
 .page-about   { background:#E59400; color:#a55400; }
-.page-contact   { background:#ffa6bb; color:#9e0000; }
+.page-contact   { background:#ffa6bb; color:#9e0000;overflow-x:hidden;}
 .page-gallery {background: #CF0000; color: #00907c}
 /* ANIMATIONS
 ============================================================================= */
@@ -197,6 +200,15 @@ html         { overflow-y:hidden; }
   -moz-animation:slideOutLeft 0.5s both ease-in;
   animation:slideOutLeft 0.5s both ease-in;   
 }
+/*.page-contact{
+background-image:url('../images/right.png');
+background-image: 
+
+
+}*/
+
+
+
 .page-contact.ng-enter    { 
     /*-webkit-animation:slideInUp 0.5s both ease-in;
   -moz-animation:slideInUp 0.5s both ease-in;
