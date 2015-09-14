@@ -7,3 +7,100 @@
 	background-attachment: fixed;
 
 }
+
+#box1
+{
+
+
+}
+
+#box2{
+  position: absolute;
+  margin-top: -42.50%;
+  margin-left: 60%;
+  background: #34495E;
+  height: 83%;
+  width:33%;
+  border-radius: 1em;
+
+
+
+
+}
+
+#tab
+{
+  margin-left: 
+
+
+}
+.md-button {
+  padding: 0 6px 0 6px;
+  margin: 6px 8px 6px 8px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+}
+
+
+
+  tr {
+    border-top: .5px solid #ddd;
+    border-bottom: .5px solid #ddd;
+    border-color: #34495E;
+    
+    height: 55.6px;
+
+
+    border-color: ;
+    padding-left: 2em;
+    padding-top: 100em;
+  }
+  th{
+     margin: .5em 1em;
+     text-align: center;  
+
+  }
+
+  td{
+     margin: .5em 1em;
+
+     display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+
+
+  }
+
+.rwd-table {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  background: #34495E;
+  color: #fff;
+  border-radius: 1em;
+  overflow: hidden;
+  min-width: 30%;
+  margin-left: 10%;
+  margin-bottom: 1.45%;
+  margin-top: 2%;
+
+
+  
+}
+button{
+
+background: #34495E;
+
+}
