@@ -1,3 +1,33 @@
+
+#txt {
+   position: absolute;
+   margin-left: 0%;
+   margin-right: 60%;
+   margin-top: 5%;
+}
+#register {
+   position: absolute;
+   margin-top: 0%;
+   margin-left: 50%;
+   margin-right:70%;
+   white-space: nowrap;
+   text-align: justify;
+}
+.selected {
+   border-color: red;
+   border-width: 1px;
+   
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.btn-success {
+  disabl
+}
+
+
 #sun{
     position: relative;
 }
@@ -13,6 +43,7 @@
 
 body {
   padding: 0;
+  overflow: auto;
 }
 
 #transit {
@@ -139,6 +170,7 @@ html         { overflow-y:hidden; }
   text-align:center;
   top:0;  
   width:100%; 
+  overflow: auto;
 }
 
 .page h1  { font-size:60px; }
