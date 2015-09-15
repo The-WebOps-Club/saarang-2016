@@ -1,0 +1,100 @@
+<div id="txt">
+	<h2>Milan is where Saarang goes beyond Chennai to reach out to the huge spectrum of audience. Saarang Milan is a plethora of events ranging from music to quizzing, held in various major cities of India before the main fest. The Milan events are massive crowd pullers and have seen colossal participation from the crowd all over the country.
+Last year, Saarang Milan saw huge turnouts in every place. The best artists of the city competed for glory. Bangalore, Hyderabad, Pune, Kochi and Mangalore were the venues of Milan. 
+Milan is a celebration. A celebration of the widespread popularity of Saarang!
+This time around, Saarang Milan is going to be bigger and better than ever before!<h2>
+</div>
+<div id="register">
+	<h3>Mangalore took pride in a renowned café called the G6 Music Café. October 19 2014 saw the beginning <br>of Saarang Milan and kudos to Mangalore G6 Café for the initiation of a musical expedition. <br>The Band Hunt Competition (Decibels) attracted participants from as far as Coimbatore and Bhopal. <br>Despite being jinxed by bad weather, Saarang Milan witnessed a bewildering crowd where 7 bands participated. <h3>
+	<input type="button" class="btn btn-primary" ng-click="showfields()" value="Register Now"/>	
+	<div id="formshow" ng-show="chform">	
+		<form class="form-horizontal" name="myform"  id="myform" ng-submit="changebool()" novalidate>
+		<div class="form-group">
+	    	<h3><em>Registration for Milan now open<br><br></em></h3>
+				<div class="col-md-6">
+					<label class="col-md-5 control-label" for="first">Name of the band</label>                         <!-- Name of band -->
+					<div class="col-md-7">
+						<input type="textarea" class="form-control" name="first" id="first" ng-class="{'selected':chfirst}" ng-model="first" placeholder="First name:" required />
+						<div id="errorfirst" ng-show="chfirst"></div><br>
+						<!-- <div class="alert alert-danger" role="alert">
+							
+			    	    </div>-->
+			    	</div>
+			    	<label class="col-md-5 control-label" for="genre">Genre</label>                          <!-- Genre -->
+					<div class="col-md-7">
+						<input type="textarea" class="form-control" name="genre" id="genre" ng-class="{'selected':chgenre}" ng-model="genre" placeholder="Genre:" required />
+						<div id="errorgenre" ng-show="chgenre"> </div><br>
+			        </div>
+		            <label class="col-md-5 control-label" for="city">City</label>                          <!-- City -->
+					<div class="col-md-7">
+						<input type="textarea" class="form-control" name="city" id="city" ng-class="{'selected':chcity}" ng-model="city" placeholder="City:" required />
+						<div id="errorcity" ng-show="chcity"> </div><br>
+			        </div>
+		            
+				    <label class="col-md-5 control-label" for="strength"> Band Strength</label>                     <!-- strength Number -->
+ 					<div class="col-md-7">
+			    		<input type="number" class="form-control" name="strength" id="strength" ng-model="strength" integer ng-class="{'selected':chstrength}"  placeholder="strength Number:" required />
+			    		<div id="errorstrength" ng-show="chstrength"></div><br>
+			    	</div>
+	            	
+				    <label class="col-md-5 control-label" for="emailband">Band email ID</label>              <!-- Band Email-->
+	        		<div class="col-md-7">
+	            		<input type="textarea" class="form-control" name="emailband" id="emailband" ng-model="emailband" ng-class="{'selected':chemailband}" placeholder="Example : abc@xyz.com:" required />
+	            		<div id="erroremailband" ng-show="chemailband"></div><br>
+	            	</div>
+	            	<label class="col-md-5 control-label" for="leader">Member 1 (Leader)</label>                   <!-- Leader First Name -->
+					<div class="col-md-7">
+						<input type="textarea" class="form-control" name="leader" id="leader" ng-class="{'selected':chleader}" ng-model="leader" placeholder="Leader Name:" required />
+						<div id="errorleader" ng-show="chleader"></div><br>
+						<!-- <div class="alert alert-danger" role="alert">
+							
+			    	    </div>-->
+			    	</div>
+			    	
+		            <label class="col-md-5 control-label" for="number1"> Contact Number</label>                <!--Leader Contact Number -->
+ 					<div class="col-md-7">
+			    		<input type="number" class="form-control" name="number1" id="number1" ng-model="number1" integer ng-class="{'selected':chnumber1}"  placeholder="Number:" required />
+			    		<div id="errornumber1" ng-show="chnumber1"></div><br>
+			    	</div>
+	            	<label class="col-md-5 control-label" for="emailleader">Email ID</label>              <!--Leader Email-->
+	        		<div class="col-md-7">
+	            		<input type="textarea" class="form-control" name="emailleader" id="emailleader" ng-model="emailleader" ng-class="{'selected':chemailleader}" placeholder="Example : abc@xyz.com:" required />
+	            		<div id="erroremailleader" ng-show="chemailleader"></div><br>
+	            	</div>
+					
+					<label class="col-md-5 control-label" for="member2">Member 2</label>                          <!--Member First Name -->
+					<div class="col-md-7">
+						<input type="textarea" class="form-control" name="member2" id="member2" ng-class="{'selected':chmember2}" ng-model="member2" placeholder="member2 Name:" required />
+						<div id="errormember2" ng-show="chmember2"></div><br>
+						<!-- <div class="alert alert-danger" role="alert">
+							
+			    	    </div>-->
+			    	</div>
+			    	
+		            <label class="col-md-5 control-label" for="number2"> Contact Number</label>                      <!-- Contact Number -->
+ 					<div class="col-md-7">
+			    		<input type="number" class="form-control" name="number2" id="number2" ng-model="number2" integer ng-class="{'selected':chnumber2}"  placeholder="Number:" required />
+			    		<div id="errornumber2" ng-show="chnumber2"></div><br>
+			    	</div>
+	            	<label class="col-md-5 control-label" for="emailmember">Email ID</label>              <!--Member Email-->
+	        		<div class="col-md-7">
+	            		<input type="textarea" class="form-control" name="emailmember" id="emailmember" ng-model="emailmember" ng-class="{'selected':chemailmember}" placeholder="Example : abc@xyz.com:" required />
+	            		<div id="erroremailmember" ng-show="chemailmember"></div><br>
+	            	</div>
+	            	<label class="col-md-5 control-label" for="linker">Link</label>                         <!-- Link to performances -->
+					<div class="col-md-7">
+						<input type="textarea" class="form-control" name="linker" id="linker" ng-class="{'selected':chlinker}" ng-model="linker" placeholder="Link:" required />
+						<div id="errorlinker" ng-show="chlinker"></div><br>
+						<!-- <div class="alert alert-danger" role="alert">
+							
+			    	    </div>-->
+			    	</div>
+			    		            	
+
+	            	<p id="demo"></p>
+	            	
+					<button type="submit" class="btn btn-primary" id="butto" ng-class="{'btn btn-success':formpass}" >Register</button>
+		</div>
+	</form>
+</div>
+</div>
