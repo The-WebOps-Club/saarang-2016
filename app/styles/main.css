@@ -134,7 +134,7 @@ position: absolute !important;
 html         {  }
 .page        { 
   
-  padding-top:200px;
+ /* padding-top:200px;*/
   position:absolute; 
   text-align:center;
   top:0;  
@@ -151,11 +151,23 @@ html         {  }
 /* PAGES
 ============================================================================= */
 .page-home    { background:#00D0BC; color:#00907c; }
-.page-about   { background:#E59400; color:#a55400; }
-.page-contact   { background:#ffa6bb; color:#9e0000;overflow-x:hidden;}
-.page-gallery {background: #CF0000; color: #00907c}
+.page-about   {  color:#a55400;/*overflow: hidden;*/ overflow-x:hidden;
+                /* background-image:url("../images/spons.png");
+  
+                  background-size: 101% 100%;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed; */}
+.page-contact   {  color:#9e0000;overflow-x:hidden;
+                  background-image:url("../images/contact.png");
+  
+                  background-size: 101% 100%;
+
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;}
+.page-gallery {background: #CF0000; color: #00907c;}
 /* ANIMATIONS
 ============================================================================= */
+  
 
 .page.ng-leave  { z-index:9999; }
 .page.ng-enter  { z-index:8888; }

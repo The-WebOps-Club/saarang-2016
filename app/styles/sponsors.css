@@ -1,0 +1,46 @@
+#sponsback{
+				overflow-x:hidden;
+				/*overflow-y:hidden;*/ 
+               background-image:url("../images/spons.png");
+  
+                  background-size: 101% 100%;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+	/*margin-top: -11.6%;
+
+}
+
+#over{
+	    background-image:url("../images/top.png");
+	    
+	   /* margin-top: 20%;*/
+	    
+	    
+
+
+	}
+/*#top{
+	height: 10%;
+	width: 100%;
+	
+	z-index:2;
+
+
+
+
+}*/
+
+
+
+#content{
+
+	/*position: absolute;*/
+	margin-top: 7%;
+	/*overflow-y:scroll; */
+	height: 80%;
+	
+	
+
+
+	
+}
