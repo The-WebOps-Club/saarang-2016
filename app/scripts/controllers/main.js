@@ -8,6 +8,7 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
+<<<<<<< HEAD
   .controller('MainCtrl', function($scope)
     {
     var scene = document.getElementById('scene');
@@ -55,3 +56,8 @@ angular.module('saarang2016App')
     //         $scope.chmoon=true;
     //     }
     });
+=======
+  .controller('MainCtrl', function ($scope) {
+    $scope.pageClass = "page-home"
+  });
+>>>>>>> 9f6503eea52dc128472c629c423c2f1512fbaca5
