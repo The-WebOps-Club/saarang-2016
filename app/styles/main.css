@@ -1,3 +1,33 @@
+
+#txt {
+   position: absolute;
+   margin-left: 0%;
+   margin-right: 60%;
+   margin-top: 5%;
+}
+#register {
+   position: absolute;
+   margin-top: 0%;
+   margin-left: 50%;
+   margin-right:70%;
+   white-space: nowrap;
+   text-align: justify;
+}
+.selected {
+   border-color: red;
+   border-width: 1px;
+   
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.btn-success {
+  
+}
+
+
 #sun{
     position: relative;
 }
@@ -13,6 +43,7 @@
 
 body {
   padding: 0;
+  overflow: auto;
 }
 
 #transit {
@@ -142,6 +173,11 @@ html
   text-align:center;
   top:0;  
   width:100%; 
+
+  overflow: auto;
+
+  height: 100%;
+  left:0px;
 }
   
 
@@ -151,12 +187,24 @@ html
 
 /* PAGES
 ============================================================================= */
-/*.page-home    { background:#00D0BC; color:#00907c; }*/
-.page-about   { background:#E59400; color:#a55400; }
-.page-contact   { background:#ffa6bb; color:#9e0000;overflow-x:hidden;}
-.page-gallery {background: #CF0000; color: #00907c}
+.page-home    { background:#00D0BC; color:#00907c; }
+.page-about   {  color:#a55400;/*overflow: hidden;*/ overflow-x:hidden;
+                /* background-image:url("../images/spons.png");
+  
+                  background-size: 101% 100%;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed; */}
+.page-contact   {  color:#9e0000;overflow-x:hidden;
+                  background-image:url("../images/contact.png");
+  
+                  background-size: 101% 100%;
+
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;}
+.page-gallery {background: #CF0000; color: #00907c;}
 /* ANIMATIONS
 ============================================================================= */
+  
 
 .page.ng-leave  { z-index:9999; }
 .page.ng-enter  { z-index:8888; }

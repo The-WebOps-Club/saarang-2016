@@ -52,6 +52,11 @@ angular
         controller: 'ContactsCtrl',
         controllerAs: 'contacts'
       })
+      .when('/milan', {
+        templateUrl: 'views/milan.html',
+        controller: 'MilanCtrl',
+        controllerAs: 'milan'
+      })
       .otherwise({
         redirectTo: '/'
       });
