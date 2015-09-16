@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-ui-bootstrap' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'angular-ui-bootstrap', null ]
+6 verbose cache add name=undefined spec="angular-ui-bootstrap" args=["angular-ui-bootstrap",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'angular-ui-bootstrap',
+7 verbose parsed url   path: 'angular-ui-bootstrap',
+7 verbose parsed url   href: 'angular-ui-bootstrap' }
+8 silly lockFile f6770473-angular-ui-bootstrap angular-ui-bootstrap
+9 verbose lock angular-ui-bootstrap /home/harish/.npm/f6770473-angular-ui-bootstrap.lock
+10 silly lockFile f6770473-angular-ui-bootstrap angular-ui-bootstrap
+11 silly lockFile f6770473-angular-ui-bootstrap angular-ui-bootstrap
+12 verbose addNamed [ 'angular-ui-bootstrap', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile f47e147d-angular-ui-bootstrap angular-ui-bootstrap@
+15 verbose lock angular-ui-bootstrap@ /home/harish/.npm/f47e147d-angular-ui-bootstrap.lock
+16 silly addNameRange { name: 'angular-ui-bootstrap', range: '*', hasData: false }
+17 verbose request where is /angular-ui-bootstrap
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id d5aa0ce3bddccf4f
+20 verbose url raw /angular-ui-bootstrap
+21 verbose url resolving [ 'https://registry.npmjs.org/', './angular-ui-bootstrap' ]
+22 verbose url resolved https://registry.npmjs.org/angular-ui-bootstrap
+23 verbose request where is https://registry.npmjs.org/angular-ui-bootstrap
+24 info trying registry request attempt 1 at 20:16:52
+25 verbose etag "97BBNO9ZB8B889QABYKII019Z"
+26 http GET https://registry.npmjs.org/angular-ui-bootstrap
+27 http 304 https://registry.npmjs.org/angular-ui-bootstrap
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Wed, 16 Sep 2015 14:46:53 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"97BBNO9ZB8B889QABYKII019Z"',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-sin6927-SIN',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1442414813.031668,VS0,VE844',
+28 silly registry.get     vary: 'Accept' } ]
+29 verbose etag https://registry.npmjs.org/angular-ui-bootstrap from cache
+30 silly addNameRange number 2 { name: 'angular-ui-bootstrap', range: '*', hasData: true }
+31 silly addNameRange versions [ 'angular-ui-bootstrap',
+31 silly addNameRange   [ '0.12.1', '0.13.0', '0.13.1', '0.13.2', '0.13.3', '0.13.4' ] ]
+32 verbose addNamed [ 'angular-ui-bootstrap', '0.13.4' ]
+33 verbose addNamed [ '0.13.4', '0.13.4' ]
+34 silly lockFile 00beb050-angular-ui-bootstrap-0-13-4 angular-ui-bootstrap@0.13.4
+35 verbose lock angular-ui-bootstrap@0.13.4 /home/harish/.npm/00beb050-angular-ui-bootstrap-0-13-4.lock
+36 silly lockFile 648623b9--angular-ui-bootstrap-0-13-4-tgz https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+37 verbose lock https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz /home/harish/.npm/648623b9--angular-ui-bootstrap-0-13-4-tgz.lock
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz',
+38 verbose addRemoteTarball   'd9981523b12ecb5f911cb0b4829fa3e5f20ed9ec' ]
+39 info retry fetch attempt 1 at 20:16:54
+40 verbose fetch to= /tmp/npm-31960-wrnOazsB/registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+41 http GET https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+42 http 200 https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+43 silly lockFile 648623b9--angular-ui-bootstrap-0-13-4-tgz https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+44 silly lockFile 648623b9--angular-ui-bootstrap-0-13-4-tgz https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+45 silly lockFile 00beb050-angular-ui-bootstrap-0-13-4 angular-ui-bootstrap@0.13.4
+46 silly lockFile 00beb050-angular-ui-bootstrap-0-13-4 angular-ui-bootstrap@0.13.4
+47 silly lockFile f47e147d-angular-ui-bootstrap angular-ui-bootstrap@
+48 silly lockFile f47e147d-angular-ui-bootstrap angular-ui-bootstrap@
+49 error Error: shasum check failed for /tmp/npm-31960-wrnOazsB/registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+49 error Expected: d9981523b12ecb5f911cb0b4829fa3e5f20ed9ec
+49 error Actual:   da39a3ee5e6b4b0d3255bfef95601890afd80709
+49 error From:     https://registry.npmjs.org/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.4.tgz
+49 error     at /usr/lib/nodejs/sha/index.js:38:8
+49 error     at ReadStream.<anonymous> (/usr/lib/nodejs/sha/index.js:85:7)
+49 error     at ReadStream.EventEmitter.emit (events.js:117:20)
+49 error     at _stream_readable.js:920:16
+49 error     at process._tickCallback (node.js:415:13)
+50 error If you need help, you may report this *entire* log,
+50 error including the npm and node versions, at:
+50 error     <http://github.com/npm/npm/issues>
+51 error System Linux 3.19.0-28-generic
+52 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "angular-ui-bootstrap"
+53 error cwd /home/harish/saarang-2016
+54 error node -v v0.10.25
+55 error npm -v 1.4.21
+56 verbose exit [ 1, true ]

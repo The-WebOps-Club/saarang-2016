@@ -192,8 +192,8 @@ html
 
 /* PAGES
 ============================================================================= */
-.page-home    {}
-.page-about   {  color:#a55400;
+.page-home    { background: url('../images/background.png')}
+.page-sponsors   { 
                   overflow-x:hidden;
                  background: url('../images/background.png');
   
@@ -210,7 +210,7 @@ html
 .page-gallery { 
   background: url('../images/background.png'); color: #00907c;
 }
-.page-sponsors {
+.page-milan {
   background: url('../images/background.png');
 }
 /* ANIMATIONS
@@ -453,8 +453,6 @@ img {
 .container {
   position: absolute;
   overflow: hidden;
-/*  overflow-x:hidden;
-  overflow-y:hidden;*/ 
   width: 100%;
   height: 100%;
 }
