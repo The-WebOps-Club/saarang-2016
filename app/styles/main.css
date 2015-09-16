@@ -27,14 +27,7 @@
   
 }
 
-
-#sun{
-    position: relative;
-}
-#moon{
-    position:relative;
-}
-    .browsehappy {
+.browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
@@ -77,6 +70,9 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.container{
+  
+}
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -185,21 +181,27 @@ html         {  }
 
 /* PAGES
 ============================================================================= */
-.page-home    { background:#00D0BC; color:#00907c; }
-.page-about   {  color:#a55400;/*overflow: hidden;*/ overflow-x:hidden;
-                /* background-image:url("../images/spons.png");
+.page-home    { background: url('../images/background.png')}
+.page-about   {  color:#a55400;
+                  overflow-x:hidden;
+                 background: url('../images/background.png');
   
                   background-size: 101% 100%;
                   background-repeat: no-repeat;
-                  background-attachment: fixed; */}
+                  background-attachment: fixed; }
 .page-contact   {  color:#9e0000;overflow-x:hidden;
-                  background-image:url("../images/contact.png");
+                  background: url('../images/background.png');
   
                   background-size: 101% 100%;
 
                   background-repeat: no-repeat;
                   background-attachment: fixed;}
-.page-gallery {background: #CF0000; color: #00907c;}
+.page-gallery { 
+  background: url('../images/background.png'); color: #00907c;
+}
+.page-sponsors {
+  background: url('../images/background.png');
+}
 /* ANIMATIONS
 ============================================================================= */
   
