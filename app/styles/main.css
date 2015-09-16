@@ -40,7 +40,7 @@ body {
 }
 
 #transit {
-    height:100vh;
+    height:100%;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -53,7 +53,10 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+}
+.navbar {
+  margin-bottom: 0px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -103,11 +106,11 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
   }
-
+*/
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -116,14 +119,10 @@ body {
     padding-right: 0;
   }
   /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
-}
 /*.main{
     margin-top: 0% !important;
     margin-left: 0% !important;
@@ -158,10 +157,14 @@ position: absolute !important;
 
 /* BASE STYLES
 ============================================================================= */
-html         {  }
-.page        { 
-  
- /* padding-top:200px;*/
+html
+{
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+.page       
+{ 
+  /*padding-top: 20px;*/
   position:absolute; 
   text-align:center;
   top:0;  
@@ -171,9 +174,8 @@ html         {  }
 
   height: 100%;
   left:0px;
-  
-
 }
+  
 
 .page h1  { font-size:60px; }
 .page a     { margin-top:50px; }
@@ -394,6 +396,139 @@ html         {  }
 @keyframes rotateOutNewspaper {
   to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
 }
+
+
+  body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.expand-width
+{
+  width:100%;
+}
+
+.container {
+  position: absolute;
+/*  overflow-x:hidden;
+  overflow-y:hidden;*/ 
+  width: 100%;
+  height: 100%;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*waves*/
+@-webkit-keyframes wave1{
+0%{margin-top:18%;margin-left:-10%;}
+25%{margin-top:19%;margin-left:-12%;}
+50%{margin-top:18%;margin-left:-14%;}
+75%{margin-top:17%;margin-left:-12%;}
+100%{margin-top:18%;margin-left:-10%;}
+}
+@-webkit-keyframes wave2{
+0%{margin-top:0%;margin-left:-10%;}
+25%{margin-top:1%;margin-left:-12%}
+50%{margin-top:0%;margin-left:-14%;}
+75%{margin-top:-1%;margin-left:-12%;}
+100%{margin-top:0%;margin-left:-10%;}
+}
+@-webkit-keyframes wave3{
+0%{margin-top:0%;margin-left:-25%;}
+25%{margin-top:0.5%;margin-left:-27%;}
+50%{margin-top:0%;margin-left:-29%;}
+75%{margin-top:-0.5%;margin-left:-27%;}
+100%{margin-top:0%;margin-left:-25%;}
+}
+@-webkit-keyframes ship{
+0%{margin-left:70%;}
+25%{margin-left:69.5%;}
+50%{margin-left:69%;}
+75%{margin-left:69.5%;}
+100%{margin-left:70%;}
+}
+
+#w1
+{
+  margin-left: -10%;
+  margin-top: 18%;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-name:wave1;
+  -webkit-animation-duration:6s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-name: wave1;
+    animation-duration:6s;
+    animation-iteration-count:infinite;
+}
+#w2
+{
+  margin-left: -10%;
+  /*margin-top: 18%;*/
+  width: 150%;
+    height: 150%;
+  -webkit-animation-name:wave2;
+  -webkit-animation-duration:5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-name: wave2;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+#w3
+{
+  margin-left: -25%;
+  /*margin-top: 20%;*/
+  width: 150%;
+    height: 150%;
+  -webkit-animation-name:wave3;
+  -webkit-animation-duration:4s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-name: wave3;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+}
+#l
+{
+  width: 25%;
+  margin-top: -35%;
+  margin-left: 35%;
+}
+#t
+{
+  width: 85%;
+  margin-top: 0%;
+  margin-left: 5%;
+}
+#s
+{
+  width: 5%;
+  height: 5%;
+  margin-top: -3%;
+  margin-left:70%;
+  -webkit-animation-name:ship;
+  -webkit-animation-duration:6s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-name:ship;
+    animation-duration:6s;
+    animation-iteration-count:infinite;
+}
+
 /*@-webkit-keyframes rotateOutRight {
   
 

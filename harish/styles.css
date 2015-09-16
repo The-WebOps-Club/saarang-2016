@@ -13,7 +13,7 @@ img {
 }
 
 .container {
-	    background: -webkit-linear-gradient(top,#92D7E7,#C1E6EF); 
+	/*background-image: url(clouds.png);*/
   position: absolute;
   overflow-x:hidden;
   overflow-y:hidden; 
@@ -26,7 +26,7 @@ img {
   margin: 0;
 }
 /*clouds*/
-@-webkit-keyframes move1{
+/*@-webkit-keyframes move1{
 	 0% {margin-left: 57%;}
 	 49% {margin-left: 115%;opacity: 1;}
 	 50%{margin-left: 115%;opacity: 0;}
@@ -199,10 +199,10 @@ img {
 	animation-name: move7;
     animation-duration:1000s;
     animation-iteration-count:infinite;
-}
+}*/
 /*saarang*/
 
-#s1
+/*#s1
 {
 	width: 4.5%;
 	height: 4.5%;
@@ -264,9 +264,9 @@ img {
 	margin-top: -9%;
 	-webkit-transform: rotate(15deg); 
     transform: rotate(15deg);
-}
+}*/
 /*year*/
-.y
+/*.y
 {
 	margin-top: -2%
 }
@@ -293,48 +293,43 @@ img {
 	width: 3%;
 	height: 3%;
 	margin-left: 52%;
-}
+}*/
 /*waves*/
 @-webkit-keyframes wave1{
-0%{margin-top:16%;margin-left:-15%;}
-25%{margin-top:16.5%;margin-left:-17%;}
-50%{margin-top:16%;margin-left:-19%;}
-75%{margin-top:15.5%;margin-left:-17%;}
-100%{margin-top:16%;margin-left:-15%;}
+0%{margin-top:15%;margin-left:-10%;}
+25%{margin-top:16%;margin-left:-12%;}
+50%{margin-top:15%;margin-left:-14%;}
+75%{margin-top:14%;margin-left:-12%;}
+100%{margin-top:15%;margin-left:-10%;}
 }
 @-webkit-keyframes wave2{
-0%{margin-top:18%;margin-left:-12%;}
-25%{margin-top:19%;margin-left:-14%}
-50%{margin-top:18%;margin-left:-16%;}
-75%{margin-top:17%;margin-left:-14%;}
-100%{margin-top:18%;margin-left:-12%;}
+0%{margin-top:0%;margin-left:-10%;}
+25%{margin-top:1%;margin-left:-12%}
+50%{margin-top:0%;margin-left:-14%;}
+75%{margin-top:-1%;margin-left:-12%;}
+100%{margin-top:0%;margin-left:-10%;}
 }
 @-webkit-keyframes wave3{
-0%{margin-top:20%;margin-left:-10%;}
-25%{margin-top:21%;margin-left:-12%;}
-50%{margin-top:20%;margin-left:-14%;}
-75%{margin-top:19%;margin-left:-12%;}
-100%{margin-top:20%;margin-left:-10%;}
+0%{margin-top:0%;margin-left:-25%;}
+25%{margin-top:0.5%;margin-left:-27%;}
+50%{margin-top:0%;margin-left:-29%;}
+75%{margin-top:-0.5%;margin-left:-27%;}
+100%{margin-top:0%;margin-left:-25%;}
 }
-@-webkit-keyframes wave4{
-0%{margin-top:22%;margin-left:-15%;}
-25%{margin-top:23%;margin-left:-17%;}
-50%{margin-top:22%;margin-left:-19%;}
-75%{margin-top: 21%;margin-left:-17%;}
-100%{margin-top:22%;margin-left:-15%;}
+@-webkit-keyframes ship{
+0%{margin-left:70%;}
+25%{margin-left:69.5%;}
+50%{margin-left:69%;}
+75%{margin-left:69.5%;}
+100%{margin-left:70%;}
 }
-/*@-webkit-keyframes wave5{
-0%{margin-top:15%;margin-left:-10%;}
-25%{margin-top:16%;margin-left:-10.5%;}
-50%{margin-top:15%;margin-left:-11%;}
-75%{margin-top: 14%;margin-left:-10.5%;}
-100%{margin-top:15%;margin-left:-10%;}
-}*/
+
 #w1
 {
-	margin-left: -15%;
-	margin-top: 16%;
+	margin-left: -10%;
+	margin-top: 18%;
 	width: 150%;
+	height: 120%;
 	-webkit-animation-name:wave1;
 	-webkit-animation-duration:6s;
 	-webkit-animation-iteration-count:infinite;
@@ -346,9 +341,10 @@ img {
 }
 #w2
 {
-	margin-left: -12%;
-	margin-top: 18%;
+	margin-left: -10%;
+	/*margin-top: 18%;*/
 	width: 150%;
+		height: 120%;
 	-webkit-animation-name:wave2;
 	-webkit-animation-duration:5s;
 	-webkit-animation-iteration-count:infinite;
@@ -360,9 +356,10 @@ img {
 }
 #w3
 {
-	margin-left: -10%;
-	margin-top: 20%;
+	margin-left: -25%;
+	/*margin-top: 20%;*/
 	width: 150%;
+		height: 120%;
 	-webkit-animation-name:wave3;
 	-webkit-animation-duration:4s;
 	-webkit-animation-iteration-count:infinite;
@@ -372,33 +369,31 @@ img {
     animation-duration:4s;
     animation-iteration-count:infinite;
 }
-#w4
+#l
 {
-	margin-left: -15%;
-	margin-top: 22%;
-	width: 150%;
-	-webkit-animation-name:wave4;
-	-webkit-animation-duration:3s;
+	width: 25%;
+	margin-top: -35%;
+	margin-left: 35%;
+}
+#t
+{
+	width: 85%;
+	margin-top: 0%;
+	margin-left: 5%;
+}
+#s
+{
+	width: 5%;
+	height: 5%;
+	margin-top: -3%;
+	margin-left:70%;
+	-webkit-animation-name:ship;
+	-webkit-animation-duration:6s;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	animation-name: wave4;
-    animation-duration:3s;
+	animation-name:ship;
+    animation-duration:6s;
     animation-iteration-count:infinite;
 }
-/*#w5
-{
-	margin-left: -10%;
-	margin-top: 15%;
-	width: 150%;
-	-webkit-animation-name:wave5;
-	-webkit-animation-duration:3s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	animation-name: wave5;
-    animation-duration:3s;
-    animation-iteration-count:infinite;
-}*/
-
 
