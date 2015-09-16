@@ -1,100 +1,64 @@
-<div id="txt">
-	<h2>Milan is where Saarang goes beyond Chennai to reach out to the huge spectrum of audience. Saarang Milan is a plethora of events ranging from music to quizzing, held in various major cities of India before the main fest. The Milan events are massive crowd pullers and have seen colossal participation from the crowd all over the country.
+<div class="row milan">
+	<div class="col-md-4 col-md-offset-1 leftBox">
+		<h3>Milan is where Saarang goes beyond Chennai to reach out to the huge spectrum of audience. Saarang Milan is a plethora of events ranging from music to quizzing, held in various major cities of India before the main fest. The Milan events are massive crowd pullers and have seen colossal participation from the crowd all over the country.
 Last year, Saarang Milan saw huge turnouts in every place. The best artists of the city competed for glory. Bangalore, Hyderabad, Pune, Kochi and Mangalore were the venues of Milan. 
 Milan is a celebration. A celebration of the widespread popularity of Saarang!
-This time around, Saarang Milan is going to be bigger and better than ever before!<h2>
-</div>
-<div id="register">
-	<h3>Mangalore took pride in a renowned café called the G6 Music Café. October 19 2014 saw the beginning <br>of Saarang Milan and kudos to Mangalore G6 Café for the initiation of a musical expedition. <br>The Band Hunt Competition (Decibels) attracted participants from as far as Coimbatore and Bhopal. <br>Despite being jinxed by bad weather, Saarang Milan witnessed a bewildering crowd where 7 bands participated. <h3>
-	<input type="button" class="btn btn-primary" ng-click="showfields()" value="Register Now"/>	
-	<div id="formshow" ng-show="chform">	
-		<form class="form-horizontal" name="myform"  id="myform" ng-submit="changebool()" novalidate>
-		<div class="form-group">
-	    	<h3><em>Registration for Milan now open<br><br></em></h3>
-				<div class="col-md-6">
-					<label class="col-md-5 control-label" for="first">Name of the band</label>                         <!-- Name of band -->
-					<div class="col-md-7">
-						<input type="textarea" class="form-control" name="first" id="first" ng-class="{'selected':chfirst}" ng-model="first" placeholder="First name:" required />
-						<div id="errorfirst" ng-show="chfirst"></div><br>
-						<!-- <div class="alert alert-danger" role="alert">
-							
-			    	    </div>-->
-			    	</div>
-			    	<label class="col-md-5 control-label" for="genre">Genre</label>                          <!-- Genre -->
-					<div class="col-md-7">
-						<input type="textarea" class="form-control" name="genre" id="genre" ng-class="{'selected':chgenre}" ng-model="genre" placeholder="Genre:" required />
-						<div id="errorgenre" ng-show="chgenre"> </div><br>
-			        </div>
-		            <label class="col-md-5 control-label" for="city">City</label>                          <!-- City -->
-					<div class="col-md-7">
-						<input type="textarea" class="form-control" name="city" id="city" ng-class="{'selected':chcity}" ng-model="city" placeholder="City:" required />
-						<div id="errorcity" ng-show="chcity"> </div><br>
-			        </div>
-		            
-				    <label class="col-md-5 control-label" for="strength"> Band Strength</label>                     <!-- strength Number -->
- 					<div class="col-md-7">
-			    		<input type="number" class="form-control" name="strength" id="strength" ng-model="strength" integer ng-class="{'selected':chstrength}"  placeholder="strength Number:" required />
-			    		<div id="errorstrength" ng-show="chstrength"></div><br>
-			    	</div>
-	            	
-				    <label class="col-md-5 control-label" for="emailband">Band email ID</label>              <!-- Band Email-->
-	        		<div class="col-md-7">
-	            		<input type="textarea" class="form-control" name="emailband" id="emailband" ng-model="emailband" ng-class="{'selected':chemailband}" placeholder="Example : abc@xyz.com:" required />
-	            		<div id="erroremailband" ng-show="chemailband"></div><br>
-	            	</div>
-	            	<label class="col-md-5 control-label" for="leader">Member 1 (Leader)</label>                   <!-- Leader First Name -->
-					<div class="col-md-7">
-						<input type="textarea" class="form-control" name="leader" id="leader" ng-class="{'selected':chleader}" ng-model="leader" placeholder="Leader Name:" required />
-						<div id="errorleader" ng-show="chleader"></div><br>
-						<!-- <div class="alert alert-danger" role="alert">
-							
-			    	    </div>-->
-			    	</div>
-			    	
-		            <label class="col-md-5 control-label" for="number1"> Contact Number</label>                <!--Leader Contact Number -->
- 					<div class="col-md-7">
-			    		<input type="number" class="form-control" name="number1" id="number1" ng-model="number1" integer ng-class="{'selected':chnumber1}"  placeholder="Number:" required />
-			    		<div id="errornumber1" ng-show="chnumber1"></div><br>
-			    	</div>
-	            	<label class="col-md-5 control-label" for="emailleader">Email ID</label>              <!--Leader Email-->
-	        		<div class="col-md-7">
-	            		<input type="textarea" class="form-control" name="emailleader" id="emailleader" ng-model="emailleader" ng-class="{'selected':chemailleader}" placeholder="Example : abc@xyz.com:" required />
-	            		<div id="erroremailleader" ng-show="chemailleader"></div><br>
-	            	</div>
-					
-					<label class="col-md-5 control-label" for="member2">Member 2</label>                          <!--Member First Name -->
-					<div class="col-md-7">
-						<input type="textarea" class="form-control" name="member2" id="member2" ng-class="{'selected':chmember2}" ng-model="member2" placeholder="member2 Name:" required />
-						<div id="errormember2" ng-show="chmember2"></div><br>
-						<!-- <div class="alert alert-danger" role="alert">
-							
-			    	    </div>-->
-			    	</div>
-			    	
-		            <label class="col-md-5 control-label" for="number2"> Contact Number</label>                      <!-- Contact Number -->
- 					<div class="col-md-7">
-			    		<input type="number" class="form-control" name="number2" id="number2" ng-model="number2" integer ng-class="{'selected':chnumber2}"  placeholder="Number:" required />
-			    		<div id="errornumber2" ng-show="chnumber2"></div><br>
-			    	</div>
-	            	<label class="col-md-5 control-label" for="emailmember">Email ID</label>              <!--Member Email-->
-	        		<div class="col-md-7">
-	            		<input type="textarea" class="form-control" name="emailmember" id="emailmember" ng-model="emailmember" ng-class="{'selected':chemailmember}" placeholder="Example : abc@xyz.com:" required />
-	            		<div id="erroremailmember" ng-show="chemailmember"></div><br>
-	            	</div>
-	            	<label class="col-md-5 control-label" for="linker">Link</label>                         <!-- Link to performances -->
-					<div class="col-md-7">
-						<input type="textarea" class="form-control" name="linker" id="linker" ng-class="{'selected':chlinker}" ng-model="linker" placeholder="Link:" required />
-						<div id="errorlinker" ng-show="chlinker"></div><br>
-						<!-- <div class="alert alert-danger" role="alert">
-							
-			    	    </div>-->
-			    	</div>
-			    		            	
+This time around, Saarang Milan is going to be bigger and better than ever before!</h3>
+	</div>
+	<div class="col-md-5 col-md-offset-1 rightBox">
+		<h3 ng-hide="chform">
+			Mangalore took pride in a renowned café called the G6 Music Café. October 19 2014 saw the beginning of Saarang Milan and kudos to Mangalore G6 Café for the initiation of a musical expedition. The Band Hunt Competition (Decibels) attracted participants from as far as Coimbatore and Bhopal. Despite being jinxed by bad weather, Saarang Milan witnessed a bewildering crowd where 7 bands participated. 
+		</h3>
+		<input type="button" class="btn btn-primary" ng-hide="chform" ng-click="showfields()" value="Register Now"/>	
+		<div id="formshow" ng-show="chform" class="col-md-12">	
+			<form class="form-horizontal">
+			  <div class="form-group">
+			    <label for="name" class="col-sm-2 control-label">Band Name</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="name" placeholder="Name of the Band" ng-model="band.name">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="genre" class="col-sm-2 control-label">Genre</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="genre" placeholder="Genre" ng-model="band.genre">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="city" class="col-sm-2 control-label">City</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="city" placeholder="Which city are you from?" ng-model="band.city">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="email" class="col-sm-2 control-label">Email</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control" id="email" placeholder="Your band's email ID" ng-model="band.email">
+			    </div>
+			  </div>
+			  <div ng-repeat="member in band.members">
+				  <div class="form-group">
+				    <label for="memberName" class="col-sm-2 control-label">Member {{$index + 1}}</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" placeholder="Name" ng-model="member.name">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				  	<button class="btn btn-danger" ng-click="deleteMember({{$index}})" ng-hide="$first" class="col-sm-2 pull-left"><span class="glyphicon glyphicon-trash"></span></button>
+				    <div class="col-sm-10 pull-right">
+				      <input type="email" class="form-control" placeholder="Email" ng-model="member.email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-10 col-sm-offset-2">
+				      <input type="text" class="form-control" placeholder="Phone Number" ng-model="member.phone">
+				    </div>
+				  </div>
 
-	            	<p id="demo"></p>
-	            	
-					<button type="submit" class="btn btn-primary" id="butto" ng-class="{'btn btn-success':formpass}" >Register</button>
+			  </div>
+			  <button ng-click="addMember()" class="btn pull-left"><span class="glyphicon glyphicon-plus"></span> Add Member</button>
+			  <button class="btn btn-success pull-right" ng-click="submit()">Submit</button>
+			</form>
 		</div>
-	</form>
-</div>
+	</div>
 </div>

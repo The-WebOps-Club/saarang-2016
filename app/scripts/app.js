@@ -37,11 +37,11 @@ angular
         controller: 'LandingCtrl',
         controllerAs: 'landing'
       })
-      .when('/gallery', {
-        templateUrl: 'views/gallery.html',
-        controller: 'GalleryCtrl',
-        controllerAs: 'gallery'
-      })
+      // .when('/gallery', {
+      //   templateUrl: 'views/gallery.html',
+      //   controller: 'GalleryCtrl',
+      //   controllerAs: 'gallery'
+      // })
       .when('/sponsors', {
         templateUrl: 'views/sponsors.html',
         controller: 'SponsorsCtrl',

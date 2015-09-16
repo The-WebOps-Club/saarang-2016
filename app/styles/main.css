@@ -1,4 +1,12 @@
+@font-face {
+    font-family: essenceSans;
+    src: url('../fonts/essenceSans/Essence Sans.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: greatVibes;
+    src: url('../fonts/greatVibes/GreatVibes-Regular.ttf') format('truetype');
+}
 #txt {
    position: absolute;
    margin-left: 0%;
@@ -38,6 +46,7 @@ body {
   padding: 0;
   overflow: auto;
 }
+
 
 #transit {
     height:100%;
@@ -169,8 +178,8 @@ html
   text-align:center;
   top:0;  
   width:100%; 
-
-  overflow: auto;
+  background: url('../images/background.png');
+  overflow-x: hidden;
 
   height: 100%;
   left:0px;
@@ -183,7 +192,7 @@ html
 
 /* PAGES
 ============================================================================= */
-.page-home    { background: url('../images/background.png')}
+.page-home    {}
 .page-about   {  color:#a55400;
                   overflow-x:hidden;
                  background: url('../images/background.png');
@@ -191,7 +200,7 @@ html
                   background-size: 101% 100%;
                   background-repeat: no-repeat;
                   background-attachment: fixed; }
-.page-contact   {  color:#9e0000;overflow-x:hidden;
+.page-contact   { overflow-x:hidden;
                   background: url('../images/background.png');
   
                   background-size: 101% 100%;
@@ -255,6 +264,35 @@ html
   -webkit-animation:rotateInLeft 1s both ease-in; */    
 }
 
+.page-sponsors.ng-leave{
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+  -moz-animation:slideOutLeft 0.5s both ease-in;
+  animation:slideOutLeft 0.5s both ease-in; 
+/*transform-origin:center 400%;
+  -webkit-animation:rotateOutRight 1s both ease-in; */
+}
+.page-sponsors.ng-enter    {  
+    -webkit-animation:slideInRight 1s0.5s both ease-in;
+  -moz-animation:slideInRight 0.5s both ease-in;
+  animation:slideInRight 0.5s both ease-in;    
+  /*transform-origin:center 400%;
+  -webkit-animation:rotateInLeft 1s both ease-in; */    
+}
+
+.page-milan.ng-leave {
+  -webkit-animation:slideOutLeft 0.5s both ease-in;
+  -moz-animation:slideOutLeft 0.5s both ease-in;
+  animation:slideOutLeft 0.5s both ease-in; 
+/*transform-origin:center 400%;
+  -webkit-animation:rotateOutRight 1s both ease-in; */
+}
+.page-milan.ng-enter    {  
+    -webkit-animation:slideInRight 1s0.5s both ease-in;
+  -moz-animation:slideInRight 0.5s both ease-in;
+  animation:slideInRight 0.5s both ease-in;    
+  /*transform-origin:center 400%;
+  -webkit-animation:rotateInLeft 1s both ease-in; */    
+}
 /* contact ---------------------- */
 .page-contact.ng-leave      {
     /*-webkit-transform-origin: 50% 50%;
@@ -414,15 +452,27 @@ img {
 
 .container {
   position: absolute;
+  overflow: hidden;
 /*  overflow-x:hidden;
   overflow-y:hidden;*/ 
   width: 100%;
   height: 100%;
 }
 
-.scene {
-  padding: 0;
-  margin: 0;
+.navLink{
+    z-index: 1000;
+    font-family: essenceSans;
+    text-decoration: none;
+    color: black;
+}
+
+.navLink:hover{
+  text-decoration: none;
+  color: black;
+}
+
+#scene {
+  top: -10%;
 }
 
 
@@ -459,7 +509,7 @@ img {
 #w1
 {
   margin-left: -10%;
-  margin-top: 18%;
+  /*margin-top: 90%;*/
   width: 150%;
   height: 150%;
   -webkit-animation-name:wave1;
@@ -501,11 +551,16 @@ img {
     animation-duration:4s;
     animation-iteration-count:infinite;
 }
-#l
-{
+#logo
+{ 
+  position: absolute;
   width: 25%;
-  margin-top: -35%;
+  margin-top: 14%;
   margin-left: 35%;
+}
+.caption{
+  font-family: greatVibes; 
+  margin-top: 25%;
 }
 #t
 {
@@ -528,22 +583,3 @@ img {
     animation-duration:6s;
     animation-iteration-count:infinite;
 }
-
-/*@-webkit-keyframes rotateOutRight {
-  
-
-  0%  {-webkit-transform:rotateZ(0deg);  }
-  25% {-webkit-transform:rotateZ(12.5deg); }
-    50% {-webkit-transform:rotateZ(25deg);  }
-    75% {-webkit-transform:rotateZ(37.5eg);  }
-    100% {-webkit-transform:rotateZ(50deg);   }
-}
-@-webkit-keyframes rotateInLeft {
-  
-
-  0%  {-webkit-transform:rotateZ(-50deg);  }
-  25% {-webkit-transform:rotateZ(-37.5deg); }
-    50% {-webkit-transform:rotateZ(-25deg);  }
-    75% {-webkit-transform:rotateZ(-12.5deg);  }
-    100% {-webkit-transform:rotateZ(0deg);   }
-}*/

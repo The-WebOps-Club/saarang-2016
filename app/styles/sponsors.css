@@ -1,7 +1,8 @@
 #sponsback{
-                  background-size: 101% 100%;
-                  background-repeat: no-repeat;
-                  background-attachment: fixed;
+	background: rgba(0, 0, 0, 0.2);
+	background-size: 101% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 #content{

@@ -8,7 +8,7 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('LandingCtrl', function ($scope) {
+  .controller('LandingCtrl', function () {
     
     
   });

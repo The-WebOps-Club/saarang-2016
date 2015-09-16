@@ -9,7 +9,8 @@
  */
 angular.module('saarang2016App')
   .controller('GalleryCtrl', function ($scope) {
-    //$scope.pageClass = "page-gallery";
+    $scope.pageClass = "page-gallery";
+    
    
     $scope.carousel = [
         '/images/bottom.png',
