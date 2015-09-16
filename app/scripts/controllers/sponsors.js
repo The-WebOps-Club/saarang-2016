@@ -9,7 +9,7 @@
  */
 angular.module('saarang2016App')
   .controller('SponsorsCtrl', function ($scope) {
- $scope.pageClass = "page-about";
+ $scope.pageClass = "page-sponsors";
 
  var logos=[
 			[{"id":50,"title":"Title Sponsor","sponsor_link":"http://www.mrftyres.com/","logo":"spons/mrf_1.png","timestamp":"2014-12-30T22:39:12Z","uploaded_by":58,"priority":99,"row_layout":1,"$$hashKey":"object:354"}],

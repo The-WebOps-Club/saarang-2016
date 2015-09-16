@@ -3,6 +3,7 @@
 angular.module('saarang2016App')
   .controller('MilanCtrl', function ($scope) {
         $scope.chform=false;
+        $scope.pageClass = "page-milan";
  		var form=document.getElementById("myform");
         $scope.showfields=function() {
         	console.log($scope.chform);

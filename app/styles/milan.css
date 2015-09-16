@@ -1,0 +1,14 @@
+.p1 
+{
+	border: 3px dashed black;
+	border-radius: 30px;
+	display: inline-block; 
+	font-size: 1.2em;
+	margin-top: 2%;
+	margin-left:5.5%;
+	padding: 2%; 
+}
+.main
+{
+	display: inline-block;
+}
