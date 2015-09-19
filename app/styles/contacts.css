@@ -10,7 +10,7 @@
 }
 
 #box2{
-  background: rgba(0 ,0 ,0 ,0.2);
+  background: rgba(0 ,0 ,0 ,0.5);
   height: 83%;
   width:33%;
   border-radius: 1em;
@@ -33,13 +33,6 @@ td{
    margin: .5em 1em;
 
    display: block; 
-  
-  &:first-child {
-    padding-top: .5em;
-  }
-  &:last-child {
-    padding-bottom: .5em;
-  }
 }
 
 table {
