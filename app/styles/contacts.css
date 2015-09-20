@@ -10,10 +10,14 @@
 }
 
 #box2{
-  background: rgba(0 ,0 ,0 ,0.5);
-  height: 83%;
+  background: rgba(0 ,0 ,0 ,0.1);
+  /*background-size: 83% 33%;*/
+  position: absolute;
+  margin-left: 60%;
+  height: 71%;
   width:33%;
   border-radius: 1em;
+  vertical-align: middle;
 }
 
 tr {
@@ -42,4 +46,9 @@ table {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+span{
+
+  /*color: #FF6600;*/
 }

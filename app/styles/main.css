@@ -35,7 +35,14 @@
   
 }
 
-.browsehappy {
+
+#sun{
+    position: relative;
+}
+#moon{
+    position:relative;
+}
+    .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
@@ -49,7 +56,7 @@ body {
 
 
 #transit {
-    height:100%;
+    height:100vh;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -62,10 +69,7 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 0px;
-}
-.navbar {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -82,9 +86,6 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-.container{
-  
-}
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -115,11 +116,11 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-/*@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+   /* max-width: 730px;*/
   }
-*/
+
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -128,10 +129,14 @@ body {
     padding-right: 0;
   }
   /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
+}
 /*.main{
     margin-top: 0% !important;
     margin-left: 0% !important;
@@ -166,14 +171,11 @@ position: absolute !important;
 
 /* BASE STYLES
 ============================================================================= */
-html
-{
-  overflow-y:hidden;
-  overflow-x:hidden;
-}
-.page       
-{ 
-  /*padding-top: 20px;*/
+html         { 
+overflow: hidden; }
+.page        { 
+  
+ /* padding-top:200px;*/
   position:absolute; 
   text-align:center;
   top:0;  
@@ -183,8 +185,9 @@ html
 
   height: 100%;
   left:0px;
-}
   
+
+}
 
 .page h1  { font-size:60px; }
 .page a     { margin-top:50px; }
@@ -202,17 +205,12 @@ html
                   background-attachment: fixed; }
 .page-contact   { overflow-x:hidden;
                   background: url('../images/background.png');
-  
                   background-size: 101% 100%;
 
                   background-repeat: no-repeat;
                   background-attachment: fixed;}
-.page-gallery { 
-  background: url('../images/background.png'); color: #00907c;
-}
-.page-milan {
-  background: url('../images/background.png');
-}
+.page-gallery {background: #CF0000; color: #00907c;
+                  background: url('../images/background.png');}
 /* ANIMATIONS
 ============================================================================= */
   
@@ -434,8 +432,6 @@ html
 @keyframes rotateOutNewspaper {
   to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
 }
-
-
   body {
   margin: 0;
 }
