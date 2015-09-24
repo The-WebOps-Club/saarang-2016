@@ -1,11 +1,11 @@
 @font-face {
     font-family: essenceSans;
-    src: url('../fonts/essenceSans/Essence Sans.ttf') format('truetype');
+    src: url('../styles/fonts/essenceSans/Essence Sans.ttf') format('truetype');
 }
 
 @font-face {
     font-family: greatVibes;
-    src: url('../fonts/greatVibes/GreatVibes-Regular.ttf') format('truetype');
+    src: url('../styles/fonts/greatVibes/GreatVibes-Regular.ttf') format('truetype');
 }
 #txt {
    position: absolute;
@@ -181,6 +181,7 @@ overflow: hidden; }
   top:0;  
   width:100%; 
   background: url('../images/background.png');
+  background-size: cover;
   overflow-x: hidden;
 
   height: 100%;
@@ -195,22 +196,30 @@ overflow: hidden; }
 
 /* PAGES
 ============================================================================= */
-.page-home    { background: url('../images/background.png')}
+.page-home    { background: url('../images/background.png');
+                background-size: cover;
+              }
 .page-sponsors   { 
                   overflow-x:hidden;
-                 background: url('../images/background.png');
+                  background: url('../images/background.png');
+                  background-size: cover;
+
   
                   background-size: 101% 100%;
                   background-repeat: no-repeat;
                   background-attachment: fixed; }
 .page-contact   { overflow-x:hidden;
                   background: url('../images/background.png');
+                  background-size: cover;
+
                   background-size: 101% 100%;
 
                   background-repeat: no-repeat;
                   background-attachment: fixed;}
 .page-gallery {background: #CF0000; color: #00907c;
-                  background: url('../images/background.png');}
+                  background: url('../images/background.png');
+                  background-size: cover;
+                }
 /* ANIMATIONS
 ============================================================================= */
   
