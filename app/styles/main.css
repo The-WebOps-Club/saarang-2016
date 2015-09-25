@@ -475,7 +475,7 @@ img {
 }
 
 #scene {
-  top: -10%;
+  bottom: 0px;
 }
 
 
@@ -512,7 +512,7 @@ img {
 #w1
 {
   margin-left: -10%;
-  /*margin-top: 90%;*/
+  margin-top: 90%;
   width: 150%;
   height: 150%;
   -webkit-animation-name:wave1;
@@ -521,8 +521,8 @@ img {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   animation-name: wave1;
-    animation-duration:6s;
-    animation-iteration-count:infinite;
+  animation-duration:6s;
+  animation-iteration-count:infinite;
 }
 #w2
 {
