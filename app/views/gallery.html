@@ -3,25 +3,10 @@
  
 <ul rn-carousel rn-carousel-auto-slide rn-carousel-transition="hexagon" class="carousel">
   
-  <li ng-repeat="slide in slides" class="slid">
+  <li ng-repeat="slide in arr" class="slid">
   	<div>
-   <img class="carouselImage" ng-src="{{slide.image}}" style="height:600px;width:600px">
+   <img class="carouselImage" ng-src="../images/gallery_pics/{{$index+1}}.jpg" style="max-height: 900px; max-width: 1200px;">
     </div>
   </li>
   
 </ul>
-
-<!--<div>
-  <div  id="slides_control">
-    <div>
-      <carousel interval="myInterval">
-        <slide ng-repeat="slide in slides" active="slide.active">
-          <img ng-src="{{slide.image}}">
-          
-        </slide>
-      </carousel>
-    </div>
-  </div>
-</div>  
-	-->
-
