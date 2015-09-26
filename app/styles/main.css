@@ -70,6 +70,8 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+  margin-left: 15%;
+  text-align: center;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -129,9 +131,9 @@ body {
     padding-right: 0;
   }
   /* Space out the masthead */
-  .header {
+  /*.header {
     margin-bottom: 30px;
-  }
+  }*/
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
@@ -199,6 +201,9 @@ overflow: hidden; }
 .page-home    { background: url('../images/background.png');
                 background-size: cover;
               }
+.page-milan{
+      overflow-y:hidden;
+}
 .page-sponsors   { 
                   overflow-x:hidden;
                   background: url('../images/background.png');
@@ -219,6 +224,7 @@ overflow: hidden; }
 .page-gallery {background: #CF0000; color: #00907c;
                   background: url('../images/background.png');
                   background-size: cover;
+                  overflow-y:hidden; 
                 }
 /* ANIMATIONS
 ============================================================================= */

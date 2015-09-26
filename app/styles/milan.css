@@ -1,17 +1,17 @@
 .milan{
-	margin-top: 5%;
+	margin-top: 6%;
 	height: 90%;
 }
 .leftBox{
 	background: rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-	height: 95%;
+	height: 90%;
 }
 .rightBox{
 	background: rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-	height: 95%;
-	overflow-y: auto; 
+	height: 90%;
+	/*overflow-y: auto; */
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
