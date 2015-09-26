@@ -1,17 +1,25 @@
 .carousel
-{
-height:45%;
-width: 60%;
-margin-left: auto;
-margin-right: auto;
-margin-top: 7em;
+{	
+	width: 60%;
+	/*height: 100%;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7em;
+	vertical-align: middle;
+	text-align: center;	
 }
 
 .slid
 {
-width: 60%;
-height: 0%;
+	width: 60%;
+	/*height: 100%;*/
+	text-align: center;
+	position: relative;
 }
-
+.slid-back{
+	text-align: center;
+	position: absolute;
+	top: 5%;
+}
 
 
