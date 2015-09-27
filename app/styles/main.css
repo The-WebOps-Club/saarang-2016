@@ -92,11 +92,11 @@ body {
   margin: 30px 0;
 }
   .carousel {
-      height:175%;
+      height:100%;
       width: 100%;
   }
 /*.carouselImage {
-    height:auto;
+    height:100%;
     width:100%;
 }*/
 /* Main marketing message and sign up button */

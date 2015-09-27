@@ -1,7 +1,7 @@
 .carousel
 {	
 	width: 60%;
-	/*height: 100%;*/
+	height: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 7em;
@@ -12,14 +12,13 @@
 .slid
 {
 	width: 60%;
-	/*height: 100%;*/
+	height: 90%;
 	text-align: center;
 	position: relative;
 }
 .slid-back{
 	text-align: center;
 	position: absolute;
-	top: 5%;
 }
 
 
