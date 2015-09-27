@@ -224,7 +224,7 @@ overflow: hidden; }
 .page-gallery {background: #CF0000; color: #00907c;
                   background: url('../images/background.png');
                   background-size: cover;
-                  /*overflow-y:auto; */
+                  overflow-y:hidden; 
                 }
 /* ANIMATIONS
 ============================================================================= */
