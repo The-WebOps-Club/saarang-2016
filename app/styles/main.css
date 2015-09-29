@@ -65,13 +65,13 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  z-index: 100000;
   margin-bottom: 10px;
   margin-left: 15%;
   text-align: center;
+  position: fixed;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -91,10 +91,10 @@ body {
 .container-narrow > hr {
   margin: 30px 0;
 }
-  .carousel {
+/*  .carousel {
       height:100%;
-      width: 100%;
-  }
+      max-width: 90%;
+  }*/
 /*.carouselImage {
     height:100%;
     width:100%;
@@ -173,8 +173,10 @@ position: absolute !important;
 
 /* BASE STYLES
 ============================================================================= */
-html         { 
-overflow: hidden; }
+html      
+{ 
+  overflow: hidden;
+}
 .page        { 
   
  /* padding-top:200px;*/
@@ -451,9 +453,12 @@ overflow: hidden; }
   margin: 0;
 }
 
-img {
+#small-logo {
   display: block;
   width: 100%;
+}
+img{
+ display: block;
 }
 
 .expand-width

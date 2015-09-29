@@ -1,11 +1,11 @@
 <!--<p>This is the gallery view.</p>
 -->
  
-<ul rn-carousel rn-carousel-auto-slide  class="carousel">
+<ul rn-carousel rn-carousel-auto-slide  rn-carousel-controls-allow-loop rn-carousel-transition="fadeAndSlide" rn-carousel-easing="easeFrom" rn-carousel-duration="2000"  class="carousel">
   
   <li ng-repeat="slide in arr" class="slid">
   	<div class="slid-back" > 
-   <img class="carouselImage" ng-src="../images/gallery_pics/{{$index+1}}.jpg" style="height:600px;" >
+		<img class="carouselImage" ng-src="../images/gallery_pics/{{$index+1}}.jpg" >
     </div>
   </li>
   
