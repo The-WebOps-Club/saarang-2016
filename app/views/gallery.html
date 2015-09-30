@@ -1,7 +1,7 @@
 <!--<p>This is the gallery view.</p>
 -->
- 
-<ul rn-carousel rn-carousel-auto-slide  rn-carousel-controls-allow-loop rn-carousel-transition="fadeAndSlide" rn-carousel-easing="easeFrom" rn-carousel-duration="2000"  class="carousel">
+ <!-- 
+<ul rn-carousel rn-carousel-auto-slide rn-carousel-controls rn-carousel-controls-allow-loop rn-carousel-transition="fadeAndSlide" rn-carousel-easing="easeFrom" rn-carousel-duration="1000"  class="carousel">
   
   <li ng-repeat="slide in arr" class="slid">
   	<div class="slid-back" > 
@@ -9,4 +9,12 @@
     </div>
   </li>
   
-</ul>
+</ul> -->
+
+<div>
+	<carousel interval="3000" no-wrap="false">
+	  <slide ng-repeat="slide in arr" active="slide.active">
+	    <img ng-src="{{slide.image}}" style="margin:auto; height:80vh;" class="carouselImage">
+	  </slide>
+	</carousel>
+</div>
