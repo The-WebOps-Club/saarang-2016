@@ -204,7 +204,7 @@ html
                 background-size: cover;
               }
 .page-milan{
-      overflow-y:hidden;
+      overflow-y:auto;
 }
 .page-sponsors   { 
                   overflow-x:hidden;
