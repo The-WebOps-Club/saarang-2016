@@ -32,14 +32,6 @@
 	top: 5%;
 	position: fixed;
 }
-a
-{
-	color: beige;
-}
-.nav-tabs > li.active > a
-{
-	background-color: transparent;
-}
 /*#formshow
 {
 	position: absolute;

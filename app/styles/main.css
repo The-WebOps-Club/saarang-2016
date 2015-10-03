@@ -204,6 +204,7 @@ html
 ============================================================================= */
 .page-home    { background: url('../images/background.png');
                 background-size: cover;
+                      overflow-y:hidden;
               }
 .page-milan{
       overflow-y:auto;
@@ -472,7 +473,8 @@ img{
   position: absolute;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 40%;
+  bottom: 0px;
 }
 
 .navLink{
@@ -494,11 +496,11 @@ img{
 
 /*waves*/
 @-webkit-keyframes wave1{
-0%{margin-top:12%;margin-left:-10%;}
-25%{margin-top:13%;margin-left:-12%;}
-50%{margin-top:12%;margin-left:-14%;}
-75%{margin-top:11%;margin-left:-12%;}
-100%{margin-top:12%;margin-left:-10%;}
+0%{margin-top:8%;margin-left:-10%;}
+25%{margin-top:10%;margin-left:-12%;}
+50%{margin-top:8%;margin-left:-14%;}
+75%{margin-top:6%;margin-left:-12%;}
+100%{margin-top:8%;margin-left:-10%;}
 }
 @-webkit-keyframes wave2{
 0%{margin-top:1%;margin-left:-10%;}
@@ -516,9 +518,9 @@ img{
 }
 @-webkit-keyframes ship{
 0%{margin-left:70%;}
-25%{margin-left:69.5%;}
-50%{margin-left:69%;}
-75%{margin-left:69.5%;}
+25%{margin-left:69%;}
+50%{margin-left:68%;}
+75%{margin-left:69%;}
 100%{margin-left:70%;}
 }
 
@@ -527,7 +529,7 @@ img{
   margin-left: -10%;
   /*margin-top: 90%;*/
   width: 150%;
-  height: 150%;
+  height: 50%;
   -webkit-animation-name:wave1;
   -webkit-animation-duration:6s;
   -webkit-animation-iteration-count:infinite;
@@ -542,7 +544,7 @@ img{
   margin-left: -10%;
   /*margin-top: 18%;*/
   width: 150%;
-    height: 150%;
+    height: 50%;
   -webkit-animation-name:wave2;
   -webkit-animation-duration:5s;
   -webkit-animation-iteration-count:infinite;
@@ -557,7 +559,7 @@ img{
   margin-left: -25%;
   /*margin-top: 20%;*/
   width: 150%;
-    height: 150%;
+    height: 50%;
   -webkit-animation-name:wave3;
   -webkit-animation-duration:4s;
   -webkit-animation-iteration-count:infinite;
@@ -586,9 +588,9 @@ img{
 }
 #s
 {
-  width: 5%;
-  height: 5%;
-  margin-top: -2%;
+  width: 6%;
+  height: 6%;
+  margin-top: -3%;
   margin-left:70%;
   -webkit-animation-name:ship;
   -webkit-animation-duration:6s;
