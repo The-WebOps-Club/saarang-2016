@@ -1,4 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+@font-face {
+    font-family: futura;
+    src: url('../styles/fonts/futurastd-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: gearedSlab;
+    src: url('../styles/fonts/gearedslab.woff') format('woff');
+}
 
 @font-face {
     font-family: essenceSans;
@@ -9,6 +17,7 @@
     font-family: greatVibes;
     src: url('../styles/fonts/greatVibes/GreatVibes-Regular.ttf') format('truetype');
 }
+
 #txt {
    position: absolute;
    margin-left: 0%;
@@ -37,14 +46,7 @@
   
 }
 
-
-#sun{
-    position: relative;
-}
-#moon{
-    position:relative;
-}
-    .browsehappy {
+.browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;

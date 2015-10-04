@@ -4,120 +4,104 @@
         <div id="box1" class="col-md-4 col-md-offset-1">
             <table>
                 <tr>
-                    <th id="contacts-header" style="color:antiquewhite"><h2>Contact Us</h2></th>
+                    <th id="contacts-header" class="contacts-header"><h2>Contact Us</h2></th>
                 </tr>
                 <tr>
-                    <th ng-click="secs=true;spons=events=shows=sales=pub=hosp=webops=fin=fac=saf=qms=design=false"> CULTURAL AFFAIRS</th>
+                    <th class="contacts-selector" ng-click="secs=true;spons=events=shows=sales=pub=hosp=webops=fin=fac=saf=qms=design=false"> CULTURAL AFFAIRS</th>
                 </tr>
                 <tr>
-                    <th ng-click=";spons=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=saf=qms=design=false;">SPONSORSHIP AND PR</th>
+                    <th class="contacts-selector" ng-click=";spons=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=saf=qms=design=false;">SPONSORSHIP AND PR</th>
                 </tr>   
                 <tr>
-                    <th ng-click="events=true;secs=spons=shows=sales=pub=hosp=webops=fin=fac=saf=qms=design=false;">EVENTS</th>
+                    <th class="contacts-selector" ng-click="events=true;secs=spons=shows=sales=pub=hosp=webops=fin=fac=saf=qms=design=false;">EVENTS</th>
                 </tr>   
                 <tr>
-                    <th ng-click="shows=true;secs=events=spons=sales=pub=hosp=webops=fin=fac=saf=qms=design=false;">PROFESSIONAL SHOWS</th>
+                    <th class="contacts-selector" ng-click="shows=true;secs=events=spons=sales=pub=hosp=webops=fin=fac=saf=qms=design=false;">PROFESSIONAL SHOWS</th>
                 </tr>   
                 <tr>
-                    <th ng-click="sales=true;secs=events=shows=spons=pub=hosp=webops=fin=fac=saf=qms=design=false;">MARKETING AND SALES</th>
+                    <th class="contacts-selector" ng-click="sales=true;secs=events=shows=spons=pub=hosp=webops=fin=fac=saf=qms=design=false;">MARKETING AND SALES</th>
                 </tr>   
                 <tr>
-                    <th ng-click="pub=true;secs=events=shows=sales=spons=hosp=webops=fin=fac=saf=qms=design=false;">PUBLICITY</th>
+                    <th class="contacts-selector" ng-click="pub=true;secs=events=shows=sales=spons=hosp=webops=fin=fac=saf=qms=design=false;">PUBLICITY</th>
                 </tr>   
                 <tr>
-                    <th ng-click="hosp=true;secs=events=shows=sales=pub=spons=webops=fin=fac=saf=qms=design=false;">HOSPITALITY</th>
+                    <th class="contacts-selector" ng-click="hosp=true;secs=events=shows=sales=pub=spons=webops=fin=fac=saf=qms=design=false;">HOSPITALITY</th>
                 </tr>   
                 <tr>
-                    <th ng-click="webops=true;secs=events=shows=sales=pub=hosp=spons=fin=fac=saf=qms=design=false;">WEB AND MOBILE OPERATIONS</th>
+                    <th class="contacts-selector" ng-click="webops=true;secs=events=shows=sales=pub=hosp=spons=fin=fac=saf=qms=design=false;">WEB AND MOBILE OPERATIONS</th>
                 </tr> 
                 <tr>
-                    <th ng-click="design=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=saf=qms=spons=false;">DESIGN AND MEDIA</th>
+                    <th class="contacts-selector" ng-click="design=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=saf=qms=spons=false;">DESIGN AND MEDIA</th>
                 </tr> 
                 <tr>
-                    <th ng-click="fin=true;secs=events=shows=sales=pub=hosp=webops=spons=fac=saf=qms=design=false;">FINANCE</th>
+                    <th class="contacts-selector" ng-click="fin=true;secs=events=shows=sales=pub=hosp=webops=spons=fac=saf=qms=design=false;">FINANCE</th>
                 </tr> 
                 <tr>
-                    <th ng-click="fac=true;secs=events=shows=sales=pub=hosp=webops=fin=spons=saf=qms=design=false;">FACILITIES</th>
+                    <th class="contacts-selector" ng-click="fac=true;secs=events=shows=sales=pub=hosp=webops=fin=spons=saf=qms=design=false;">FACILITIES</th>
                 </tr> 
                 <tr>
-                    <th ng-click="saf=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=spons=qms=design=false;">SAFETY AND SECURITY</th>
+                    <th class="contacts-selector" ng-click="saf=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=spons=qms=design=false;">SAFETY AND SECURITY</th>
                 </tr> 
                 <tr>
-                    <th ng-click="qms=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=saf=spons=design=false;">QMS</th>
+                    <th class="contacts-selector" ng-click="qms=true;secs=events=shows=sales=pub=hosp=webops=fin=fac=saf=spons=design=false;">QMS</th>
                 </tr> 
             </table>    
         </div>
         <div id="box2" style="vertical-align:middle">
-            <br>
             <div ng-show="secs" >    
-            <div>
-            <div id="sec(arts)" >
-                <div >
+                <div id="sec(arts)" >
                     <h3>Secretary,Cultural Affairs (Arts)</h3>
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/adi.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/adi.png" style="width:29%">
                     <span><h4>Aditya U</h4></span>
-                    
                     <span>
                         <a href="mailto:adi@saarang.org" target="_blank" class="ng-binding">adi@saarang.org</a>
                     </span>
                     <br>
                     <span>+919962971662</span>  
                 </div>
-            </div>
-            <div id="sec(literary)">
-                <div>
-                    <h3>Secretary,Cultural Affairs (Literary)</h3>
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/krishnakoushik.png" style="width:29%">
-                    <span><h4>Krishna Koushik</h4></span>
-                    
-                    <span>
-                        <a href="mailto:krishnakoushik@saarang.org" target="_blank" class="ng-binding">krishnakoushik@saarang.org</a>
-                    </span>
-                    <br>
-                    <span>+917418789160</span>  
+                <div id="sec(literary)">
+                    <div>
+                        <h3>Secretary,Cultural Affairs (Literary)</h3>
+                        <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/krishnakoushik.png" style="width:29%">
+                        <span><h4>Krishna Koushik</h4></span>
+                        <span>
+                            <a href="mailto:krishnakoushik@saarang.org" target="_blank" class="ng-binding">krishnakoushik@saarang.org</a>
+                        </span>
+                        <br>
+                        <span>+917418789160</span>  
+                    </div>
                 </div>
-            </div>
-            </div>
             </div>
 
             <div ng-show="spons" >
             <div >
-                
-                <div >
-                    <div >
-                        <div><img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/anish.png" style="width:24%"></div>
-                        <div><span><h4>Anish Rathi</h4>
-                                       
+                <div><img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/anish.png" style="width:24%"></div>
+                <div>
+                    <span><h4>Anish Rathi</h4></span>
+                    <span>
                         <a href="mailto:anish.rathi@saarang.org" target="_blank" class="ng-binding">anish.rathi@saarang.org</a>
-                                       
-                        +919884685016</span>
-                        </div>
-                    </div>    
+                    </span>
+                    <br>
+                    <span>+919884685016</span>
                 </div>
             </div>
             <div >
-                <div>
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/anirvan.png" style="width:24%">
-                    <span><h4>Anirvan Bordoloi</h4>
-                    
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/anirvan.png" style="width:24%">
+                    <span><h4>Anirvan Bordoloi</h4></span>
                     <span>
                         <a href="mailto:anirvan.bordoloi@saarang.org" target="_blank" class="ng-binding">anirvan.bordoloi@saarang.org</a>
-                    
-                    
-                    +919962609617 </span>
-                </div>
+                    </span>
+                    <br>
+                    <span>+919962609617 </span>
             </div>
             <div >
-                <div>
-                    
-                    <img class="col-md-offset-4"src="http://saarang.org/2015/deploy/img/core_pics/aashish.png" style="width:24%">
-                    <span><h4>Ashish Jha</h4>
-                    
-                   
+                    <img class="contact-image"src="http://saarang.org/2015/deploy/img/core_pics/aashish.png" style="width:24%">
+                    <span><h4>Ashish Jha</h4></span>
+                    <span>
                         <a href="mailto:ashish.jha@saarang.org" target="_blank" class="ng-binding">ashish.jha@saarang.org</a>
-                    
-                   +918695851252</span>  
-                </div>
+                    </span>
+                    <br>                    
+                   <span>+918695851252</span>  
             </div>
 
 
@@ -129,7 +113,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/rushabh.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/rushabh.png" style="width:29%">
                     <span><h4>Rushabh Menon</h4></span>
                     
                     <span>
@@ -141,7 +125,7 @@
             </div>
             <div >
                 <div >
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/srijith.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/srijith.png" style="width:29%">
                     <span><h4>Srijith R</h4></span>
                     
                     <span>
@@ -163,7 +147,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/harshith.png" style="width:29%;">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/harshith.png" style="width:29%;">
                     <span><h4>Harshith Guntha</h4></span>
                     
                     <span>
@@ -186,7 +170,7 @@
                 
                 <div>
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/saikrishnakoushik.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/saikrishnakoushik.png" style="width:29%">
                     <span><h4>Sri Krishna Koushik</h4></span>
                     
                     <span>
@@ -207,7 +191,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4"  src="http://saarang.org/2015/deploy/img/core_pics/rinkesh.png" style="width:29%">
+                    <img class="contact-image"  src="http://saarang.org/2015/deploy/img/core_pics/rinkesh.png" style="width:29%">
                     <span><h4>Rinkesh Virani</h4></span>
                     
                     <span>
@@ -224,7 +208,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/sreeharsha.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/sreeharsha.png" style="width:29%">
                     <span><h4>Sreeharsha Gunda</h4></span>
                     
                     <span>
@@ -241,7 +225,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/deepak.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/deepak.png" style="width:29%">
                     <span><h4>Deepak Padamata</h4></span>
                     
                     <span>
@@ -253,7 +237,7 @@
             </div>
             <div >
                 <div >
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/aqel.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/aqel.png" style="width:29%">
                     <span><h4>Aqel Ahammed</h4></span>
                     
                     <span>
@@ -273,7 +257,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/thambi.png" style="width:24%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/thambi.png" style="width:24%">
                     <span><h4>Manavala Thambi</h4>
                     
            
@@ -285,7 +269,7 @@
             </div>
             <div >
                 <div>
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/rathees.png" style="width:24%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/rathees.png" style="width:24%">
                     <span><h4>Rathees P</h4>
                     
                                             <a href="mailto:ratiz@saarang.org" target="_blank" class="ng-binding">ratiz@saarang.org</a>
@@ -297,7 +281,7 @@
             <div >
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/rahul.png" style="width:24%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/rahul.png" style="width:24%">
                     <span><h4>Rahul K</h4>
                     
                     
@@ -316,7 +300,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/favas.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/favas.png" style="width:29%">
                     <span><h4>Favas MP</h4></span>
                     
                     <span>
@@ -328,7 +312,7 @@
             </div>
             <div >
                 <div >
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/ramanand.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/ramanand.png" style="width:29%">
                     <span><h4>Srinivas Ramanand</h4></span>
                     
                     <span>
@@ -348,7 +332,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/hari.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/hari.png" style="width:29%">
                     <span><h4>Hari M</h4></span>
                     
                     <span>
@@ -365,7 +349,7 @@
                 
                 <div>
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/bharadwaj.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/bharadwaj.png" style="width:29%">
                     <span><h4>Bharadwaj M</h4></span>
                     
                     <span>
@@ -377,7 +361,7 @@
             </div>
             <div >
                 <div >
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/ruthbabu.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/ruthbabu.png" style="width:29%">
                     <span><h4>Ruth Babu Marpu</h4></span>
                     
                     <span>
@@ -397,7 +381,7 @@
                 
                 <div >
                     
-                    <img class="col-md-offset-4" src="http://saarang.org/2015/deploy/img/core_pics/vidyadhar.png" style="width:29%">
+                    <img class="contact-image" src="http://saarang.org/2015/deploy/img/core_pics/vidyadhar.png" style="width:29%">
                     <span><h4>Vidyadhar Mudium</h4></span>
                     
                     <span>
