@@ -24,6 +24,7 @@
 }
 .details
 {
+  display: inline-block;
   align-self:center;
   position: relative;
 }
