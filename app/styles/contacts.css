@@ -15,10 +15,17 @@
   position: fixed;
   top: 15%;
   margin-left: 60%;
+  margin-bottom: auto;
   height: 85%;
   width:33%;
   border-radius: 1em;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+}
+.details
+{
+  align-self:center;
+  position: relative;
 }
 
 tr {
