@@ -37,14 +37,32 @@ angular.module('saarang2016App')
 
 $scope.logos=logos;
 
+/*$(window).scroll(function(){
+    $("#yo").css("top",Math.max(5%,20%-$(this).scrollTop()));
+});*/
 
+/*var windw = this;
 
+$.fn.followTo = function ( pos ) {
+     var $this = this,
+        $window = $(windw);
 
+$window.scroll(function(e){
+    if ($window.scrollTop() > pos) {
+        $this.css({
+            position: 'absolute',
+            top: pos
+        });
+    } else {
+        $this.css({
+            position: 'fixed',
+            top: 0%
+        });
+    }
+});
+};
 
+$('#yo').followTo(30%);*/
 
-
-
-
-
-   
+  
   });

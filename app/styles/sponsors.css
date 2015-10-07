@@ -1,14 +1,52 @@
 #sponsback{
-	background: rgba(0, 0, 0, 0.2);
-	background-size: 101% 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	
+	/*overflow-y: auto;*/
+
+		margin-bottom: 1%;
 }
 
-#over{
-	    background-image:url("../images/top.png");
-	}
 
 #content{
-	margin-top: 7%;
+	
+	background: rgba(0, 0, 0, 0.2);
+	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.fullBox{
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	
+	/*overflow-y: auto; */
+	padding-top: 2em;
+	padding-bottom: 2em;
+	position: absolute;
+
+
+	}
+
+
+/*.spons2015
+{
+	overflow-y:auto;
+}
+
+#sponsall
+{
+
+
+}*/
+
+#full
+{	margin-top: 5%;
+	height: 85%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#all
+{
+	height: 89%;
+	/*position: fixed;*/
 }

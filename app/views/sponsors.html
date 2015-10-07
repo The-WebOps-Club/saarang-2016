@@ -1,14 +1,20 @@
-<div id="sponsback">
 
 
-<div id="content">
-	<h1 class="text-center text-info" style="color:black">SPONSORS</h1>
-	<div class="col-xs-12">
+
+<div id="full">
+    
+    <div id="content">
+	  
+      <div>
+       <h1 class="text-center text-info" style="color:black">SPONSORS</h1>
+	   <div>
             <p class="text-center text-info" style="color:black">For sponsorship related queries please contact one of the sponsorship cores below:</p>
-    </div>
+        </div>
+       </div> 
 
     <div id="newCores">
-        <div class="row" style="color:black">
+        
+         <div class="row" style="color:black">
             <div class="col-md-4">
                 <p>Anish Rathi<br>
                 <a class="sponsCoreMail" href="mailto:anish.rathi@saarang.org">anish.rathi@saarang.org</a><br>
@@ -26,6 +32,85 @@
             </div>
         </div>
     </div>
+    </div>
+
+
+    
+    <div class="col-md-10 col-md-offset-1 tab" id="yo">
+    <tabset justified="true">
+        <tab heading="2014">
+            <div class="col-md-12 fullBox">
+                  <h3>y</h3>
+            </div>  
+        </tab>
+        <tab heading="2015">
+            <div class="col-md-12 fullBox">
+
+               <div>
+
+                    <div class="row" ng-repeat="row in logos">
+        <div ng-if="row.length===1">
+            <div ng-repeat="logo in row"  class="col-md-4 col-md-offset-4">
+            <center>
+            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+            <a href="{{logo.sponsor_link}}" target="_blank">
+                <img style="min-height:60px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erp.saarang.org/media/{{logo.logo}}" class="img-rounded img-responsive">
+            </a>
+            </center>
+            </div>
+        </div>
+        <div ng-if="row.length===2" >
+            <div ng-repeat="logo in row" class="col-md-6">
+            <center>
+            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+            <a href="{{logo.sponsor_link}}" target="_blank">
+                <img style="min-height:50px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erp.saarang.org/media/{{logo.logo}}" class="img-rounded img-responsive">
+            </a>
+            </center>
+            </div>
+        </div>
+        <div ng-if="row.length===3" >
+            <div ng-repeat="logo in row" class="col-md-4">
+                <center>
+            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+            <a href="{{logo.sponsor_link}}" target="_blank">
+                <img style="min-height:40px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erp.saarang.org/media/{{logo.logo}}" class="img-rounded img-responsive">
+            </a>
+            </center>
+            </div>
+        </div>
+        <div ng-if="row.length===4">
+            <div ng-repeat="logo in row" class="col-md-3">
+            <center>
+            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+            <a href="{{logo.sponsor_link}}" target="_blank">
+                <img style="min-height:30px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erp.saarang.org/media/{{logo.logo}}" class="img-rounded img-responsive">
+            </a>
+            </center>
+            </div>
+        </div>
+    </div>
+
+
+               </div>
+
+                
+            </div>
+        </tab>
+        <tab heading="2016">
+            <div class="col-md-12 fullBox">
+                 
+            </div>
+        </tab>
+         
+    </tabset>
+    </div>
+    <div>
+
+
+
+</div>
+
 
 
 <!-- 
@@ -71,5 +156,3 @@
             </div>
         </div>
 	</div> -->
-</div>
-</div>

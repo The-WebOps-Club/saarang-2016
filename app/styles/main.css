@@ -208,7 +208,8 @@ html
       overflow-y:auto;
 }
 .page-sponsors   { 
-                  overflow-x:hidden;
+                  
+                  /*overflow: auto;*/
                   background: url('../images/background.png');
                   background-size: cover;
 
