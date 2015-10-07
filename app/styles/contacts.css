@@ -1,25 +1,28 @@
-#back{
-  margin-top: 5%;
-}
-
 #box1
 {
-  background: rgba(0 ,0 ,0 ,0.2);
-  height: 83%;
+  background: rgba(0 ,0 ,0 ,0.8);
+  height: 100%;
   border-radius: 1em;
 }
 
 #box2{
-  background: rgba(0 ,0 ,0 ,0.1);
-  position: fixed;
-  top: 15%;
-  /*background-size: 83% 33%;*/
+  background: rgba(0 ,0 ,0 ,0.8);
+  color: antiquewhite;
+  position: absolute;
+  /*top: 10%;*/
   margin-left: 60%;
-  min-height: 50%;
-  max-height: 90%;
+  margin-bottom: auto;
+  height: 117%;
   width:33%;
   border-radius: 1em;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+}
+.details
+{
+  display: inline-block;
+  align-self:center;
+  position: relative;
 }
 
 tr {
@@ -32,16 +35,15 @@ tr {
 th{
    margin: .5em 1em;
    text-align: center;  
-
 }
 
 td{
    margin: .5em 1em;
-
    display: block; 
 }
 
 table {
+  color: antiquewhite;
   text-align: center;
   border-radius: 1em;
   overflow: hidden;
@@ -50,7 +52,16 @@ table {
   margin-right: auto;
 }
 
+.contacts-header{
+  font-family: gearedSlab;
+}
+.contacts-selector{
+  font-family: futura;
+}
 span{
 
   /*color: #FF6600;*/
+}
+.contact-image{
+  margin: auto;
 }

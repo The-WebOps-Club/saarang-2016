@@ -11,7 +11,7 @@ angular.module('saarang2016App')
   .controller('ContactsCtrl', function ($scope) {
    $scope.pageClass = "page-contact";
    $scope.now=false;
-   $scope.secs=false;
+   $scope.secs=true;
    $scope.spons=false;
    $scope.events=false;
    $scope.shows=false;

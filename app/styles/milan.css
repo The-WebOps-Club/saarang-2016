@@ -31,6 +31,15 @@
 	top: 5%;
 	position: fixed;
 }
+p
+{
+	font-family:futura;
+	font-size: 1.55em;
+}
+.tab
+{
+	font-family: gearedSlab;
+}
 /*#formshow
 {
 	position: absolute;
