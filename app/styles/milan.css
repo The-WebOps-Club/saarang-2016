@@ -29,6 +29,7 @@
 .tabs
 {
 	top: -8%;
+	z-index: 10000000;
 	/*position: fixed;*/
 }
 p
