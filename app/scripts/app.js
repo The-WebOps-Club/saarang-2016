@@ -15,50 +15,68 @@ angular
     'ngCookies',
     'ngMessages',
     'ngResource',
-    'ngRoute',
+    'ui.router',
     'ngSanitize',
     'ngTouch',
     'angular-carousel',
     'ui.bootstrap',
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider,$urlRouterProvider) {
+    $urlRouterProvider.otherwise("/state1");
+    $stateProvider
+      .state('main', {
+        url:'/home',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
+      .state('about', {
+        url:'/about',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/landing', {
-        templateUrl: 'views/landing.html',
-        controller: 'LandingCtrl',
-        controllerAs: 'landing'
-      })
-       .when('/gallery', {
+      .state('gallery', {
+        url:'/gallery',
         templateUrl: 'views/gallery.html',
          controller: 'GalleryCtrl',
          controllerAs: 'gallery'
       })
-      .when('/sponsors', {
+      .state('sponsors', {
+        url:'/sponsors',
         templateUrl: 'views/sponsors.html',
         controller: 'SponsorsCtrl',
         controllerAs: 'sponsors'
       })
-      .when('/contacts', {
+      .state('contactUs', {
+        url:'/contacts',
         templateUrl: 'views/contacts.html',
         controller: 'ContactsCtrl',
         controllerAs: 'contacts'
       })
-      .when('/milan', {
+      .state('milan', {
+        url:'/milan',
         templateUrl: 'views/milan.html',
         controller: 'MilanCtrl',
         controllerAs: 'milan'
       })
-      .otherwise({
-        redirectTo: '/'
+      .state('wcs', {
+        url:'/wcs',
+        templateUrl: 'views/wcs.html',
+        controller: 'WcsCtrl',
+        controllerAs: 'wcs'
+      })
+      .state('events', {
+        url:'/events',
+        templateUrl: 'views/events.html',
+        controller: 'EventsCtrl',
+        controllerAs: 'events'
+      })
+      .state('proshows', {
+        url:'/proshows',
+        templateUrl: 'views/proshows.html',
+        controller: 'ProshowsCtrl',
+        controllerAs: 'proshows'
       });
+      
   });
