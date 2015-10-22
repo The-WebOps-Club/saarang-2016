@@ -58,6 +58,16 @@ body {
   overflow: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 #top
 {
   height: 15%;
@@ -79,18 +89,43 @@ body {
 .header {
   z-index: 100000;
   margin-bottom: 10px;
-  margin-left: 15%;
   text-align: center;
   position: fixed;
-  height: 15%;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
   opacity: 1;
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+
+#small-logo {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navLink{
+    z-index: 1000;
+    font-family: gearedSlab;
+    text-decoration: none;
+    color: white;
+}
+
+.navLink:hover{
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  background-clip: 
+}
+
+.divider:after{
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:10%;
+  bottom: 10%;
+  right: 0;
 }
 
 /* Custom page footer */
@@ -472,10 +507,6 @@ html
   margin: 0;
 }
 
-#small-logo {
-  display: block;
-  width: 100%;
-}
 img{
  display: block;
 }
@@ -493,17 +524,6 @@ img{
   height: 60%;
 }
 
-.navLink{
-    z-index: 1000;
-    font-family: essenceSans;
-    text-decoration: none;
-    color: black;
-}
-
-.navLink:hover{
-  text-decoration: none;
-  color: black;
-}
 
 /*#scene {
   bottom: 0px;

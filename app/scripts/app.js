@@ -22,7 +22,7 @@ angular
     'ui.bootstrap',
   ])
   .config(function ($stateProvider,$urlRouterProvider) {
-    $urlRouterProvider.otherwise("/state1");
+    $urlRouterProvider.otherwise("/home");
     $stateProvider
       .state('main', {
         url:'/home',
