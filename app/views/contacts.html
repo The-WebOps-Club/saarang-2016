@@ -9,7 +9,7 @@
                 </div>
                 <div class="row photos">
                     <div ng-class="{'col-md-2' : true,'col-md-offset-5':{{tab.members.length===1}}, 'col-md-offset-4':{{tab.members.length===2}} && {{$index===0}}, 'col-md-offset-3':{{tab.members.length===3}} && {{$index===0}}}" ng-repeat="member in tab.members"> 
-                        <img ng-src="images/contact_images/{{member.img}}" class="img-responsive corePic"/>
+                        <img ng-src="{{member.img}}" class="img-responsive corePic"/>
                         <span>{{member.name}}</span><br>
                         <span><a href="mailto:{{member.email}}" target="_blank">{{member.email}}</a></span><br>
                         <span>{{member.phone}}</span>
