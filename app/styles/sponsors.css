@@ -1,15 +1,10 @@
 #sponsback{
-	
-	/*overflow-y: auto;*/
-
 		margin-bottom: 1%;
 }
 
 
 #content{
-	
 	background: rgba(0, 0, 0, 0.2);
-	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
@@ -33,14 +28,8 @@
 	text-decoration: none;
 }
 
-#full
-{	margin-top: 5%;
-	height: 85%;
+#full{
+	height: 750px;
 	overflow-y: auto;
 	overflow-x: hidden;
-}
-#all
-{
-	height: 89%;
-	/*position: fixed;*/
 }

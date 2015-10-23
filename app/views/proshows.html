@@ -1,1 +1,19 @@
-<p>This is the proshows view.</p>
+<div class="row">
+	<div class="col-md-2 col-md-offset-1 show-block" ng-click="open('lg', 'classical night')" id="classical"></div>
+	<div class="col-md-2 col-md-offset-2 show-block" ng-click="open('lg', 'choreo night')" id="choreo"></div>
+	<div class="col-md-2 col-md-offset-2 show-block" ng-click="open('lg', 'edm night')" id="edm"></div>
+</div>
+<br>
+<br>
+<div class="row">
+	<div class="col-md-2 col-md-offset-3 show-block" ng-click="open('lg', 'rock show')" id="rock"></div>
+	<div class="col-md-2 col-md-offset-2 show-block" ng-click="open('lg', 'popular night')" id="popular"></div>
+</div>
+
+<script type="text/ng-template" id="proshowsDetails.html">
+    <div class="modal-body row {{pageClass}}" style="background: url('images/classical_modal.png'); background-size:100%;">
+    	<div class="col-md-5 col-md-offset-7 info">
+    		Info Here for {{show}}
+    	</div>
+    </div>
+</script>

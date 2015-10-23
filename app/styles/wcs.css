@@ -1,0 +1,28 @@
+.page-wcs #box1
+{
+  margin-top: 0%;
+  height: 750px;
+  color: white;
+  font-family: gearedSlab;
+  font-size: 1.25em;
+  background: rgba(0 ,0 ,0 ,0.8);
+  overflow-x: hidden;
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+}
+.page-wcs .artist-roll {
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.page-wcs .artist-roll:hover {
+	content:url("../images/India-icon.png");
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  transform:rotate(360deg);
+}

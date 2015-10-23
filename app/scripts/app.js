@@ -19,7 +19,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'angular-carousel',
-    'ui.bootstrap',
+    'ui.bootstrap'
   ])
   .config(function ($stateProvider,$urlRouterProvider) {
     $urlRouterProvider.otherwise("/home");

@@ -8,10 +8,11 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('WcsCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('WcsCtrl', function ($scope) {
+    $scope.pageClass = "page-wcs"
+    $scope.isCollapsed = false;
+    $scope.showData = function (num) {
+    	$scope.artist = "Artist " + num;
+    	$scope.data = "Info " + num;
+    }
   });

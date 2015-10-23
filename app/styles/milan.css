@@ -1,22 +1,18 @@
 .milan{
-	margin-top: 6%;
-	height: 90%;
+	height: 700px;
 }
 .leftBox{
 	background: rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	min-height: 80%;
-	position: fixed;
 	z-index: 100;
 }
 .rightBox{
 	background: rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	min-height: 50%;
-	/*overflow-y: auto; */
 	padding-top: 2em;
 	padding-bottom: 2em;
-	position: absolute;
 }
 .btn-primary
 {
@@ -41,10 +37,3 @@ p
 {
 	font-family: gearedSlab;
 }
-/*#formshow
-{
-	position: absolute;
-	top: 90%;
-	left: 30%;
-}
-*/

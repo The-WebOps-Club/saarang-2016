@@ -63,7 +63,17 @@ a {
   color: inherit;
 }
 
+a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
 a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active{
   text-decoration: none;
   color: inherit;
 }
@@ -87,20 +97,26 @@ a:hover {
 }
 /* Custom page header */
 .header {
-  z-index: 100000;
+  z-index: 1;
   margin-bottom: 10px;
   text-align: center;
-  position: fixed;
   background: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 105%;
   opacity: 1;
 }
 
 #small-logo {
   display: block;
-  width: 60%;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: -50px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 10px 10px 10px;
+  background-image: -webkit-linear-gradient(transparent 50%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5)),
+        -webkit-linear-gradient(0deg, transparent 100%, rgb(0, 0, 0) 50%, rgb(0, 0, 0));
+    -webkit-transform: rotate(0deg);
+  border-radius: 50%;
 }
 
 .navLink{
@@ -117,6 +133,9 @@ a:hover {
   background-clip: 
 }
 
+.navLink:active{
+  text-decoration: none;
+}
 .divider:after{
   background: #e0e0e0;
   width: 1px;
@@ -130,9 +149,10 @@ a:hover {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
+  bottom: 0px;
+  width: 105%;
   border-top: 1px solid #e5e5e5;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .container-narrow > hr {
@@ -224,70 +244,91 @@ html
 { 
   overflow: hidden;
 }
-.page        { 
-  
- /* padding-top:200px;*/
-  position:absolute; 
-  text-align:center;
-  top:0;  
-  width:100%; 
-  background: url('../images/background.png');
-  background-size: cover;
+body {
+  margin: 0;
   overflow-x: hidden;
-
-  height: 100%;
-  left:0px;
-  
-
+  background: url('../images/bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.containers{
-  background: url('../images/background.png');
-  background-size: 101% 100%;
-  background-repeat: no-repeat;
-  position: fixed;
-  height: 100%;
-  width: 100%;
+.page{ 
+  text-align:center;
+  width:100%; 
+  overflow-x: hidden; 
+  overflow-y: scroll;
 }
+
+.fill-height-or-more {
+  min-height: 100vh;  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+} 
+
+.fill-height-or-more > .containers {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .page h1  { font-size:60px; }
 .page a     { margin-top:50px; }
 #about      { color:#333; position:absolute; text-align:center; top:50px; width:100%; }
 
 /* PAGES
 ============================================================================= */
-.page-home    { background: url('../images/background.png');
-                background-size: cover;
-                      overflow-y:hidden;
-              }
+.page-home    {}
 .page-milan{
-      overflow-y:auto;
 }
 .page-sponsors   { 
-                  
-                  /*overflow: auto;*/
-                  background: url('../images/background.png');
-                  background-size: cover;
-                  background-size: 101% 100%;
-                  background-repeat: no-repeat;
-                  background-attachment: fixed; }
-.page-contact   { overflow-x:hidden;
-                  background: url('../images/background.png');
-                  background-size: cover;
-                  background-size: 101% 100%;
-                  top: 10%;
-                  height: 90%;
-                  background-repeat: no-repeat;
-                  background-attachment: fixed;}
-.page-gallery {background: #CF0000; color: #00907c;
-                  background: url('../images/background.png');
-                  background-size: cover;
-                  overflow-y:hidden; 
-                }
+                   }
+.page-contact   { }
+.page-gallery {}
 /* ANIMATIONS
 ============================================================================= */
   
 
-.page.ng-leave  { z-index:9999; }
-.page.ng-enter  { z-index:8888; }
+.page.ng-leave  { -webkit-animation:slideOutLeft 0.5s both ease-in;
+  -moz-animation:slideOutLeft 0.5s both ease-in;
+  animation:slideOutLeft 0.5s both ease-in;  }
+.page.ng-enter  { -webkit-animation:slideInRight 0.5s both ease-in;
+  -moz-animation:slideInRight 0.5s both ease-in;
+  animation:slideInRight 0.5s both ease-in; }
 
 /* page specific animations ------------------------ */
 
@@ -503,9 +544,6 @@ html
 @keyframes rotateOutNewspaper {
   to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
 }
-  body {
-  margin: 0;
-}
 
 img{
  display: block;
@@ -517,195 +555,93 @@ img{
 }
 
 .container {
-  /*background: url('../images/background.png');*/
-  position: absolute;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
-  height: 60%;
 }
 
-
-/*#scene {
-  bottom: 0px;
-}*/
-
-
-/*waves*/
-@-webkit-keyframes wave1{
-0%{margin-top:8%;margin-left:-10%;}
-25%{margin-top:10%;margin-left:-12%;}
-50%{margin-top:8%;margin-left:-14%;}
-75%{margin-top:6%;margin-left:-12%;}
-100%{margin-top:8%;margin-left:-10%;}
+/* SOCIAL ICONS
+============================================================================= */
+#social-icons{
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  z-index: 1000000000;
 }
-@-webkit-keyframes wave2{
-0%{margin-top:1%;margin-left:-10%;}
-25%{margin-top:2%;margin-left:-12%}
-50%{margin-top:1%;margin-left:-14%;}
-75%{margin-top:0%;margin-left:-12%;}
-100%{margin-top:1%;margin-left:-10%;}
+.social-roll {
+  height: 48px;
+  width: 48px;
+  margin: 10px;
+  float: left;
+  border-radius: 50%;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
-@-webkit-keyframes wave3{
-0%{margin-top:1%;margin-left:-25%;}
-25%{margin-top:1.5%;margin-left:-27%;}
-50%{margin-top:1%;margin-left:-29%;}
-75%{margin-top:0.5%;margin-left:-27%;}
-100%{margin-top:1%;margin-left:-25%;}
-}
-@-webkit-keyframes ship{
-0%{margin-left:53%;}
-25%{margin-left:52%;}
-50%{margin-left:51%;}
-75%{margin-left:52%;}
-100%{margin-left:53%;}
-}
-@keyframes wave1{
-0%{margin-top:8%;margin-left:-10%;}
-25%{margin-top:10%;margin-left:-12%;}
-50%{margin-top:8%;margin-left:-14%;}
-75%{margin-top:6%;margin-left:-12%;}
-100%{margin-top:8%;margin-left:-10%;}
-}
-@keyframes wave2{
-0%{margin-top:1%;margin-left:-10%;}
-25%{margin-top:2%;margin-left:-12%}
-50%{margin-top:1%;margin-left:-14%;}
-75%{margin-top:0%;margin-left:-12%;}
-100%{margin-top:1%;margin-left:-10%;}
-}
-@keyframes wave3{
-0%{margin-top:1%;margin-left:-25%;}
-25%{margin-top:1.5%;margin-left:-27%;}
-50%{margin-top:1%;margin-left:-29%;}
-75%{margin-top:0.5%;margin-left:-27%;}
-100%{margin-top:1%;margin-left:-25%;}
-}
-@keyframes ship{
-0%{margin-left:53%;}
-25%{margin-left:52%;}
-50%{margin-left:51%;}
-75%{margin-left:52%;}
-100%{margin-left:53%;}
-}
-@-moz-keyframes wave1{
-0%{margin-top:8%;margin-left:-10%;}
-25%{margin-top:10%;margin-left:-12%;}
-50%{margin-top:8%;margin-left:-14%;}
-75%{margin-top:6%;margin-left:-12%;}
-100%{margin-top:8%;margin-left:-10%;}
-}
-@-moz-keyframes wave2{
-0%{margin-top:1%;margin-left:-10%;}
-25%{margin-top:2%;margin-left:-12%}
-50%{margin-top:1%;margin-left:-14%;}
-75%{margin-top:0%;margin-left:-12%;}
-100%{margin-top:1%;margin-left:-10%;}
-}
-@-moz-keyframes wave3{
-0%{margin-top:1%;margin-left:-25%;}
-25%{margin-top:1.5%;margin-left:-27%;}
-50%{margin-top:1%;margin-left:-29%;}
-75%{margin-top:0.5%;margin-left:-27%;}
-100%{margin-top:1%;margin-left:-25%;}
-}
-@-moz-keyframes ship{
-0%{margin-left:53%;}
-25%{margin-left:52%;}
-50%{margin-left:51%;}
-75%{margin-left:52%;}
-100%{margin-left:53%;}
+.social-roll:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  transform:rotate(360deg);
 }
 
-#w1
-{
-  margin-left: -10%;
-  /*margin-top: 90%;*/
-  width: 150%;
-  height: 50%;
-  -webkit-animation-name:wave1;
-  -webkit-animation-duration:6s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-name: wave1;
-  animation-duration:6s;
-  animation-iteration-count:infinite;
-  -moz-animation-timing-function: linear;
-  -moz-animation-name: wave1;
-  -moz-animation-duration:6s;
-  -moz-animation-iteration-count:infinite;
+#gallery-icon{
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1000000000;
 }
-#w2
-{
-  margin-left: -10%;
-  /*margin-top: 18%;*/
-  width: 150%;
-    height: 50%;
-  -webkit-animation-name:wave2;
-  -webkit-animation-duration:5s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-name: wave2;
-    animation-duration:5s;
-    animation-iteration-count:infinite;
-    -moz-animation-timing-function: linear;
-  -moz-animation-name: wave2;
-    -moz-animation-duration:5s;
-    -moz-animation-iteration-count:infinite;
+
+#gallery-icon p{
+  font-family: gearedSlab;
 }
-#w3
-{
-  margin-left: -25%;
-  /*margin-top: 20%;*/
-  width: 150%;
-    height: 50%;
-  -webkit-animation-name:wave3;
-  -webkit-animation-duration:4s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-name: wave3;
-    animation-duration:4s;
-    animation-iteration-count:infinite;
-    -moz-animation-timing-function: linear;
-  -moz-animation-name: wave3;
-    -moz-animation-duration:4s;
-    -moz-animation-iteration-count:infinite;
-}
+
 #logo
 { 
-  position: absolute;
   width: 25%;
-  margin-top: 14%;
-  margin-left: 35%;
+  margin: auto;
 }
 .caption{
-  font-family: greatVibes; 
-  margin-top: 25%;
+  font-family: greatVibes;
+  margin: auto;
+
 }
-#t
-{
-  width: 85%;
-  margin-top: 0%;
-  margin-left: 5%;
+
+/*SCROLLBARS
+===========================================*/
+::-webkit-scrollbar {
+      width: 15px;
 }
-#s
-{
-  width: 6%;
-  height: 6%;
-  margin-top: -3%;
-  margin-left:53%;
-  -webkit-animation-name:ship;
-  -webkit-animation-duration:6s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-name:ship;
-    animation-duration:6s;
-    animation-iteration-count:infinite;
-    -moz-animation-timing-function: linear;
-  -moz-animation-name:ship;
-    -moz-animation-duration:6s;
-    -moz-animation-iteration-count:infinite;
+::-webkit-scrollbar-track {
+      background-color: rgba(255, 255, 255, 0.2);
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      display: none;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
 }

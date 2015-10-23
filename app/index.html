@@ -15,41 +15,69 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/contacts.css">
+    <link rel="stylesheet" type="text/css" href="styles/wcs.css">
+    <link rel="stylesheet" type="text/css" href="styles/proshows.css">
     <link rel="stylesheet" type="text/css" href="styles/sponsors.css">
     <link rel="stylesheet" type="text/css" href="styles/milan.css">
     <link rel="stylesheet" type="text/css" href="styles/gallery.css">
 
     <!-- endbuild -->
   </head>
-  <body ng-app="saarang2016App">
+  <body ng-app="saarang2016App" class="fill-height-or-more">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="header row">
-      <div id="leftLinks" class="col-md-2 row vdivide">
+      <div id="leftLinks" class="col-md-2 row">
         <div class="col-md-6 col-md-offset-0 navLink divider"><h3><a href="/#/sponsors">LOGIN</a></h3></div>
         <div class="col-md-6 col-md-offset-0 navLink"><h3><a href="/#/sponsors">REGISTER</a></h3></div>
       </div>
       <div id="centerLinks" class="col-md-6 col-md-offset-1 row">
-        <div class="col-md-2 col-md-offset-0 navLink divider"><h3><a href="/#/sponsors">EVENTS</a></h3></div>
-        <div class="col-md-8 col-md-offset-0 row">
-          <div class="col-md-5 col-md-offset-0 navLink"><h3><a href="/#/milan">WCS</a></h3></div>
-          <div class="col-md-2 col-md-offset-0 navLink center-block"><a href="/#/home"><img id="small-logo" src="images/nav-logo.png"></a></div>
-          <div class="col-md-5 col-md-offset-0 navLink divider"><h3><a href="/#/contacts">PROSHOWS</a></h3></div>
+        <div class="col-md-2 col-md-offset-1 navLink divider"><h3><a ui-sref="events">EVENTS</a></h3></div>
+        <div class="col-md-6 col-md-offset-0 row">
+          <div class="col-md-4 col-md-offset-0 navLink"><h3><a ui-sref="wcs">WCS</a></h3></div>
+          <div class="col-md-2 col-md-offset-0 center-block"><a ui-sref="home"><img id="small-logo" src="images/nav-logo.png"></a></div>
+          <div class="col-md-5 col-md-offset-1 navLink divider"><h3><a ui-sref="proshows">PROSHOWS</a></h3></div>
         </div>
-        <div class="col-md-2 col-md-offset-0 navLink"><h3><a href="/#/gallery">SPONSORS</a></h3></div>
+        <div class="col-md-2 col-md-offset-0 navLink"><h3><a ui-sref="sponsors">SPONSORS</a></h3></div>
       </div>
-      <div id="rightLinks" class="col-md-3 col-md-offset-1">
-        e
+      <div id="rightLinks" class="col-md-3 col-md-offset-0">
+        <div class="col-md-12 col-md-offset-0 navLink"><h3><a ui-sref="sponsors">Search HERE</a></h3></div>
       </div>
     </div>
 
     
-    <div class="containers"></div>
+    <div class="containers">
       <div class="page {{pageClass}} " ui-view></div>
     </div> 
+
+    <div id="social-icons">
+      <a href="https://www.facebook.com/saarangiitm" target="_blank"><img class="social-roll" src="images/fb.png"></a>
+      <a href="https://twitter.com/Saarang_IITM" target="_blank"><img class="social-roll" src="images/twitter.png"></a>
+      <a href="https://google.com" target="_blank"><img class="social-roll" href="https://play.google.com/store" src="images/android.png"></a>
+    </div>
+    <div id="gallery-icon" ui-sref="gallery">
+      <p>GALLERY<p>
+    </div>
+    <div class="footer">
+      <div class="col-md-2 row">
+        <div class="col-md-6 col-md-offset-0 navLink"><h3><a href="/#/sponsors">MUSIC HERE</a></h3></div>
+      </div>
+      <div id="centerLinks" class="col-md-5 col-md-offset-2 row">
+        <div class="col-md-2 col-md-offset-0 navLink divider text-center"><h3><a href="/#/sponsors">HOSPITALITY</a></h3></div>
+        <div class="col-md-4 col-md-offset-0 navLink divider text-center"><h3><a href="/#/sponsors">SAARANG SOCIAL CAUSE</a></h3></div>
+        <div class="col-md-2 col-md-offset-0 navLink divider text-center"><h3><a href="/#/sponsors">CONTACT US</a></h3></div>
+        <div class="col-md-1 col-md-offset-0 navLink"><h3><a href="/#/sponsors">MILAN</a></h3></div>
+      </div>
+      <div class="col-md-3 col-md-offset-0">
+        <div class="col-md-6 col-md-offset-0 navLink divider text-center"><h3><a href="/#/sponsors">SHAASTRA</a></h3></div>
+        <div class="col-md-3 col-md-offset-0 navLink divider text-center"><a href="http://www.iitm.ac.in"><img src="images/iitm.png" class="img-responsive"></a></div>
+        <div class="col-md-3 col-md-offset-0 navLink text-center"><img src="images/iso.png" class="img-responsive"></div>
+        
+      </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
