@@ -15,12 +15,13 @@
 }
 
 .page-proshows .show-block {
-	height: 300px;
+	height: 260px;
 }
 
 .page-proshows-details .info {
   margin-top: 0%;
-  height: 820px;
+  /*height: 820px;*/
+  height: 100%;
   color: white;
   font-family: gearedSlab;
   font-size: 1.25em;
@@ -33,10 +34,11 @@
 
 .modal-dialog {
 	width: 80%;
+  /*height:10%;*/
 }
 
 .modal-body {
-	height: 850px;
+	height: 610px;
 }
 
 .modal {
