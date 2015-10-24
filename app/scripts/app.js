@@ -24,7 +24,7 @@ angular
   .config(function ($stateProvider,$urlRouterProvider) {
     $urlRouterProvider.otherwise("/home");
     $stateProvider
-      .state('main', {
+      .state('home', {
         url:'/home',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',

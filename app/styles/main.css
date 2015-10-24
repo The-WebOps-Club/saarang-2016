@@ -124,6 +124,8 @@ a:active{
     font-family: gearedSlab;
     text-decoration: none;
     color: white;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .navLink:hover{
@@ -247,7 +249,7 @@ html
 body {
   margin: 0;
   overflow-x: hidden;
-  background: url('../images/bg.png') no-repeat center center fixed;
+  background: url('../images/bg_full.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -497,16 +499,32 @@ body {
 
 /* slide in from the right */
 @keyframes slideInRight {
-  from  { transform:translateX(100%); }
-  to    { transform: translateX(0); }
+  from  { transform:translateX(100%); 
+    > body{
+      background-position-x: 10%;
+    }
+  }
+  to    { transform: translateX(0);
+     > body{
+      background-position-x: 20%;
+    }
+  }
 }
 @-moz-keyframes slideInRight {
   from  { -moz-transform:translateX(100%); }
   to    { -moz-transform: translateX(0); }
 }
 @-webkit-keyframes slideInRight {
-  from  { -webkit-transform:translateX(100%); }
-  to    { -webkit-transform: translateX(0); }
+  from  { -webkit-transform:translateX(100%); 
+    > .body{
+      background-position: 100px 5px;
+    }
+  }
+  to    { -webkit-transform: translateX(0); 
+    > .body{
+      background-position: 200px 5px;
+    }
+  }
 }
 
 /* slide in from the bottom */
@@ -616,7 +634,7 @@ img{
 
 #logo
 { 
-  width: 25%;
+  width: 50%;
   margin: auto;
 }
 .caption{
