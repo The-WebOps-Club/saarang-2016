@@ -631,10 +631,34 @@
 	height:50%; 
 	width:50%;
 }
+.glyphicon{
+	font-size: 3em;
+}
+.glyphicon-option-vertical{
+	position: absolute;
+	color: white;
+	font-size: 2em;
+}
+.g1{
+	top: 37%;
+}
+.g2{
+	top: 51%;
+}
+.g3{
+	top: 65%;
+}
+.right{
+	left: 8%;
+}
+.left{
+	left: 20.5%;
+}
+/*LECDESMPAGE*/
 .lecdemspage{
 	z-index: 9999;
 	position: absolute;
-	background:rgba(255, 189, 0, 0.6);
+	background:rgba(243, 190, 41, 0.58);
 	display: inline-block;
 	/*opacity: 0.8; */
 	top: 0px;
@@ -695,13 +719,18 @@
 }
 .caside
 {
+	vertical-align: middle;
 	color: white;
 	font-family: gearedSlab; 
 	z-index: 100000;
 	background:rgba(0, 0, 0, 0.68);
 	width: 15%;
-	height: 8%;
 	top: 30%;
+}
+h2{
+	padding-top:5%;
+	padding-bottom:5%;
+	margin: 0px;  
 }
 .caside:hover{
 	cursor: pointer;
@@ -710,10 +739,4 @@
 	z-index: -1;
 	position: absolute;
 	width: 100%;
-}
-#dot{
-	border-radius:100%;
-	background:  white;
-	width: 0.5%;
-	height: 1%;
 }
