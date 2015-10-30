@@ -39,7 +39,6 @@
 	top:60%;
 	left:27%;
 	width: 20%;
-	/*height: 40%;*/
 }
 #informals_t
 {
@@ -566,7 +565,7 @@
 	position: absolute;
 	top:43%;
 	left:15%;
-	height:18%;
+	height:15%;
 	width: 50%;
 }
 /*WESTERN*/
@@ -631,4 +630,90 @@
 #blue{	
 	height:50%; 
 	width:50%;
+}
+.lecdemspage{
+	z-index: 9999;
+	position: absolute;
+	background:rgba(255, 189, 0, 0.6);
+	display: inline-block;
+	/*opacity: 0.8; */
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+#lecdems_t1{
+	position: absolute;
+	top: 17%;
+	left: 42%;
+	width: 15%;
+	height: 6%;
+}
+.lec
+{
+	z-index: 10;
+	position: absolute;
+	background:black;
+	width: 12%;
+	height: 25%;
+}
+.top
+{
+	top: 27%;
+}
+.bottom{
+	top: 60%; 
+}
+#close:hover,
+.t:hover,
+.b:hover{
+	cursor: pointer;
+}
+.capage{
+	z-index: 9999;
+	position: absolute;
+	background:rgba(255, 151, 0, 0.64);
+	display: inline-block;
+	/*opacity: 0.8; */
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.info{
+	background:rgba(0, 0, 0, 0.68);
+	position: absolute;
+	top: 22%;
+	height: 65%; 
+}
+#ca_t1{
+	position: absolute;
+	top: 17%;
+	left: 43%;
+	width: 15%;
+	height: 4%;
+}
+.caside
+{
+	color: white;
+	font-family: gearedSlab; 
+	z-index: 100000;
+	background:rgba(0, 0, 0, 0.68);
+	width: 15%;
+	height: 8%;
+	top: 30%;
+}
+.caside:hover{
+	cursor: pointer;
+}
+#dance{
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+}
+#dot{
+	border-radius:100%;
+	background:  white;
+	width: 0.5%;
+	height: 1%;
 }
