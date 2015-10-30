@@ -10,9 +10,7 @@
 angular.module('saarang2016App')
   .controller('MainCtrl', function($scope)
     {
-    var currentTime = new Date();
-	var hours = currentTime.getHours();
-	var minutes = currentTime.getMinutes();
+	$('body').animate({'background-position-x': "50%"}, 500);
     $scope.pageClass = "page-home"
 
     });

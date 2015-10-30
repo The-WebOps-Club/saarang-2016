@@ -515,16 +515,8 @@ body {
   to    { -moz-transform: translateX(0); }
 }
 @-webkit-keyframes slideInRight {
-  from  { -webkit-transform:translateX(100%); 
-    > .body{
-      background-position: 100px 5px;
-    }
-  }
-  to    { -webkit-transform: translateX(0); 
-    > .body{
-      background-position: 200px 5px;
-    }
-  }
+  from  { -webkit-transform:translateX(100%);   }
+  to    { -webkit-transform: translateX(0);   }
 }
 
 /* slide in from the bottom */
