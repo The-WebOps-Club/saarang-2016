@@ -48,7 +48,7 @@ angular
         controller: 'SponsorsCtrl',
         controllerAs: 'sponsors'
       })
-      .state('contactUs', {
+      .state('contacts', {
         url:'/contacts',
         templateUrl: 'views/contacts.html',
         controller: 'ContactsCtrl',
