@@ -12,6 +12,7 @@ angular.module('saarang2016App')
     $scope.pageClass="page-proshows";
     $scope.animationsEnabled = true;
     $scope.items = ['item1', 'item2', 'item3'];
+ $('body').animate({'background-position-x': "75%"}, 500);
 
 	$scope.open = function (size, show) {
 

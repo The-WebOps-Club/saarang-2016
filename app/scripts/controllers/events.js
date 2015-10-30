@@ -9,9 +9,6 @@
  */
 angular.module('saarang2016App')
   .controller('EventsCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+ 	$('body').animate({'background-position-x': "0%"}, 500);
+
   });

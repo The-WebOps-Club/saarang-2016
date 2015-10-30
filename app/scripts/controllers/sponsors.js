@@ -10,7 +10,7 @@
 angular.module('saarang2016App')
   .controller('SponsorsCtrl', function ($scope) {
  $scope.pageClass = "page-sponsors";
-
+ $('body').animate({'background-position-x': "100%"}, 500);
  var logos=[
 			[{"id":50,"title":"Title Sponsor","sponsor_link":"http://www.mrftyres.com/","logo":"spons/mrf_1.png","timestamp":"2014-12-30T22:39:12Z","uploaded_by":58,"priority":99,"row_layout":1,"$$hashKey":"object:354"}],
 			[{"id":2,"title":"Presenting Sponsor","sponsor_link":"http://timesofindia.indiatimes.com/","logo":"spons/TOI_Logo_in_Two_Lines_Red_Bakcground_without_shadow.jpg","timestamp":"2014-11-18T05:24:47Z","uploaded_by":167,"priority":90,"row_layout":1,"$$hashKey":"object:357"}],
