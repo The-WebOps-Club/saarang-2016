@@ -98,17 +98,18 @@ a:active{
 /* Custom page header */
 .header {
   z-index: 1;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
+  margin-top: -2px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
-  width: 105%;
+  width: 103%;
   opacity: 1;
 }
 
 #small-logo {
   display: block;
   height: 100px;
-  margin-top: 10px;
+  margin-top: 6px;
   margin-bottom: -50px;
   margin-left: auto;
   margin-right: auto;
@@ -152,11 +153,19 @@ a:active{
 /* Custom page footer */
 .footer {
   bottom: 0px;
-  width: 105%;
-  border-top: 1px solid #e5e5e5;
+  /*width: 103%;*/
+  /*border-top: 1px solid #e5e5e5;*/
   background: rgba(0, 0, 0, 0.5);
 }
-
+.navbar
+{
+  border:0px;
+  margin-bottom: 0px;
+}
+nav
+{
+  margin: 0px;
+}
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -200,13 +209,50 @@ a:active{
     padding-right: 0;
   }
   /* Space out the masthead */
-  /*.header {
-    margin-bottom: 30px;
-  }*/
+  .header {
+    /*margin-bottom: 30px;*/
+  }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
+}
+@media screen and (max-width: 995px){
+  #small-logo{
+    display: none;
+    background:none; 
+  }
+  .container{
+    max-width: 1024px;
+  }
+  .navLink{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+.header{
+  width: 110%;
+}
+html{
+  overflow-y:scroll; 
+}
+.divider:after
+{
+  width: 0px;
+}
+}
+@media screen and (max-width: 768px){
+  #small-logo{
+    display: none;
+    background:none;
+  }
+.header{
+  width: 102%;
+}
+.social-roll{
+  height: 24px;
+  width: 24px;
+}
 }
 /*.main{
     margin-top: 0% !important;
@@ -317,6 +363,10 @@ body {
 .page-home    {}
 .page-milan{
 }
+/*.page-events{
+    background: url('../images/events/back.png') no-repeat center center fixed;
+  background-size: 110%;
+}*/
 .page-sponsors   { 
                    }
 .page-contact   { }
