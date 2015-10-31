@@ -98,6 +98,12 @@ angular.module('saarang2016App')
                 "email": "koushik.esk@saarang.org",
                 "phone": "+918124343670",
                 "img"  :"images/contact_images/saikoushik.png"
+              },
+              {
+                "name": "Sai Akhil Matha",
+                "email": "akhil@saarang.org",
+                "phone": "+918056128354",
+                "img"  :"images/contact_images/matha.png"
               }
             ]
             },
