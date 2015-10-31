@@ -2,33 +2,28 @@
 	background: url('../images/events/back.png') no-repeat center center fixed;
 	background-size: 110%;
 }*/
-.y,
-.r,
-.b{
-	position: absolute;
-}
-.y:hover,
-.b:hover,
-.r:hover
-{
-	cursor: pointer;
-}
 
-/*INFORMALS*/
-.informals{
+.r,
+.b,
+.y{
+	position: absolute;
     -webkit-transition: all 0.5s ease; 
     -moz-transition: all 0.5s ease; 
     -ms-transition: all 0.5s ease; 
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.informals:hover{
+.r:hover,
+.b:hover,
+.y:hover{
+	cursor: pointer;
 	-webkit-transform:scale(1.25); 
     -moz-transform:scale(1.25); 
     -ms-transform:scale(1.25); 
     -o-transform:scale(1.25); 
      transform:scale(1.25);
 }
+/*INFORMALS*/
 #informals_c{
 	height: 100%;
 	width: 100%;
@@ -49,20 +44,6 @@
 	width: 75%;
 }
 /*CHOREO*/
-.choreo{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.choreo:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
 .choreo{
 	z-index: 14;
 	top: 10%;
@@ -90,20 +71,6 @@
 }
 /*FINEARTS*/
 .finearts{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.finearts:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
-.finearts{
 	z-index: 2;
 	top:45%;
 	right:16%;
@@ -129,20 +96,6 @@
 	width: 48%;
 }
 /*LEC DEMS*/
-.lecdems{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.lecdems:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
 .lecdems{
 	z-index: 14;
 	top:23%;
@@ -182,20 +135,6 @@
 }
 /*SPEAKING*/
 .speaking{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.speaking:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
-.speaking{
 	z-index: 14;
 	top:18%;
 	left:20%;
@@ -221,20 +160,6 @@
 	width: 48%;
 }
 /*CLASSICAL ARTS*/
-.ca{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.ca:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
 .ca{
 	z-index: 2;
 	top:50%;
@@ -262,20 +187,6 @@
 }
 /*LIFESTYLE*/
 .lifestyle{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.lifestyle:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
-.lifestyle{
 	z-index: 1;
 	top:65%;
 	right:12%;
@@ -294,20 +205,6 @@
 	width: 75%;
 }
 /*LIGHTMUSIC*/
-.lm{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.lm:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
 .lm{
 	top:61%;
 	left:38%;
@@ -333,20 +230,6 @@
 	width: 42%;
 }
 /*DESIGN AND MEDIA*/
-.dam{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.dam:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
 .dam{
 	z-index: 13;
 	top:25%;
@@ -398,20 +281,6 @@
 }
 /*QUIZZING*/
 .quiz{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.quiz:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
-.quiz{
 	z-index: 3;
 	top:38%;
 	left:7%;
@@ -437,20 +306,6 @@
 	width: 42%;
 }
 /*WRITING*/
-.writing{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.writing:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
 .writing{
 	z-index: 13;
 	top:30%;
@@ -478,20 +333,6 @@
 }
 /*WORDGAMES*/
 .wordgames{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.wordgames:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
-.wordgames{
 	top:13%;
 	left:40%;
 	width: 8%;
@@ -509,20 +350,6 @@
 	width: 64%;
 }
 /*THESPIAN*/
-.thespian{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.thespian:hover{ 
-   -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}
 .thespian{
 	z-index: 1;
 	top:32%;
@@ -542,7 +369,7 @@
 	width: 60%;
 }
 /*WESTERN*/
-.western{
+/*.western{
     -webkit-transition: all 0.5s ease; 
     -moz-transition: all 0.5s ease; 
     -ms-transition: all 0.5s ease; 
@@ -555,7 +382,7 @@
     -ms-transform:scale(1.25); 
     -o-transform:scale(1.25); 
      transform:scale(1.25);
-}
+}*/
 .western{
 	z-index: 13;
 	top:54%;
