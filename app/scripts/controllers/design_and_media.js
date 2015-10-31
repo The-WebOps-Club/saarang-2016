@@ -8,7 +8,7 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('WritingCtrl', function () {
+  .controller('Design_and_mediaCtrl', function () {
 
 
   });

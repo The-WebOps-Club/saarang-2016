@@ -156,5 +156,4 @@ angular
         controller: 'ThespianCtrl',
         controllerAs: 'thespian'
       });
-      
   });
