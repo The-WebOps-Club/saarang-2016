@@ -10,7 +10,6 @@
 angular.module('saarang2016App')
   .controller('MainCtrl', function($scope)
     {
-	$('body').animate({'background-position-x': "50%"}, 500);
-    $scope.pageClass = "page-home"
-
+		$('body').animate({'background-position-x': "50%"}, 500);
+	    $scope.pageClass = "page-home"
     });

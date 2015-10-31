@@ -19,7 +19,7 @@ angular.module('saarang2016App')
     var modalInstance = $modal.open({
       animation: $scope.animationsEnabled,
       templateUrl: 'proshowsDetails.html',
-      controller: 'ModalInstanceCtrl',
+      controller: 'ProshowDetailsCtrl',
       size: size,
       resolve: {
         show: function () {
@@ -38,7 +38,7 @@ angular.module('saarang2016App')
   });
 
 
-angular.module('saarang2016App').controller('ModalInstanceCtrl', function ($scope, $modalInstance, show) {
+angular.module('saarang2016App').controller('ProshowDetailsCtrl', function ($scope, $modalInstance, show) {
   $scope.pageClass = "page-proshows-details"
   $scope.show = show;
 
