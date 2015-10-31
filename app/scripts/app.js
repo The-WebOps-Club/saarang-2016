@@ -77,6 +77,83 @@ angular
         templateUrl: 'views/proshows.html',
         controller: 'ProshowsCtrl',
         controllerAs: 'proshows'
+      })
+      .state('informals', {
+        url:'/events/informals',
+        templateUrl: 'views/informals.html',
+        controller: 'InformalsCtrl',
+        controllerAs: 'informals'
+      })
+      .state('choreo', {
+        url:'/events/choreo',
+        templateUrl: 'views/choreo.html',
+        controller: 'ChoreoCtrl',
+        controllerAs: 'choreo'
+      })
+      .state('fine_arts', {
+        url:'/events/fine_arts',
+        templateUrl: 'views/fine_arts.html',
+        controller: 'FineartsCtrl',
+        controllerAs: 'finearts'
+      })
+      .state('lec_dems', {
+        url:'/events/lec_dems',
+        templateUrl: 'views/lec_dems.html',
+        controller: 'LecdemsCtrl',
+        controllerAs: 'lecdems'
+      })
+      .state('speaking', {
+        url:'/events/speaking',
+        templateUrl: 'views/speaking.html',
+        controller: 'SpeakingCtrl',
+        controllerAs: 'speaking'
+      })
+      .state('classical_arts', {
+        url:'/events/classical_arts',
+        templateUrl: 'views/classical_arts.html',
+        controller: 'ClassicalartsCtrl',
+        controllerAs: 'classicalarts'
+      })
+      .state('lifestyle', {
+        url:'/events/lifestyle',
+        templateUrl: 'views/lifestyle.html',
+        controller: 'LifestyleCtrl',
+        controllerAs: 'lifestyle'
+      })
+      .state('light_music', {
+        url:'/events/light_music',
+        templateUrl: 'views/light_music.html',
+        controller: 'LightmusicCtrl',
+        controllerAs: 'lightmusic'
+      })
+      .state('design_and_media', {
+        url:'/events/design_and_media',
+        templateUrl: 'views/design_and_media.html',
+        controller: 'Design_and_mediaCtrl',
+        controllerAs: 'design_and_media'
+      })
+      .state('quizzing', {
+        url:'/events/quizzing',
+        templateUrl: 'views/quizzing.html',
+        controller: 'QuizzingCtrl',
+        controllerAs: 'quizzing'
+      })
+      .state('writing', {
+        url:'/events/writing',
+        templateUrl: 'views/writing.html',
+        controller: 'WritingCtrl',
+        controllerAs: 'writing'
+      })
+      .state('word_games', {
+        url:'/events/word_games',
+        templateUrl: 'views/word_games.html',
+        controller: 'Word_gamesCtrl',
+        controllerAs: 'word_games'
+      })
+      .state('thespian', {
+        url:'/events/thespian',
+        templateUrl: 'views/thespian.html',
+        controller: 'ThespianCtrl',
+        controllerAs: 'thespian'
       });
-      
   });
