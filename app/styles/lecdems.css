@@ -1,0 +1,62 @@
+.glyphicon{
+	font-size: 3em;
+}
+.glyphicon-option-vertical{
+	position: absolute;
+	color: white;
+	font-size: 2em;
+}
+.g1{
+	top: 37%;
+}
+.g2{
+	top: 51%;
+}
+.g3{
+	top: 65%;
+}
+.right{
+	left: 8%;
+}
+.left{
+	left: 20.5%;
+}
+/*LECDESMPAGE*/
+.lecdemspage{
+	z-index: 9999;
+	position: absolute;
+	background:rgba(243, 190, 41, 0.58);
+	display: inline-block;
+	/*opacity: 0.8; */
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+#lecdems_t1{
+	position: absolute;
+	top: 17%;
+	left: 42%;
+	width: 15%;
+	height: 6%;
+}
+.lec
+{
+	z-index: 10;
+	position: absolute;
+	background:black;
+	width: 12%;
+	height: 25%;
+}
+.top
+{
+	top: 27%;
+}
+.bottom{
+	top: 60%; 
+}
+#close:hover,
+.t:hover,
+.b:hover{
+	cursor: pointer;
+}

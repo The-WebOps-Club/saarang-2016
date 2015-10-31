@@ -77,6 +77,18 @@ angular
         templateUrl: 'views/proshows.html',
         controller: 'ProshowsCtrl',
         controllerAs: 'proshows'
+      })
+      .state('lecdems', {
+        url:'/events/lecdems',
+        templateUrl: 'views/lecdems.html',
+        controller: 'LecdemsCtrl',
+        controllerAs: 'lecdems'
+      })
+      .state('classical', {
+        url:'/events/classical',
+        templateUrl: 'views/classical.html',
+        controller: 'ClassicalCtrl',
+        controllerAs: 'classical'
       });
       
   });
