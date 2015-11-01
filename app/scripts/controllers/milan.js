@@ -35,4 +35,59 @@ angular.module('saarang2016App')
           alert("Submitted Successfully!");
         })
     }
+
+    $scope.cities=[
+    {
+      title: 'BENGALURU',
+      info: 'BENGALURU_info',
+    },
+    {
+      title: 'MANGALURU',
+      info: 'MANGALURU_info',
+    },
+    {
+      title: 'HYDERABAD',
+      info: 'HYDERABAD_info',
+    },
+    {
+      title: 'PUNE',
+      info: 'PUNE_info',
+    },
+    {
+      title: 'DELHI',
+      info: 'DELHI_info',
+    },
+    {
+      title: 'KOCHI',
+      info: 'KOCHI_info',
+    },
+    {
+      title: 'VIZAG',
+      info: 'VIZAG_info',
+    },
+    {
+      title: 'AHMEDABAD',
+      info: 'AHMEDABAD_info',
+    },
+    {
+      title: 'COIMBATORE',
+      info: 'COIMBATORE_info',
+    },
+    {
+      title: 'MUMBAI',
+      info: 'MUMBAI_info',
+    },
+    {
+      title: 'SAARANG MILAN',
+      info: 'MILAN_info',
+    }
+    ]
+
+    $scope.info="";
+    $scope.title="";
+    $scope.initial = true;
+    $scope.show = function (num) {
+      $scope.selectedCity = $scope.cities[num];
+      $scope.initial = false;
+    }
  	});

@@ -1,4 +1,29 @@
-<div class="row milan">
+<div class="milan_back">
+	<div id="cities">
+		<div class="city" ng-click="show(0)"><img id="bengaluru" src="images/milan/bengaluru.png"></div>
+		<div class="city" ng-click="show(1)"><img id="mangaluru" src="images/milan/mangaluru.png"></div>
+		<div class="city" ng-click="show(2)"><img id="hyderabad" src="images/milan/hyderabad.png"></div>
+		<div class="city" ng-click="show(3)"><img id="pune" src="images/milan/pune.png"></div>
+		<div class="city" ng-click="show(10)"><img id="middle" src="images/milan/middle.png"></div>
+		<div class="city" ng-click="show(4)"><img id="delhi" src="images/milan/delhi.png"></div>
+		<div class="city" ng-click="show(5)"><img id="kochi" src="images/milan/kochi.png"></div>
+		<div class="city" ng-click="show(6)"><img id="vizag" src="images/milan/vizag.png"></div>
+		<div class="city" ng-click="show(7)"><img id="ahmedabad" src="images/milan/ahmedabad.png"></div>
+		<div class="city" ng-click="show(8)"><img id="coimbatore" src="images/milan/coimbatore.png"></div>
+		<div class="city" ng-click="show(9)"><img id="mumbai" src="images/milan/mumbai.png"></div>
+	</div>
+	<div class="info col-md-5 col-md-offset-5">
+		<div id="title">
+			<h2 ng-show="initial">{{cities[10].title}}</h2>
+			<h2>{{selectedCity.title}}</h2>
+		</div>
+		<div id="content">
+			<p ng-show="initial">{{cities[10].info}}</p>
+			<p>{{selectedCity.info}}</p>
+		</div>	
+	</div>
+</div>
+<!-- <div class="row milan">
 	<div class="col-md-4 col-md-offset-1 leftBox">
 		<p>Milan is where Saarang goes beyond Chennai to reach out to the huge spectrum of audience. Saarang Milan is a plethora of events ranging from music to quizzing, held in various major cities of India before the main fest. The Milan events are massive crowd pullers and have seen colossal participation from the crowd all over the country.
 Last year, Saarang Milan saw huge turnouts in every place. The best artists of the city competed for glory. Bangalore, Hyderabad, Pune, Kochi and Mangalore were the venues of Milan. 
@@ -97,4 +122,4 @@ This time around, Saarang Milan is going to be bigger and better than ever befor
 			</form>
 		</div>
 	</div>
-</div>
+</div> -->

@@ -1,4 +1,4 @@
-.milan{
+/*.milan{
 	height: 700px;
 }
 .leftBox{
@@ -26,7 +26,7 @@
 {
 	top: -8%;
 	z-index: 10000000;
-	/*position: fixed;*/
+	/*position: fixed;
 }
 p
 {
@@ -35,5 +35,91 @@ p
 }
 .tab
 {
+	font-family: gearedSlab;
+}
+*/
+.page-milan .milan_back{
+	position: fixed;
+	top: 16%;
+	left: 4%;
+	width: 90%;
+	height: 70%;
+	background:rgba(0, 0, 0, 0.77);
+}
+.page-milan .city:hover{
+	cursor: pointer;
+}
+.page-milan #bengaluru{
+	position: fixed;
+	width:10%;
+	top: 20%;
+	left: 6%;
+}
+.page-milan #mangaluru{
+	position: fixed;
+	width:10%;
+	top: 20%;
+	left: 20%;
+}
+.page-milan #hyderabad{
+	position: fixed;
+	width:10%;
+	top: 20%;
+	left: 34%;
+}
+.page-milan #pune{
+	position: fixed;
+	width:10%;
+	top: 37%;
+	left: 6%;
+}
+.page-milan #middle{
+	position: fixed;
+	width:10%;
+	height: 30%;
+	top: 37%;
+	left: 20%;
+}
+.page-milan #delhi{
+	position: fixed;
+	width:10%;
+	top: 37%;
+	left: 34%;
+}
+.page-milan #kochi{
+	position: fixed;
+	width:10%;
+	top: 54%;
+	left: 6%;
+}
+.page-milan #vizag{
+	position: fixed;
+	width:10%;
+	top: 54%;
+	left: 34%;
+}
+.page-milan #ahmedabad{
+	position: fixed;
+	width:10%;
+	top: 70%;
+	left: 6%;
+}
+.page-milan #coimbatore{
+	position: fixed;
+	width:10%;
+	top: 70%;
+	height: 12%;
+	left: 20%;
+}
+.page-milan #mumbai{
+	position: fixed;
+	width:10%;
+	top: 70%;
+	left: 34%;
+}
+.page-milan .info{
+	margin-left:45%; 
+	position: fixed;
+	color: white;
 	font-family: gearedSlab;
 }

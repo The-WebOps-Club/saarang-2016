@@ -1,6 +1,7 @@
 .page-hospitality #hospi-container {
 	background: rgba(0, 0, 0, 0.8);
 	color: white;
+	height: 70%;
 }
 
 .page-hospitality .hospi-header {
