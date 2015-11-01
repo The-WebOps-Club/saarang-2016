@@ -1,0 +1,22 @@
+<div class="capage">
+	<a href="#/events"><div id="close" class="col-md-offset-11"><span ng-click="capage=false" class="glyphicon glyphicon-remove-circle"></span></div></a>
+	<div><img id="ca_t1" src="images/events/classicalarts_t.png"></div>
+	<br><br>
+	<br><br>
+	<div class="col-md-5 col-md-offset-2">
+		<img id="dance" src="images/classical/dance.png">
+	</div>
+	<br><br><br>
+	<div class="row" ng-repeat="event in events">
+		<div class="col-md-offset-1 col-md-2 " >
+				<div  class="caside" ng-click="show($index)">
+				<h2>{{event.name}}</h2>	
+				</div>	
+				<br>
+		</div>
+	</div>
+	<div class="info col-md-5 col-md-offset-6">
+		<p>{{selectedEvent.title}}</p>
+		<p>{{selectedEvent.info}}</p>
+	</div>
+</div>
