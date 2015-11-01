@@ -10,6 +10,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -20,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="styles/proshows.css">
     <link rel="stylesheet" type="text/css" href="styles/sponsors.css">
     <link rel="stylesheet" type="text/css" href="styles/milan.css">
+    <link rel="stylesheet" type="text/css" href="styles/hospitality.css">
     <link rel="stylesheet" type="text/css" href="styles/gallery.css">
     <link rel="stylesheet" type="text/css" href="styles/informals.css">
     <link rel="stylesheet" type="text/css" href="styles/choreo.css">
@@ -44,7 +46,7 @@
 
     <!-- Add your site or application content here -->
     <!-- Navbar -->
-    <nav class="navbar navbar-default header row">
+    <nav class="navbar navbar-default header row" ng-controller="HeaderCtrl">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -116,7 +118,7 @@
       <p>GALLERY<p>
     </div>
     <!-- Footer-->
-    <nav class="navbar navbar-default footer row">
+    <nav class="navbar navbar-default footer row" ng-controller="FooterCtrl">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false">
@@ -131,8 +133,8 @@
               <div><a class="col-md-12 navLink text-center" href="#"><h3>MUSIC HERE</h3></a></div>
             </div>
             <div class="col-md-7 nav navbar-nav">
-              <div class="col-md-2 text-center col-md-offset-1 navLink divider"><a><h3>HOSPITALITY</h3></a></div>
-              <div class="col-md-4 text-center navLink divider"><a><h3>SAARANG SOCIAL CAUSE</h3></a></div>
+              <div class="col-md-2 text-center col-md-offset-1 navLink divider" ui-sref="hospitality"><a><h3>HOSPITALITY</h3></a></div>
+              <div class="col-md-4 text-center navLink divider"><a><h3>SAARANG SOCIAL WING</h3></a></div>
               <div class="col-md-3 text-center navLink divider" ui-sref="contacts"><h3><a>CONTACT US</a></a></div>
               <div class="col-md-2 text-center navLink " ui-sref="milan"><a><h3>MILAN</h3></a></div>
             </div>
@@ -203,6 +205,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/header.js"></script>
+        <script src="scripts/controllers/footer.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/gallery.js"></script>
@@ -213,6 +217,7 @@
         <script src="scripts/controllers/events.js"></script>
         <script src="scripts/controllers/proshows.js"></script>
         <script src="scripts/controllers/hospitality.js"></script>
+        <script src="scripts/controllers/classical_arts.js"></script>
         <!-- endbuild -->
 </body>
 </html>

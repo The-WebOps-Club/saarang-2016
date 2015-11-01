@@ -82,7 +82,7 @@
 	width: 75%;
 }
 /*CHOREO*/
-.choreo{
+.page-events .choreo{
 	z-index: 14;
 	top: 10%;
 	right: 20%;
@@ -100,7 +100,7 @@
 	height: 12%;
 	width:48%;
 }
-#choreo{	
+.page-events #choreo{	
 	position: absolute;	
 	top: 11%;
 	left: 35%;

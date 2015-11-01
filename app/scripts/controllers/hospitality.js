@@ -1,12 +1,7 @@
-angular.module('saarang2016App').controller('HospitalityCtrl', function ($scope, $modalInstance, show) {
+angular.module('saarang2016App').controller('HospitalityCtrl', function ($scope) {
   $scope.pageClass = "page-hospitality"
-  $scope.show = show;
-
-  $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
-  };
-
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
+  $scope.activate = function (num) {
+  	$('.active').removeClass('active');
+  	$('.ht-'+num).addClass('active');
+  }
 });

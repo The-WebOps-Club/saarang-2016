@@ -1,12 +1,24 @@
-<div class="modal-body row {{pageClass}}" style="background: rgba(0, 0, 0, 0.7); background-size:100%;">
-	<div class="container-fluid hospiPage">
+<div class="row {{pageClass}}" style="">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-        <h1>Hospitality at Saarang</h1>
+        <div class="col-md-10 col-md-offset-1" id="hospi-container">
+        <h3 class="hospi-header">Hospitality at Saarang</h3>
         <hr/>
-            <tabset >
-                <tab heading="Atithi Devo Bhavah">
-                    <p>
+	        <div class="col-xs-2"> <!-- required for floating -->
+	          <!-- Nav tabs -->
+	          <ul class="nav nav-tabs tabs-left">
+	            <li class="ht-1 active" ng-click="activate(1)"><a>Atithi Devo Bhavah</a></li>
+	            <li class="ht-2" ng-click="activate(2)"><a data-toggle="tab">Control Room</a></li>
+	            <li class="ht-3" ng-click="activate(3)"><a data-toggle="tab">Accommodation Portal</a></li>
+	            <li class="ht-4" ng-click="activate(4)"><a data-toggle="tab">Alternate Accomodation</a></li>
+	            <li class="ht-5" ng-click="activate(5)"><a data-toggle="tab">Reaching IIT Madras</a></li>
+	            <li class="ht-6" ng-click="activate(6)"><a data-toggle="tab">About Campus</a></li>
+	          </ul>
+	        </div>
+
+	        <div class="col-xs-10">
+	          <div class="tab-content">
+	            <div class="tab-pane ht-1 active">
+	            	<p>
                         We, at Hospitality, strongly believe that our Guest is our God. We shall leave no stone unturned to ensure that your stay here is comfortable and enjoyable. We, at Saarang, ensure that you have the fun while we take care of the rest.
                     </p>
                     <p>
@@ -23,9 +35,9 @@
                         sreeharsha@saarang.org<br/>
                         +919962663576
                     </p>
-                </tab> 
-                <tab heading="Control Room">
-                    <p>
+	            </div>
+	            <div class="tab-pane ht-2">
+	            	<p>
                         We strive to make your stay with us, as pleasant and comfortable as we can. Upon reaching the IIT Madras campus, participants who registered for accommodation are requested to report to the Control Room, which will be operational day and night (except from 5pm to 12 midnight which is the time for Professional Shows). Participants will be requested to produce all necessary documents at the control room. Nominal charges for accommodation will be collected here depending on the number of days you wish to avail this facility. The control room will close in the afternoon of the final day of Saarang. All participants are required to carry their :
                     </p>
                     <p>
@@ -38,9 +50,9 @@
                     <p>
                         In order to avail accommodation on campus. Participants are also expected to follow certain Rules and Regulations to help us maintain the festive atmosphere in the institute. We would be issuing Saarang ID cards to all the outstation participants.
                     </p>
-                </tab>
-                <tab heading="Accommodation Portal">
-                    <p style="text-align: center;">
+	            </div>
+	            <div class="tab-pane ht-3">
+	            	<p style="text-align: center;">
                         <a class="btn btn-primary" href="accommodation" ng-if="loggedIn">Log into Accommodation Portal</a>
                         <span  ng-if="!loggedIn">Log in to enter Accommodation Portal</span>
                         
@@ -49,20 +61,16 @@
                     <p>
                         Also, to register for accommodation, you first need to register each individual member of the team on the Saarang website. <!--Click here for accomodation-->
                     </p>
-                </tab>
-                <tab heading="Alternate Accomodation">
-                    <p>
+	            </div>
+	            <div class="tab-pane ht-4">
+	            	<p>
                         Since we have limited space on campus, we might not be able to provide accommodation to all participants who apply for accommodation. In case you don't receive a confirmation mail regarding your accommodation from the Hospitality team, you can always make arrangements for your stay outside our campus.
                     </p>
                     <p>
                         For your reference, We have uploaded a list of hotels and lodges nearby .<a href='hotels around iit madras.pdf' target='_blank'>click here for details</a>
-                    </p>
-                </tab>
-                <tab heading="Reaching IIT Madras">
-                <center>
-                    <a href="https://play.google.com/store/apps/details?id=com.hm.raft" target="_blank"><img src="../main/img/raft-logo.png" width="" /></a>
-                    <p>Use raft for getting public transport directions when you are in Chennai</p>
-
+                    </p></div>
+	            <div class="tab-pane ht-5">
+	            	<center>
                     <p>Outstation participants can reach the IIT Madras campus via bus, auto or call-taxi which is available just outside the station.</p>
                     <p>
                     <b>IITM campus:</b></p>
@@ -97,11 +105,11 @@
                     Hire an auto/taxi to IIT Madras (inside)
                     <br/>Catch Bus number 23M or 5E which come directly to institute. From the main gate there are IITM buses to the hostels, every 20 minutes.
                     <br/>
-                                                    <p></p>
-                </center>
-                </tab>
-                <tab heading="About Campus">
-                   <p>Set in a lush green campus spanning 620 acres in the heart of Chennai, IIT Madras is home to 6000 students and also a few hundred monkeys, deer and blackbucks. Carved from the Guindy National Park, IITM, which celebrated its Golden Jubilee in 2009, is blessed with rich wildlife that perhaps no other college in the world can boast of.
+                    <p></p>
+                	</center>
+	            </div>
+	            <div class="tab-pane ht-6">
+	            	<p>Set in a lush green campus spanning 620 acres in the heart of Chennai, IIT Madras is home to 6000 students and also a few hundred monkeys, deer and blackbucks. Carved from the Guindy National Park, IITM, which celebrated its Golden Jubilee in 2009, is blessed with rich wildlife that perhaps no other college in the world can boast of.
                 </p><p>
                     IIT Madras boasts one of the most vibrant student population in India with it's eclectic mix of students taking part in a variety of events on campus ranging from quizzing to hosting and excelling in technical events. 
                 </p><p> Cultural activities on campus reach its peak in January as Saarang fever takes over the campus. Formerly known as Mardi Gras, Saarang has, over the years, evolved into the behemoth it is today.
@@ -109,11 +117,10 @@
                     IITM being a residential campus has 17 hostels all of which are named after rivers. This along with the fact that the campus buses used to be named after mountains has resulted in an epigram about IIT Madras that it is the only place where the mountains move and the rivers remain still.
                 </p><p>
                     Another distinctive feature of the campus is its lingo. A mix of English, Hindi, Telugu, Malayalam and Tamil, aspects of the campus slang has been adopted by some other Chennai  colleges. Interestingly enough, the lingo has outgrown the boundaries of the college and has resulted in a Master's thesis about it in a German university.
-                                                </p>
-                </tab>
-                
-            </tabset>
+                </p>
+	            </div>
+	          </div>
+	        </div>
          </div>
-     </div>
-</div>
+	</div>
 </div>

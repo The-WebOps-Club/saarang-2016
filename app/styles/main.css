@@ -360,158 +360,40 @@ body {
 
 /* PAGES
 ============================================================================= */
-.page-home    {}
-.page-milan{
-}
-/*.page-events{
-    background: url('../images/events/back.png') no-repeat center center fixed;
-  background-size: 110%;
-}*/
-.page-sponsors   { 
-                   }
-.page-contact   { }
-.page-gallery {}
+
 /* ANIMATIONS
 ============================================================================= */
   
 
-.page.ng-leave  { -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-  animation:slideOutLeft 0.5s both ease-in;  }
-.page.ng-enter  { -webkit-animation:slideInRight 0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight 0.5s both ease-in; }
+.page.ng-leave  { -webkit-animation:fadeOut 0.5s both ease-in;
+  -moz-animation:fadeOut 0.5s both ease-in;
+  animation:fadeOut 0.5s both ease-in;  }
+.page.ng-enter  { -webkit-animation:fadeIn 0.5s both ease-in;
+  -moz-animation:fadeIn 0.5s both ease-in;
+  animation:fadeIn 0.5s both ease-in; }
 
 /* page specific animations ------------------------ */
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    50% {opacity: 0; display: none;} 
+    100% {opacity: 1; display: block;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    50% {opacity: 0;  display: none;} 
+    100% {opacity: 1;  display: block;} 
+} 
 
-/* home -------------------------- */
-.page-home.ng-leave         {
-    /*-webkit-transform-origin: 0% 0%;
-  -webkit-animation: rotateFall 1s both ease-in;
-  -moz-transform-origin: 0% 0%;
-  -moz-animation: rotateFall 1s both ease-in;
-  transform-origin: 0% 0%;
-  animation: rotateFall 1s both ease-in;*/
-  -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-  animation:slideOutLeft 0.5s both ease-in;  
-  /*transform-origin:center 400%;
-  -webkit-animation:rotateOutRight 1s both ease-in; */
-
-}
-.page-home.ng-enter     {  
-    /*-webkit-animation:scaleUp 0.5s both ease-in;
-  -moz-animation:scaleUp 0.5s both ease-in;
-  animation:scaleUp 0.5s both ease-in; */
-  -webkit-animation:slideInRight 0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight 0.5s both ease-in;  
-  /*transform-origin:center 400%;
-  -webkit-animation:rotateInLeft 1s both ease-in;     */
-}
-
-/* about ------------------------ */
-.page-about.ng-leave        {
-    -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-  animation:slideOutLeft 0.5s both ease-in; 
-/*transform-origin:center 400%;
-  -webkit-animation:rotateOutRight 1s both ease-in; */
-}
-.page-about.ng-enter    {  
-    -webkit-animation:slideInRight 1s0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight 0.5s both ease-in;    
-  /*transform-origin:center 400%;
-  -webkit-animation:rotateInLeft 1s both ease-in; */    
-}
-
-.page-sponsors.ng-leave{
-    -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-  animation:slideOutLeft 0.5s both ease-in; 
-/*transform-origin:center 400%;
-  -webkit-animation:rotateOutRight 1s both ease-in; */
-}
-.page-sponsors.ng-enter    {  
-    -webkit-animation:slideInRight 1s0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight 0.5s both ease-in;    
-  /*transform-origin:center 400%;
-  -webkit-animation:rotateInLeft 1s both ease-in; */    
-}
-
-.page-milan.ng-leave {
-  -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-  animation:slideOutLeft 0.5s both ease-in; 
-/*transform-origin:center 400%;
-  -webkit-animation:rotateOutRight 1s both ease-in; */
-}
-.page-milan.ng-enter    {  
-    -webkit-animation:slideInRight 1s0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight 0.5s both ease-in;    
-  /*transform-origin:center 400%;
-  -webkit-animation:rotateInLeft 1s both ease-in; */    
-}
-/* contact ---------------------- */
-.page-contact.ng-leave      {
-    /*-webkit-transform-origin: 50% 50%;
-  -webkit-animation: rotateOutNewspaper .5s both ease-in;
-  -moz-transform-origin: 50% 50%;
-  -moz-animation: rotateOutNewspaper .5s both ease-in;
-  transform-origin: 50% 50%;
-  animation: rotateOutNewspaper .5s both ease-in;*/
- -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-  animation:slideOutLeft 0.5s both ease-in;   
- /* transform-origin:center 400%;
-  -webkit-animation:rotateOutRight 1s both ease-in; */
-
- /* transform-origin:center 300%;
-  -webkit-animation:rotateOutRight 0.5s both ease-in;*/ 
-}
-
-
-
-.page-contact.ng-enter    { 
-    /*-webkit-animation:slideInUp 0.5s both ease-in;
-  -moz-animation:slideInUp 0.5s both ease-in;
-  animation:slideInUp 0.5s both ease-in;  */
-  -webkit-animation:slideInRight 0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight 0.5s both ease-in;   
-  /*transform-origin:center 400%;
-  -webkit-animation:rotateInLeft 1s both ease-in;   *    
-
-  /*transform-origin:center 300%;
-  -webkit-animation:rotateInLeft 0.5s both ease-in;  */
-}
-
-.page-gallery.ng-leave         {
-   /* -webkit-transform-origin: 0% 0%;
-  -webkit-animation: rotateFall 1s both ease-in;
-  -moz-transform-origin: 0% 0%;
-  -moz-animation: rotateFall 1s both ease-in;
-  transform-origin: 0% 0%;
-  animation: rotateFall 1s both ease-in;*/
-  -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-  animation:slideOutLeft 0.5s both ease-in;   
-   /*transform-origin:center 400%;
-  -webkit-animation:rotateOutRight 1s both ease-in; */
-}
-.page-gallery.ng-enter     {  
-    /*-webkit-animation:scaleUp 0.5s both ease-in;
-  -moz-animation:scaleUp 0.5s both ease-in;
-  animation:scaleUp 0.5s both ease-in;  */
-  -webkit-animation:slideInRight 0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight 0.5s both ease-in;    
-  /*transform-origin:center 400%;
-  -webkit-animation:rotateInLeft 1s both ease-in;  */     
-}
+@-webkit-keyframes fadeOut { 
+    0% {opacity: 1;} 
+    50% {opacity: 1;  display: block;} 
+    100% {opacity: 0;  display: none;} 
+} 
+@keyframes fadeOut { 
+    0% {opacity: 1;} 
+    50% {opacity: 1;  display: block;} 
+    100% {opacity: 0;  display: none;} 
+} 
 
 /* rotate and fall */
 @-webkit-keyframes rotateFall {
@@ -668,6 +550,7 @@ img{
   bottom: 90px;
   right: 20px;
   z-index: 1000000000;
+  cursor: pointer;
 }
 
 #gallery-icon p{
@@ -705,3 +588,4 @@ img{
 ::-webkit-scrollbar-corner {
       background-color: black;
 }
+

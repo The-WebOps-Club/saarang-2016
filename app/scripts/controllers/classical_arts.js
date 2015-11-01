@@ -8,7 +8,7 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('ClassicalartsCtrl', function () {
-
+  .controller('ClassicalartsCtrl', function ($scope, $stateParams) {
+  	$scope.myroute = $stateParams;
 
   });

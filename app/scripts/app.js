@@ -72,6 +72,12 @@ angular
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
+      .state('hospitality', {
+        url:'/hospitality',
+        templateUrl: 'views/hospitality.html',
+        controller: 'HospitalityCtrl',
+        controllerAs: 'hospitality'
+      })
       .state('proshows', {
         url:'/proshows',
         templateUrl: 'views/proshows.html',

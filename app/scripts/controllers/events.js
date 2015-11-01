@@ -8,7 +8,8 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('EventsCtrl', function () {
+  .controller('EventsCtrl', function ($scope) {
+  	$scope.pageClass = 'page-events';
  	$('body').animate({'background-position-x': "0%"}, 500);
 
   });
