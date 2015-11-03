@@ -10,6 +10,9 @@
 angular.module('saarang2016App')
   .controller('EventsCtrl', function ($scope) {
   	$scope.pageClass = 'page-events';
+ //  	document.getElementById('audio').onmouseover=function(){
+	// document.getElementById('welcomeSound').play();
+	// };
  	$('body').animate({'background-position-x': "0%"}, 500);
 
   });

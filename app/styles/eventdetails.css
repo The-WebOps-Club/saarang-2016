@@ -12,12 +12,12 @@
 .page-eventdetails .info{
 	background:rgba(0, 0, 0, 0.68);
 	position: absolute;
-	top: 22%;
+	top: 20%;
 	height: 65%; 
 }
 .page-eventdetails #ca_t1{
 	position: absolute;
-	top: 17%;
+	top: 15%;
 	left: 43%;
 	width: 15%;
 	height: 4%;
