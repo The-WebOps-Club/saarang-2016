@@ -514,7 +514,7 @@ img{
   z-index: 1000000000;
 }
 .social-roll {
-  width: 15%;
+  width: 25%;
   margin: 2%;
   float: left;
   border-radius: 50%;
@@ -544,7 +544,7 @@ img{
 
 #gallery-icon{
   height: 4%;
-  border-radius: 50%;
+  border-radius: 5em;
   padding-left: 2%;
   padding-right: 2%;
   color: white;
@@ -558,7 +558,7 @@ img{
 
 #gallery-icon p{
   font-family: gearedSlab;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 #logo
