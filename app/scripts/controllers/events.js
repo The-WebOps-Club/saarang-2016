@@ -8,7 +8,7 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('EventsCtrl', function ($scope) {
+  .controller('EventsCtrl', function ($scope,$rootScope) {
   	$scope.pageClass = 'page-events';
  //  	document.getElementById('audio').onmouseover=function(){
 	// document.getElementById('welcomeSound').play();

@@ -12,35 +12,63 @@
 .page-eventdetails .info{
 	background:rgba(0, 0, 0, 0.68);
 	position: absolute;
+	color: white;
+	font-family: gearedSlab;
 	top: 20%;
 	height: 65%; 
+	/*height: auto;*/
+	overflow-y: auto;
 }
-.page-eventdetails #ca_t1{
+.page-eventdetails .left{
 	position: absolute;
-	top: 15%;
-	left: 43%;
-	width: 15%;
-	height: 4%;
+	height: 65%;
+	vertical-align: middle;
+	width: 20%;
+	overflow-x: hidden; 
+	overflow-y: auto;
 }
-.page-eventdetails .caside
+.page-eventdetails .nav{
+	color: white;
+	font-size: 1.25em;
+	font-family:ComicSans; 
+}
+.page-eventdetails .nav > li >a{
+	color: white;
+	/*font-size: 1.25em;*/
+	font-family:ComicSans; 
+	margin-top: 0px;
+	max-height: 100px;
+}
+.page-eventdetails .tab_info{
+	padding-top:2%; 
+	font-size: 2em;
+}
+.page-eventdetails #title{
+	position: absolute;
+	font-family: gearedSlab;
+	color: white;
+	left: 43%;
+}
+.page-eventdetails .subevents
 {
+	position: relative;
 	vertical-align: middle;
 	color: white;
 	font-family: gearedSlab; 
 	z-index: 100000;
 	background:rgba(0, 0, 0, 0.68);
-	top: 30%;
+	padding-left: 2%;
 }
-.page-eventdetails h2{
+.page-eventdetails .subevents h2{
 	padding-top:5%;
 	padding-bottom:5%;
 	margin: 0px;  
 }
-.page-eventdetails .caside:hover{
+.page-eventdetails .subevents:hover{
 	cursor: pointer;
 }
-.page-eventdetails #dance{
+.page-eventdetails #image{
 	z-index: -1;
 	position: absolute;
-	width: 100%;
+	width:100%;
 }

@@ -1,22 +1,39 @@
 <div class="capage">
 	<a href="#/events"><div id="close" class="col-md-offset-11"><span ng-click="capage=false" class="glyphicon glyphicon-remove-circle"></span></div></a>
-	<div><img id="ca_t1" src="images/events/classicalarts_t.png"></div>
+	<div id="title">
+		<h1 ng-show="selectedCategory == 'informals'">Informals</h1>
+		<h1 ng-show="selectedCategory == 'choreo'">Choreo</h1>
+		<h1 ng-show="selectedCategory == 'finearts'">Fine Arts</h1>
+		<h1 ng-show="selectedCategory == 'speaking'">Speaking</h1>
+		<h1 ng-show="selectedCategory == 'classicalarts'">Classical Arts</h1>
+		<h1 ng-show="selectedCategory == 'lifestyle'">Lifestyle</h1>
+		<h1 ng-show="selectedCategory == 'lightmusic'">Light Music</h1>
+		<h1 ng-show="selectedCategory == 'designmedia'">Design & Media</h1>
+		<h1 ng-show="selectedCategory == 'quizzing'">Quizzing</h1>
+		<h1 ng-show="selectedCategory == 'writing'">Writing</h1>
+		<h1 ng-show="selectedCategory == 'wordgames'">Word Games</h1>
+		<h1 ng-show="selectedCategory == 'westernmusic'">Western Music</h1>
+		<h1 ng-show="selectedCategory == 'thespian'">Thespian</h1>
+	</div>
 	<br><br>
 	<br><br>
 	<div class="col-md-5 col-md-offset-2">
-		<img id="dance" src="images/classical/dance.png">
+		<img id="image" alt="image for {{selectedCategory}}" src="images/category/{{selectedCategory}}.png">
 	</div>
-	<br><br><br>
-	<div class="row" ng-repeat="event in events">
-		<div class="col-md-offset-1 col-md-2 " >
-				<div  class="caside" ng-click="show($index)">
-				<h2>{{event.name}}</h2>	
-				</div>	
-				<br>
+	<br>
+	<div class="col-md-offset-1 left">
+		<div class="row " ng-repeat="subevent in events | filter: category=selectedCategory">
+			<div class="subevents" ng-click="show(subevent.name)">
+				<h2>{{subevent.name}}</h2>	
+			</div>	
+		    <br>
 		</div>
 	</div>
-	<div class="info col-md-5 col-md-offset-6">
-		<p>{{selectedEvent.title}}</p>
-		<p>{{selectedEvent.info}}</p>
+	<div class="info col-md-7 col-md-offset-5">
+		<!-- <div ng-bind-html="yo.long_description"></div> -->
+		<h2>{{selectedEvent.name}}</h2>
+		<tabset justified="true">
+			<tab ng-repeat="tab in selectedEvent.eventtab_set" heading="{{tab.name}}"><div ng-bind-html="tab.content" class="tab_info"></div></tab>
+		</tabset>
 	</div>
 </div>

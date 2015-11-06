@@ -1,12 +1,13 @@
 .page-wcs #box1
 {
   margin-top: 0%;
-  height: 750px;
+  height: 600px;
   color: white;
   font-family: gearedSlab;
   font-size: 1.25em;
   background: rgba(0 ,0 ,0 ,0.8);
   overflow-x: hidden;
+  overflow-y: auto; 
   border-top: 10px solid rgba(0, 0, 0, 0);
   border-right: 10px solid rgba(0, 0, 0, 0);
   border-bottom: 10px solid rgba(0, 0, 0, 0);

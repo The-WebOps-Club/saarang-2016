@@ -84,9 +84,9 @@ angular
         controller: 'ProshowsCtrl',
         controllerAs: 'proshows'
       })
-      .state('lec_dems', {
-        url:'/events/lec_dems',
-        templateUrl: 'views/lec_dems.html',
+      .state('lecdems', {
+        url:'/events/lecdems',
+        templateUrl: 'views/lecdems.html',
         controller: 'LecdemsCtrl',
         controllerAs: 'lecdems'
       })
