@@ -1,7 +1,7 @@
 .page-eventdetails .capage{
 	z-index: 9999;
 	position: absolute;
-	background:rgba(255, 151, 0, 0.64);
+	background:rgba(243, 190, 41, 0.58);
 	display: inline-block;
 	/*opacity: 0.8; */
 	top: 0px;
@@ -10,56 +10,85 @@
 	height: 100%;
 }
 .page-eventdetails .info{
-	background:rgba(0, 0, 0, 0.68);
+	background:rgba(0, 0, 0, 0.62);
 	position: absolute;
 	color: white;
-	font-family: gearedSlab;
+	font-family: futura;
 	top: 20%;
 	height: 65%; 
-	/*height: auto;*/
 	overflow-y: auto;
+}
+.page-eventdetails #info_title{
+	font-family: essenceSans;
 }
 .page-eventdetails .left{
 	position: absolute;
+	left: 3%;
 	height: 65%;
 	vertical-align: middle;
-	width: 20%;
+	width: 25%;
 	overflow-x: hidden; 
 	overflow-y: auto;
+}
+.subevents:hover,
+.info:hover,
+#close span:hover {
+	-moz-box-shadow: 1px 1px 50px #999;
+	-webkit-box-shadow: 1px 1px 50px #999;
+	box-shadow: 1px 1px 50px #999;
 }
 .page-eventdetails .nav{
 	color: white;
 	font-size: 1.25em;
-	font-family:ComicSans; 
 }
 .page-eventdetails .nav > li >a{
-	color: white;
-	/*font-size: 1.25em;*/
-	font-family:ComicSans; 
+	font-family:futura; 
 	margin-top: 0px;
 	max-height: 100px;
 }
+.page-eventdetails .nav > li >a:hover{
+	color:black;	
+}
+.page-eventdetails .nav > li >a:active{
+	color:black;	
+}
 .page-eventdetails .tab_info{
 	padding-top:2%; 
-	font-size: 2em;
+	font-size: 1.5em;
 }
 .page-eventdetails #title{
-	position: absolute;
-	font-family: gearedSlab;
-	color: white;
-	left: 43%;
+	font-family: greatVibes;
+	color: #521E1E;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .page-eventdetails .subevents
 {
 	position: relative;
 	vertical-align: middle;
 	color: white;
-	font-family: gearedSlab; 
+	text-align: center;
+	font-family: futura; 
 	z-index: 100000;
-	background:rgba(0, 0, 0, 0.68);
+	background:rgba(0, 0, 0, 0.62);
 	padding-left: 2%;
 }
-.page-eventdetails .subevents h2{
+.subevents:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(-45deg);
+  -ms-transform: skew(-45deg);
+  transform: skew(-45deg);
+  z-index: -1;
+}
+.page-eventdetails .subevents h4{
 	padding-top:5%;
 	padding-bottom:5%;
 	margin: 0px;  

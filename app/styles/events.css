@@ -25,26 +25,26 @@
      transform:scale(1.25);
 }
 /*Fadding*/
-.r {
-    -webkit-animation: fadein 3s; 
-       -moz-animation: fadein 3s; 
-        -ms-animation: fadein 3s; 
-         -o-animation: fadein 3s; 
-            animation: fadein 3s;
+.page-events .r {
+    -webkit-animation: fadein 6s; 
+       -moz-animation: fadein 6s; 
+        -ms-animation: fadein 6s; 
+         -o-animation: fadein 6s; 
+            animation: fadein 6s;
 }
-.b {
-    -webkit-animation: fadein 5s; 
-       -moz-animation: fadein 5s; 
-        -ms-animation: fadein 5s; 
-         -o-animation: fadein 5s; 
-            animation: fadein 5s;
+.page-events .b {
+    -webkit-animation: fadein 4s; 
+       -moz-animation: fadein 4s; 
+        -ms-animation: fadein 4s; 
+         -o-animation: fadein 4s; 
+            animation: fadein 4s;
 }
-.y {
-    -webkit-animation: fadein 7s; 
-       -moz-animation: fadein 7s; 
-        -ms-animation: fadein 7s; 
-         -o-animation: fadein 7s; 
-            animation: fadein 7s;
+.page-events .y {
+    -webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -78,8 +78,7 @@
 	width: 8%;
 	/*height: 16%;*/
 }
-.page-events #informals_t
-{
+.page-events #informals_t{
 	position: absolute;
 	top:48%;
 	left: 10%;
@@ -411,20 +410,6 @@
 	width: 60%;
 }
 /*WESTERN*/
-/*.western{
-    -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease; 
-    -ms-transition: all 0.5s ease; 
-    -o-transition: all 0.5s ease; 
-    transition: all 0.5s ease;
-}
-.western:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
-     transform:scale(1.25);
-}*/
 .page-events .western{
 	z-index: 13;
 	top:54%;
