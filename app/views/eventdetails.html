@@ -16,19 +16,19 @@
 		<h1 ng-show="selectedCategory == 'thespian'">Thespian</h1>
 	</div>
 	<!-- <br><br> -->
-	<!-- <br><br> -->
-	<div class="col-md-5 col-md-offset-2">
-		<img id="image" alt="image for {{selectedCategory}}" src="images/category/{{selectedCategory}}.png">
-	</div>
-	<!-- <br> -->
-	<div class="left">
-		<div class="row " ng-repeat="subevent in events | filter: category=selectedCategory">
+	<div class="left col-md-offset-1">
+		<div class="row" ng-repeat="subevent in events | filter: category=selectedCategory">
 			<div class="subevents" ng-click="show(subevent.name)">
 				<h4>{{subevent.name}}</h4>	
 			</div>	
 		    <br>
 		</div>
 	</div>
+	<!-- <br><br> -->
+	<div class="col-md-5 col-md-offset-2">
+		<img id="image" alt="image for {{selectedCategory}}" src="images/category/{{selectedCategory}}.png">
+	</div>
+	<!-- <br> -->
 	<div class="info col-md-6 col-md-offset-6">
 		<!-- <div ng-bind-html="yo.long_description"></div> -->
 		<h2 id="info_title">{{selectedEvent.name}}</h2>

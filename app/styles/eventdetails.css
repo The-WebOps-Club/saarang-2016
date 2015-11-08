@@ -22,11 +22,12 @@
 	font-family: essenceSans;
 }
 .page-eventdetails .left{
-	position: absolute;
-	left: 3%;
+	/*position: absolute;*/
+	left:3%;
 	height: 65%;
-	vertical-align: middle;
-	width: 25%;
+	/*vertical-align: middle;*/
+	/*min-width: 20%;*/
+	max-width: 25%;
 	overflow-x: hidden; 
 	overflow-y: auto;
 }
@@ -72,7 +73,7 @@
 	font-family: futura; 
 	z-index: 100000;
 	background:rgba(0, 0, 0, 0.62);
-	padding-left: 2%;
+	/*padding-left: 2%;*/
 }
 .subevents:after {
   content: '';
@@ -98,6 +99,8 @@
 }
 .page-eventdetails #image{
 	z-index: -1;
-	position: absolute;
-	width:100%;
+	position: fixed;
+	top: 20%;
+	left: 25%;
+	width:30%;
 }

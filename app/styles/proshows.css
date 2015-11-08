@@ -1,36 +1,42 @@
-/*.page-proshows #classical{
-	background: url('../images/proshow_images/classical.jpg');
-  background-size: cover;
-  background-position-x: 80%;
+.page-proshows #classical{
+  position: absolute;
+  /*margin-left: 5%;*/
+  /*margin-right: 5%; */
+  width:20%;
+  top:30%;
+  left:10%;
 }
 .page-proshows #choreo{
-	background: url('../images/proshow_images/choreo.jpg');
-  background-size: cover;
-  background-position-x: 80%;
+  position: absolute;
+  /*margin-left: 5%;*/
+  /*margin-right: 5%; */
+  width:20%;
+  top:30%;
+  left:40%;
 }
 .page-proshows #edm{
-	background: url('../images/proshow_images/edm.jpg');
-  background-size: cover;
-  background-position-x: 80%;
+  position: absolute;
+  /*margin-left: 5%;*/
+  /*margin-right: 5%; */
+  width:20%;
+  top:30%;
+  left:70%;
 }
 .page-proshows #rock{
-	background: url('../images/proshow_images/rock.jpg');
-  background-size: cover;
-  background-position-x: 80%;
+  position: absolute;
+  /*margin-left: 5%;*/
+  /*margin-right: 5%; */
+  width:20%;
+  top:55%;
+  left:25%;
 }
 .page-proshows #popular{
-	background: url('../images/proshow_images/popular.jpg');
-  background-size: cover;
-  background-position-x: 80%;
-}*/
-
-.page-proshows .show-block {
-  width: 17%;
-  padding: 2%;
-}
-
-.page-proshows .pic{
-  padding: 2%;
+  position: absolute;
+  /*margin-left: 5%;*/
+  /*margin-right: 5%; */
+  width:20%;
+  top:55%;
+  left:55%;
 }
 .page-proshows .show-block:after{
   content: '';
@@ -45,11 +51,9 @@
 }
 .page-proshows img{
   width: 100%;
-  /*height: 100%;*/
 }
 .page-proshows-details .info {
   margin-top: 0%;
-  /*height: 820px;*/
   height: 100%;
   color: white;
   font-family: gearedSlab;
