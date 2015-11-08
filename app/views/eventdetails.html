@@ -15,7 +15,7 @@
 		<h1 ng-show="selectedCategory == 'westernmusic'">Western Music</h1>
 		<h1 ng-show="selectedCategory == 'thespian'">Thespian</h1>
 	</div>
-	<br><br>
+	<!-- <br><br> -->
 	<div class="left col-md-offset-1">
 		<div class="row" ng-repeat="subevent in events | filter: category=selectedCategory">
 			<div class="subevents" ng-click="show(subevent.name)">
