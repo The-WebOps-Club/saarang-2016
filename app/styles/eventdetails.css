@@ -22,11 +22,8 @@
 	font-family: essenceSans;
 }
 .page-eventdetails .left{
-	/*position: absolute;*/
 	left:3%;
 	height: 65%;
-	/*vertical-align: middle;*/
-	/*min-width: 20%;*/
 	max-width: 25%;
 	overflow-x: hidden; 
 	overflow-y: auto;

@@ -41,8 +41,19 @@ $('.show-block').mouseleave(function() {
         opacity:"1",
         width:"20%" 
       }, 750);
+});
+$('.show-block').click(function() {
+      $(this).stop();  
+      $(this).animate({
+       opacity: "0",
+       width:"500%" 
+      }, 1000);
+      $(this).animate({
+       opacity: "2",
+       width:"20%"
+      }, 10);
 
-})
+});
 	$scope.open = function (size, show) {
 
     var modalInstance = $modal.open({
