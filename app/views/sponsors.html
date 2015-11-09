@@ -35,11 +35,51 @@
     </div>
     <div class="col-md-10 col-md-offset-1 tab" id="yo">
     <tabset justified="true">
-        
         <tab heading="2016">
             <div class="col-md-12 fullBox">
-                <p>Coming soon!</p>
-            </div>
+                    <div class="row" ng-repeat="logo in logos2016">
+                        <div ng-if="logo.row_layout===1">
+                            <div class="col-md-4 col-md-offset-4">
+                            <center>
+                            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+                            <a href="{{logo.sponsor_link}}" target="_blank">
+                                <img style="min-height:60px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erptest.saarang.org/assets/images/spons_images/{{logo.logo}}" class="img-rounded img-responsive">
+                            </a>
+                            </center>
+                            </div>
+                        </div>
+                        <div ng-if="logo.row_layout===2">
+                            <div class="col-md-6">
+                            <center>
+                            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+                            <a href="{{logo.sponsor_link}}" target="_blank">
+                                <img style="min-height:60px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erptest.saarang.org/assets/images/spons_images/{{logo.logo}}" class="img-rounded img-responsive">
+                            </a>
+                            </center>
+                            </div>
+                        </div>
+                        <div ng-if="logo.row_layout===3">
+                            <div class="col-md-4">
+                            <center>
+                            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+                            <a href="{{logo.sponsor_link}}" target="_blank">
+                                <img style="min-height:60px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erptest.saarang.org/assets/images/spons_images/{{logo.logo}}" class="img-rounded img-responsive">
+                            </a>
+                            </center>
+                            </div>
+                        </div>
+                        <div ng-if="logo.row_layout===4">
+                            <div class="col-md-3">
+                            <center>
+                            <h2 class="text-center text-info" style="color:white; font-size:20px">{{logo.title}}</h2>
+                            <a href="{{logo.sponsor_link}}" target="_blank">
+                                <img style="min-height:60px;max-height:100px;vertical-align:middle;margin-bottom:50px;" src="http://erptest.saarang.org/assets/images/spons_images/{{logo.logo}}" class="img-rounded img-responsive">
+                            </a>
+                            </center>
+                            </div>
+                        </div>
+                    </div>
+               </div>
         </tab>
         <tab heading="2015">
             <div class="col-md-12 fullBox">

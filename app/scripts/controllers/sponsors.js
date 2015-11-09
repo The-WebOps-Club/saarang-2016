@@ -8,7 +8,7 @@
  * Controller of the saarang2016App
  */
 angular.module('saarang2016App')
-  .controller('SponsorsCtrl', function ($scope) {
+  .controller('SponsorsCtrl', function ($scope, $http) {
  $scope.pageClass = "page-sponsors";
  $('body').animate({'background-position-x': "100%"}, 500);
  var logos=[
@@ -36,33 +36,14 @@ angular.module('saarang2016App')
 ];
 
 $scope.logos=logos;
-
-/*$(window).scroll(function(){
-    $("#yo").css("top",Math.max(5%,20%-$(this).scrollTop()));
-});*/
-
-/*var windw = this;
-
-$.fn.followTo = function ( pos ) {
-     var $this = this,
-        $window = $(windw);
-
-$window.scroll(function(e){
-    if ($window.scrollTop() > pos) {
-        $this.css({
-            position: 'absolute',
-            top: pos
-        });
-    } else {
-        $this.css({
-            position: 'fixed',
-            top: 0%
-        });
-    }
-});
-};
-
-$('#yo').followTo(30%);*/
-
+	$http.defaults.useXDomain = true;
+ 	$http.get('http://erptest.saarang.org/api/sponsors/').then(function successCallback(response) {
+ 		console.log(response);
+		$scope.logos2016 = response.data;
+		console.log("success");
+		for (var i = 0; i <= $scope.logos2016.length-1; i++) {
+	      $scope.logos2016[i].logo = $scope.logos2016[i].logo.split('/')[10];
+	  	};
+    });
   
   });
