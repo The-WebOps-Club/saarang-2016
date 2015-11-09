@@ -1,7 +1,8 @@
 .page-wcs #box1
 {
+  position: absolute;
   margin-top: 0%;
-  height: 600px;
+  height: 65%;
   color: white;
   font-family: gearedSlab;
   font-size: 1.25em;

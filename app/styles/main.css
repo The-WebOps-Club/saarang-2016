@@ -56,7 +56,7 @@
 body {
   zoom:90%;
   padding: 0;
-  overflow: scroll;
+  overflow: auto;
 }
 
 a {
@@ -140,7 +140,7 @@ a:active{
 .navLink:active{
   text-decoration: none;
 }
-.divider:after{
+/*.divider:after{
   background: #e0e0e0;
   width: 1px;
   content: "";
@@ -149,7 +149,7 @@ a:active{
   top:10%;
   bottom: 10%;
   right: 0;
-}
+}*/
 
 /* Custom page footer */
 .footer {
@@ -163,6 +163,7 @@ a:active{
 {
   border:0px;
   margin-bottom: 0px;
+  z-index: 99999;
 }
 nav
 {

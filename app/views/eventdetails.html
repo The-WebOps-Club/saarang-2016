@@ -1,5 +1,6 @@
 <div class="capage">
-	<a href="#/events"><div id="close" class="col-md-offset-11"><span ng-click="capage=false" class="glyphicon glyphicon-remove-circle"></span></div></a>
+	<a href="#/events"><div id="close"><span ng-click="capage=false" class="glyphicon glyphicon-circle-arrow-left"></span></div></a>
+	<br><br><br>
 	<div id="title">
 		<h1 ng-show="selectedCategory == 'informals'">Informals</h1>
 		<h1 ng-show="selectedCategory == 'choreo'">Choreo</h1>
@@ -26,14 +27,16 @@
 	</div>
 	<!-- <br><br> -->
 	<div class="col-md-5 col-md-offset-2">
-		<img id="image" alt="image for {{selectedCategory}}" src="http://erp.saarang.org/media/{{selectedEvent.event_image}}">
+		<img id="image" src="http://erp.saarang.org/media/{{selectedEvent.event_image}}">
 	</div>
 	<!-- <br> -->
 	<div class="info col-md-6 col-md-offset-6">
 		<!-- <div ng-bind-html="yo.long_description"></div> -->
 		<h2 id="info_title">{{selectedEvent.name}}</h2>
 		<tabset justified="true">
-			<tab ng-repeat="tab in selectedEvent.eventtab_set" heading="{{tab.name}}"><div ng-bind-html="tab.content" class="tab_info"></div></tab>
+			<tab ng-repeat="tab in selectedEvent.eventtab_set" heading="{{tab.name}}">
+				<div ng-bind-html="tab.content" class="tab_info"></div>
+			</tab>
 		</tabset>
 	</div>
 </div>

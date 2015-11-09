@@ -1,4 +1,4 @@
-<div class="row yo">
+<!-- <div class="row yo">
 	<div class="show-block" ng-click="open('lg', 'classical night')" id="classical">
 		<div class="pic">
 			<img src="images/proshow_images/classical.jpg">
@@ -14,8 +14,6 @@
 			<img src="images/proshow_images/edm.jpg">
 		</div>
 	</div>
-<!-- <br>
-<br> -->
 	<div class="show-block" ng-click="open('lg', 'rock show')" id="rock">
 		<div class="pic">
 			<img src="images/proshow_images/rock.jpg">
@@ -26,7 +24,46 @@
 			<img src="images/proshow_images/popular.jpg">
 		</div>
 	</div>
+</div> -->
+<div class="row">
+
+<div class="box"  ng-click="classical=false" id="classical">
+	<img src="images/proshow_images/classical.jpg">
+	<!-- <div class="content" ng-hide="classical">
+		hello there !!!
+	</div> -->
 </div>
+
+<div class="box"  ng-click="open('lg', 'choreo night')" id="choreo">
+	<img src="images/proshow_images/choreo.jpg">
+	<!-- <div class="content" ng-show="choreo">
+		hello there !!!
+	</div> -->
+</div>
+
+<div class="box"  ng-click="open('lg', 'edm night')" id="edm">
+	<img src="images/proshow_images/edm.jpg">
+	<!-- <div class="content" ng-show="edm">
+		hello there !!!
+	</div> -->
+</div>
+
+<div class="box"  ng-click="open('lg', 'rock night')" id="rock">
+	<img src="images/proshow_images/rock.jpg">
+	<!-- <div class="content" ng-show="rock">
+		hello there !!!
+	</div> -->
+</div>
+
+<div class="box"  ng-click="open('lg', 'popular night')" id="popular">
+	<img src="images/proshow_images/popular.jpg">
+	<!-- <div class="content" ng-show="popular">
+		hello there !!!
+	</div> -->
+</div>
+
+</div>
+
 <script type="text/ng-template" id="proshowsDetails.html">
     <div class="modal-body row {{pageClass}}" style="background: url('images/classical_modal.png'); background-size:100%;">
     	<div class="col-md-5 col-md-offset-7 info">

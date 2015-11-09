@@ -1,11 +1,29 @@
 .page-hospitality #hospi-container {
+	position: absolute;
 	background: rgba(0, 0, 0, 0.8);
 	color: white;
 	height: 70%;
+	top: 15%;
 }
-
+.page-hospitality .left{
+	position: absolute;
+	height: 80%;
+	overflow-y: auto;
+}
+.page-hospitality #head{
+}
+.page-hospitality .tab-content{
+	position: absolute;
+	height: 410px;
+	left: 18%;
+	font-size: 1.25em;
+	overflow-y: auto;
+}
 .page-hospitality .hospi-header {
+	z-index: 9999999999;
+	left: 45%;
 	font-family: essenceSans;
+	position: fixed;
 	font-weight: 700;
 }
 

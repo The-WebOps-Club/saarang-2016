@@ -13,11 +13,12 @@ angular.module('saarang2016App')
     $scope.animationsEnabled = true;
     $scope.items = ['item1', 'item2', 'item3'];
  $('body').animate({'background-position-x': "75%"}, 500);
-$('.show-block').mouseenter(function() {
-      $(this).stop();    
-      $(this).css({"z-index": "5"});
-      $(this).animate({
-        // left: "10%",
+ var timer;
+$(".box").mouseenter(function() {
+      // $(this).stop();
+      var that= this;
+    timer = setTimeout(function(){
+      $(that).animate({
        width:"30%" 
       }, 750)
       .siblings()
@@ -25,13 +26,15 @@ $('.show-block').mouseenter(function() {
       .stop()
       .animate({
         opacity:"0.5",
-        width:"10%" 
+        width:"0%" 
       }, 750);
+    }, 1000);
 });
-$('.show-block').mouseleave(function() {
+$('.box').mouseleave(function() {
+    clearTimeout(timer);
       $(this).stop();
-      $(this).css({"z-index": "2"});
       $(this).animate({
+       opacity:"1",
        width:"20%" 
       }, 750)
       .siblings()
@@ -42,12 +45,16 @@ $('.show-block').mouseleave(function() {
         width:"20%" 
       }, 750);
 });
-$('.show-block').click(function() {
+$('.box').click(function() {
       $(this).stop();  
       $(this).animate({
-       opacity: "0",
-       width:"500%" 
-      }, 1000);
+       width:"100%", 
+       opacity: "0"
+      }, 1000)
+      .siblings()
+      .animate({
+        opacity:"0",
+      }, 750);
       $(this).animate({
        opacity: "2",
        width:"20%"
