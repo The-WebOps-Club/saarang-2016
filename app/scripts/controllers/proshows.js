@@ -14,6 +14,13 @@ angular.module('saarang2016App')
     $scope.items = ['item1', 'item2', 'item3'];
  $('body').animate({'background-position-x': "75%"}, 500);
  var timer;
+ $scope.image;
+ $scope.yo=false;
+ $scope.class_data = false;
+ $scope.choreo_data = false;
+ $scope.edm_data = false;
+ $scope.rock_data = false;
+ $scope.popular_data = false;
  $scope.back=false;
  $scope.pro= true;
  $scope.classical= false;
@@ -55,8 +62,11 @@ angular.module('saarang2016App')
 //         width:"20%" 
 //       }, 750);
 // });
+$scope.close = function(){
+ $scope.yo=false;
+};
 $('.container').click(function() {
-      $(this).css({"left":"42%","top":"40%"});
+      $(this).css({"left":"42%","top":"40%","border-radius":"0"});
       $(this).animate({
        opacity: "0"
       }, 1000)
@@ -64,7 +74,7 @@ $('.container').click(function() {
       .animate({
         opacity:"0",
       }, 500);
-      $("#info").css({"opacity":"0"});
+      $("#name").css({"opacity":"0"});
 });
 	$scope.open = function (size, show) {
 
