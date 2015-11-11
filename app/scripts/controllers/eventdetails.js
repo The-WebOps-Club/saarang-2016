@@ -10,6 +10,7 @@
 angular.module('saarang2016App')
   .controller('EventDetails',function ($scope,$http,$rootScope,$stateParams) {
     $scope.pageClass='page-eventdetails';
+    $scope.long= true;
     // function RefreshPageUrl(title, url){ 
     //   if (history.pushState){  
     //       history.pushState(null, title, url);
@@ -29,6 +30,7 @@ angular.module('saarang2016App')
       }
     };
     $scope.show = function (subevent) {
+      $scope.long= false;
       // RefreshPageUrl('subevent', 'subevent');
       for (var i = 0; i < $scope.events.length-1; i++) {
         if ($scope.events[i].name==subevent) {
