@@ -14,52 +14,57 @@ angular.module('saarang2016App')
     $scope.items = ['item1', 'item2', 'item3'];
  $('body').animate({'background-position-x': "75%"}, 500);
  var timer;
-$(".box").mouseenter(function() {
-      // $(this).stop();
-      var that= this;
-    timer = setTimeout(function(){
-      $(that).animate({
-       width:"30%" 
-      }, 750)
-      .siblings()
-      .css({"z-index": "-5"})
-      .stop()
-      .animate({
-        opacity:"0.5",
-        width:"0%" 
-      }, 750);
-    }, 1000);
-});
-$('.box').mouseleave(function() {
-    clearTimeout(timer);
-      $(this).stop();
+ $scope.back=false;
+ $scope.pro= true;
+ $scope.classical= false;
+ $scope.choreo= false;
+ $scope.edm= false;
+ $scope.rock= false;
+ $scope.popular= false;
+ // var info = document.getElementById('info');
+// $(".container").mouseenter(function() {
+//       $(this).stop();
+//       $(this).css({"transform":"scale(2,1)"});
+//       var that= this;
+//     timer = setTimeout(function(){
+//       $(that).animate({
+//        width:"25%" 
+//       }, 750)
+//       .siblings()
+//       .css({"z-index": "-5"})
+//       .css({"transform":"scale(0.5,1)"})
+//       .stop()
+//       .animate({
+//         opacity:"0.5"
+//         width:"10%" 
+//       }, 750);
+//     }, 1000);
+// });
+// $('.container').mouseleave(function() {
+//     clearTimeout(timer);
+//       $(this).stop();
+//       $(this).animate({
+//        opacity:"1",
+//        width:"20%" 
+//       }, 750)
+//       .siblings()
+//       .stop()
+//       .css({"z-index": "1"})
+//       .animate({
+//         opacity:"1",
+//         width:"20%" 
+//       }, 750);
+// });
+$('.container').click(function() {
+      $(this).css({"left":"42%","top":"40%"});
       $(this).animate({
-       opacity:"1",
-       width:"20%" 
-      }, 750)
-      .siblings()
-      .stop()
-      .css({"z-index": "1"})
-      .animate({
-        opacity:"1",
-        width:"20%" 
-      }, 750);
-});
-$('.box').click(function() {
-      $(this).stop();  
-      $(this).animate({
-       width:"100%", 
        opacity: "0"
       }, 1000)
       .siblings()
       .animate({
         opacity:"0",
-      }, 750);
-      $(this).animate({
-       opacity: "2",
-       width:"20%"
-      }, 10);
-
+      }, 500);
+      $("#info").css({"opacity":"0"});
 });
 	$scope.open = function (size, show) {
 

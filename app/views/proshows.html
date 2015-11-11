@@ -25,42 +25,71 @@
 		</div>
 	</div>
 </div> -->
+<a href="#/proshows"><div id="close"><span ng-show="back" class="glyphicon glyphicon-circle-arrow-left"></span></div></a>
+<div id="info">
+	<div class="title" id="pro_t" ng-show="pro">PRO SHOWS</div>
+	<!-- <div class="date" ng-show="pro">JAN 6<sup>th</sup> to JAN 10<sup>th</sup> </div> -->
+	<div class="title" ng-show="classical">CLASSICAL NIGHT</div>
+	<div class="date" ng-show="classical">JAN - 6<sup>th</sup></div>
+	<div class="title" ng-show="choreo">CHOREO NIGHT</div>
+	<div class="date" ng-show="choreo">JAN - 7<sup>th</sup></div>
+	<div class="title" ng-show="edm">EDM</div>
+	<div class="date" ng-show="edm">JAN - 8<sup>th</sup></div>
+	<div class="title" ng-show="rock">ROCK SHOW</div>
+	<div class="date" ng-show="rock">JAN - 9<sup>th</sup></div>
+	<div class="title" ng-show="popular">POPULAR NIGHT</div>
+	<div class="date" ng-show="popular">JAN - 10<sup>th</sup></div>
+</div>
 <div class="row">
-
-<div class="box"  ng-click="classical=false" id="classical">
-	<img src="images/proshow_images/classical.jpg">
+<div class="container"  ng-mouseleave="classical=false;pro=true" ng-mouseenter="classical=true;pro=false" ng-click="back=true" id="classical">
+	<div class="box">
+		<div class="image"></div>
+	<!-- <img src="images/proshow_images/classical.jpg"> -->
 	<!-- <div class="content" ng-hide="classical">
 		hello there !!!
 	</div> -->
+	</div>
 </div>
-
-<div class="box"  ng-click="open('lg', 'choreo night')" id="choreo">
-	<img src="images/proshow_images/choreo.jpg">
-	<!-- <div class="content" ng-show="choreo">
+<div class="container"  ng-mouseleave="choreo=false;pro=true" ng-mouseenter="choreo=true;pro=false" ng-click="back=true" id="choreo">
+	<div class="box">
+		<div class="image"></div>
+	<!-- <img src="images/proshow_images/choreo.jpg">
+	<div class="content" ng-show="choreo">
 		hello there !!!
 	</div> -->
+	</div>
 </div>
 
-<div class="box"  ng-click="open('lg', 'edm night')" id="edm">
-	<img src="images/proshow_images/edm.jpg">
-	<!-- <div class="content" ng-show="edm">
+<div class="container"  ng-mouseleave="edm=false;pro=true" ng-mouseenter="edm=true;pro=false" ng-click="back=true" id="edm">
+	<div class="box">
+		<div class="image"></div>
+	<!-- <img src="images/proshow_images/edm.jpg">
+	<div class="content" ng-show="edm">
 		hello there !!!
 	</div> -->
+	</div>
 </div>
 
-<div class="box"  ng-click="open('lg', 'rock night')" id="rock">
-	<img src="images/proshow_images/rock.jpg">
-	<!-- <div class="content" ng-show="rock">
+<div class="container"  ng-mouseleave="rock=false;pro=true" ng-mouseenter="rock=true;pro=false" ng-click="back=true" id="rock">
+	<div class="box">
+		<div class="image"></div>
+	<!-- <img src="images/proshow_images/rock.jpg">
+	<div class="content" ng-show="rock">
 		hello there !!!
 	</div> -->
+	</div>
 </div>
 
-<div class="box"  ng-click="open('lg', 'popular night')" id="popular">
-	<img src="images/proshow_images/popular.jpg">
-	<!-- <div class="content" ng-show="popular">
+<div class="container"  ng-mouseleave="popular=false;pro=true" ng-mouseenter="popular=true;pro=false" ng-click="back=true" id="popular">
+	<div class="box">
+		<div class="image"></div>
+	<!-- <img src="images/proshow_images/popular.jpg">
+	<div class="content" ng-show="popular">
 		hello there !!!
 	</div> -->
+	</div>
 </div>
+
 
 </div>
 
