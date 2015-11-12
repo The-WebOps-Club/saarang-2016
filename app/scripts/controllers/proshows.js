@@ -15,12 +15,8 @@ angular.module('saarang2016App')
  $('body').animate({'background-position-x': "75%"}, 500);
  var timer;
  $scope.image;
+ $scope.pos;
  $scope.yo=false;
- $scope.class_data = false;
- $scope.choreo_data = false;
- $scope.edm_data = false;
- $scope.rock_data = false;
- $scope.popular_data = false;
  $scope.back=false;
  $scope.pro= true;
  $scope.classical= false;
@@ -62,11 +58,11 @@ angular.module('saarang2016App')
 //         width:"20%" 
 //       }, 750);
 // });
-$scope.close = function(){
- $scope.yo=false;
-};
 $('.container').click(function() {
-      $(this).css({"left":"42%","top":"40%","border-radius":"0"});
+      $(this).css({"left":"42%","top":"40%"});
+      $("#name").css({"opacity":"0"});
+      $scope.that = $(this);
+      $scope.pos = $(this).position();
       $(this).animate({
        opacity: "0"
       }, 1000)
@@ -74,10 +70,26 @@ $('.container').click(function() {
       .animate({
         opacity:"0",
       }, 500);
-      $("#name").css({"opacity":"0"});
+      $('#info').animate({
+        opacity:"1"
+      },500);
+});
+$('#close').click(function(){
+      $scope.back=false;
+      $scope.that.css({"left":$scope.pos.left,"top":$scope.pos.top});
+      $("#name").css({"opacity":"1"});
+      $('#info').animate({
+        opacity:"0"
+      },500);
+      $scope.that.animate({
+       opacity:"1"
+      }, 1000)
+      .siblings()
+      .animate({
+        opacity:"1",
+      }, 1000);
 });
 	$scope.open = function (size, show) {
-
     var modalInstance = $modal.open({
       animation: $scope.animationsEnabled,
       templateUrl: 'proshowsDetails.html',
@@ -89,13 +101,11 @@ $('.container').click(function() {
         }
       }
     });
-
     modalInstance.result.then(function (selectedItem) {
       $scope.selected = selectedItem;
     }, function () {
     });
   };
-
   });
 
 

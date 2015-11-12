@@ -102,12 +102,9 @@
       <a href="https://twitter.com/Saarang_IITM" target="_blank"><img class="social-roll" src="images/twitter.png"></a>
       <a href="https://google.com" target="_blank"><img class="social-roll" href="https://play.google.com/store" src="images/android.png"></a>
     </div>
-    <div  id="gallery-icon" ui-sref="gallery">
-      <!-- <audio id="click" controls="controls" preload="auto">
-        <source src="audio/gallery.mp3"></source>
-      </audio> -->
+    <!-- <div  id="gallery-icon" ui-sref="gallery">
       <p onclick="click()">GALLERY<p>
-    </div>
+    </div> -->
     <!-- Footer-->
     <nav class="navbar navbar-default footer row" ng-controller="FooterCtrl">
       <div class="container-fluid">
@@ -121,18 +118,19 @@
         </div>
         <div class="collapse navbar-collapse row" id="collapse-2">
             <div id="leftLinks" class="col-md-2 row" >
-              <div><a class="col-md-12 navLink text-center" href="#"><h3>MUSIC HERE</h3></a></div>
+              <div><a class="col-md-12 navLink text-center" href="#"><h4>MUSIC HERE</h4></a></div>
             </div>
             <div class="col-md-7 nav navbar-nav">
-              <div class="col-md-2 text-center col-md-offset-1 navLink divider" ui-sref="hospitality"><a><h3>HOSPITALITY</h3></a></div>
-              <div class="col-md-4 text-center navLink divider"><a><h3>SAARANG SOCIAL WING</h3></a></div>
-              <div class="col-md-3 text-center navLink divider" ui-sref="contacts"><h3><a>CONTACT US</a></a></div>
-              <div class="col-md-2 text-center navLink " ui-sref="milan"><a><h3>MILAN</h3></a></div>
+              <div class="col-md-2 text-center col-md-offset-3 navLink divider" ui-sref="hospitality"><a><h4>HOSPITALITY</h4></a></div>
+              <!-- <div class="col-md-4 text-center navLink divider"><a><h4>SAARANG SOCIAL WING</h4></a></div> -->
+              <div class="col-md-2 text-center navLink divider" ui-sref="gallery"><a><h4>GALLERY</h4></a></div>
+              <div class="col-md-3 text-center navLink divider" ui-sref="contacts"><h4><a>CONTACT US</a></a></div>
+              <div class="col-md-2 text-center navLink " ui-sref="milan"><a><h4>MILAN</h4></a></div>
             </div>
             <div class="nav navbar-nav navbar-right col-md-3">
-              <div class="col-md-6 navLink text-center divider"><h3><a href="/#/sponsors">SHAASTRA</a></h3></div>
-              <div class="col-md-3 navLink text-center divider"><a href="http://www.iitm.ac.in"><img src="images/iitm.png" class="img-responsive"></a></div>
-              <div class="col-md-3 navLink text-center"><img src="images/iso.png" class="img-responsive"></div>
+              <div class="col-md-6 navLink text-center divider"><h4><a href="http://www.shaastra.org/#/">SHAASTRA</a></h4></div>
+              <div class="col-md-3 navLink text-center divider"><a href="http://www.iitm.ac.in"><img src="images/iitm.png" id="iitm" ></a></div>
+              <div class="col-md-3 navLink text-center"><img src="images/iso.png" id="iso"></div>
             </div>  
         </div><!-- /.navbar-collapse-->
       </div><!-- /.container-fluid -->
