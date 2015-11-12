@@ -107,6 +107,24 @@ a:active{
   width: 103%;
   opacity: 1;
 }
+#search{
+  padding-top:0.25%; 
+}
+#searchObjResults {
+  position: absolute;
+  right: 6%;
+  /*width: 80%;*/
+  color: white;
+  height: 500%;
+  overflow-y: auto;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.searchResults {
+  margin: 5px;
+}
 
 #small-logo {
   display: block;
