@@ -11,7 +11,9 @@
   /*transform: skewX(20deg);*/
 }
 .page-proshows .container{
-  transition: all 1s easeIn;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   position: absolute;
   height:25%;
   border-radius: 50%;
@@ -25,7 +27,9 @@
 }
 .page-proshows #name{
   z-index: 1;
-  transition: all 1s;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   position: absolute;
   background:rgba(0, 0, 0, 0.62);
   border-radius:50%;  
@@ -56,17 +60,21 @@
   top: 50%;
 }
 .page-proshows #classical{
-  transition: all 1s;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   z-index: 2;
+  position: absolute;
   background: url('../images/proshow_images/classical.jpg');
   background-size: cover;
-  position: absolute;
-  top: 13%;
+  top: 14%;
   left:42%;
   width:15%;
 }
 .page-proshows #choreo{
-  transition: all 1s;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   z-index: 2;
   position: absolute; 
   background: url('../images/proshow_images/choreo.jpg');
@@ -76,7 +84,9 @@
   left:65%;
 }
 .page-proshows #edm{
-  transition: all 1s;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   z-index: 2;
   position: absolute; 
   background: url('../images/proshow_images/edm.jpg');
@@ -86,7 +96,9 @@
   left:55%;
 }
 .page-proshows #rock{
-  transition: all 1s;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   z-index: 2;
   position: absolute; 
   background: url('../images/proshow_images/rock.jpg');
@@ -96,7 +108,9 @@
   left:29%;
 }
 .page-proshows #popular{
-  transition: all 1s;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   z-index: 2;
   position: absolute; 
   background: url('../images/proshow_images/popular.jpg');
@@ -106,11 +120,14 @@
   left:19%;
 }
 .page-proshows #info{
-  transition:all 1s;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
   position: absolute;
-  top: 2%;
+  opacity: 0;
+  top: 5%;
   left: 10%;
-  height: 75%;
+  height: 78%;
   width: 80%;
 }
 .page-proshows .data{
@@ -125,7 +142,7 @@
   position: absolute;
   width: 100%;
   height:100%;
-  z-index: 1;
+  z-index: 3;
   background-size: cover;
 }
 /*.page-proshows #full_title{

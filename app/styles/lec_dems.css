@@ -55,6 +55,10 @@
 .bottom{
 	top: 60%; 
 }
+#close{
+	position: absolute;
+	top:10%;
+}
 #close:hover,
 .t:hover,
 .b:hover{
