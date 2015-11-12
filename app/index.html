@@ -64,7 +64,7 @@
               </div>
               <div id="searchObjResults" ng-show="searchText.name">
                 <div class="searchResults" ng-repeat="event in displayEvents | filter:searchText">
-                  <a href="events/{{event.category}}/{{event.name}}" ng-click="searchText.name=''">{{event.name}}</a>
+                  <a href="#/events/{{event.category}}/{{event.name}}" ng-click="searchText.name=''">{{event.name}}</a>
                 </div>
               </div>
             </form>
