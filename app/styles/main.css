@@ -112,10 +112,10 @@ a:active{
 }
 #searchObjResults {
   position: absolute;
-  right: 6%;
-  /*width: 80%;*/
+  /*right: %;*/
+  width: 80%;
   color: white;
-  height: 500%;
+  /*height: 500%;*/
   overflow-y: auto;
   font-size: 1em;
   background: rgba(0, 0, 0, 0.7);
@@ -331,7 +331,7 @@ html
 }
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   background: url('../images/bg_full.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
