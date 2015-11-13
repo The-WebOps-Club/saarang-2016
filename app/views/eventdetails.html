@@ -2,19 +2,20 @@
 	<a href="#/events"><div id="close"><span ng-click="capage=false" class="glyphicon glyphicon-circle-arrow-left"></span></div></a>
 	<br><br><br><br>
 	<div id="title">
-		<h1 ng-show="selectedCategory == 'informals'">Informals</h1>
-		<h1 ng-show="selectedCategory == 'choreo'">Choreo</h1>
-		<h1 ng-show="selectedCategory == 'finearts'">Fine Arts</h1>
-		<h1 ng-show="selectedCategory == 'speaking'">Speaking</h1>
-		<h1 ng-show="selectedCategory == 'classicalarts'">Classical Arts</h1>
-		<h1 ng-show="selectedCategory == 'lifestyle'">Lifestyle</h1>
-		<h1 ng-show="selectedCategory == 'lightmusic'">Light Music</h1>
-		<h1 ng-show="selectedCategory == 'designmedia'">Design & Media</h1>
-		<h1 ng-show="selectedCategory == 'quizzing'">Quizzing</h1>
-		<h1 ng-show="selectedCategory == 'writing'">Writing</h1>
-		<h1 ng-show="selectedCategory == 'wordgames'">Word Games</h1>
-		<h1 ng-show="selectedCategory == 'westernmusic'">Western Music</h1>
-		<h1 ng-show="selectedCategory == 'thespian'">Thespian</h1>
+		<h2 id="info_title">{{selectedEvent.name}}</h2>
+		<h2 ng-show="selectedCategory == 'informals'&& cat">Informals</h2>
+		<h2 ng-show="selectedCategory == 'choreo'&& cat">Choreo</h2>
+		<h2 ng-show="selectedCategory == 'finearts'&& cat">Fine Arts</h2>
+		<h2 ng-show="selectedCategory == 'speaking'&& cat">Speaking</h2>
+		<h2 ng-show="selectedCategory == 'classicalarts'&& cat">Classical Arts</h2>
+		<h2 ng-show="selectedCategory == 'lifestyle'&& cat">Lifestyle</h2>
+		<h2 ng-show="selectedCategory == 'lightmusic'&& cat">Light Music</h2>
+		<h2 ng-show="selectedCategory == 'designmedia'&& cat">Design & Media</h2>
+		<h2 ng-show="selectedCategory == 'quizzing'&& cat">Quizzing</h2>
+		<h2 ng-show="selectedCategory == 'writing'&& cat">Writing</h2>
+		<h2 ng-show="selectedCategory == 'wordgames'&& cat">Word Games</h2>
+		<h2 ng-show="selectedCategory == 'westernmusic'&& cat">Western Music</h2>
+		<h2 ng-show="selectedCategory == 'thespian'&& cat">Thespian</h2>
 	</div>
 	<!-- <br><br> -->
 	<div class="left">
@@ -30,8 +31,8 @@
 		<img id="image" src="http://erp.saarang.org/media/{{selectedEvent.event_image}}">
 	</div>
 	<!-- <br> -->
-	<div class="info col-md-7 col-md-offset-4">
-		<h2 id="info_title">{{selectedEvent.name}}</h2>
+	<div class="info col-md-7 col-md-offset-5">
+		<!-- <h2 id="info_title">{{selectedEvent.name}}</h2> -->
 		<h4><div ng-show="long" ng-bind-html="yo.long_description"></div></h4>
 		<tabset justified="true">
 			<tab ng-repeat="tab in selectedEvent.eventtab_set" heading="{{tab.name}}">

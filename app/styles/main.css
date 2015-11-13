@@ -115,8 +115,6 @@ a:active{
   /*right: %;*/
   width: 80%;
   color: white;
-  /*height: 500%;*/
-  overflow-y: auto;
   font-size: 1em;
   background: rgba(0, 0, 0, 0.7);
   border: 2px solid white;
