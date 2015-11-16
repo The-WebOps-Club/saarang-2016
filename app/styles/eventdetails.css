@@ -32,8 +32,8 @@
 	overflow-x: hidden; 
 	overflow-y: auto;
 }
-.subevents:hover,
-.info:hover,
+.page-eventdetails .subevents:hover,
+.page-eventdetails .info:hover,
 #close span:hover {
 	-moz-box-shadow: 1px 1px 50px #999;
 	-webkit-box-shadow: 1px 1px 50px #999;
