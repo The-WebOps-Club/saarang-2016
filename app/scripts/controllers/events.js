@@ -14,5 +14,14 @@ angular.module('saarang2016App')
 	// document.getElementById('welcomeSound').play();
 	// };
  	$('body').animate({'background-position-x': "0%"}, 500);
-
-  });
+ 	$('.circles').click(function() {
+      $(this).css({"width":"200%"});
+      $(this).animate({
+       opacity: "0"
+      }, 1000)
+      .siblings()
+      .animate({
+        opacity:"0",
+      }, 500);
+	});
+});

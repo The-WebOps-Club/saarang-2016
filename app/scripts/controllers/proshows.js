@@ -17,7 +17,7 @@ angular.module('saarang2016App')
  $scope.image;
  $scope.pos;
  $scope.yo=false;
- $scope.back=false;
+ $scope.back_arrow=false;
  $scope.pro= true;
  $scope.classical= false;
  $scope.choreo= false;
@@ -25,40 +25,8 @@ angular.module('saarang2016App')
  $scope.rock= false;
  $scope.popular= false;
  // var info = document.getElementById('info');
-// $(".container").mouseenter(function() {
-//       $(this).stop();
-//       $(this).css({"transform":"scale(2,1)"});
-//       var that= this;
-//     timer = setTimeout(function(){
-//       $(that).animate({
-//        width:"25%" 
-//       }, 750)
-//       .siblings()
-//       .css({"z-index": "-5"})
-//       .css({"transform":"scale(0.5,1)"})
-//       .stop()
-//       .animate({
-//         opacity:"0.5"
-//         width:"10%" 
-//       }, 750);
-//     }, 1000);
-// });
-// $('.container').mouseleave(function() {
-//     clearTimeout(timer);
-//       $(this).stop();
-//       $(this).animate({
-//        opacity:"1",
-//        width:"20%" 
-//       }, 750)
-//       .siblings()
-//       .stop()
-//       .css({"z-index": "1"})
-//       .animate({
-//         opacity:"1",
-//         width:"20%" 
-//       }, 750);
-// });
 $('.container').click(function() {
+      $(".page-proshows .row").css({"background":"rgba(243, 190, 41, 0.58)"});
       $(this).css({"left":"42%","top":"40%"});
       $("#name").css({"opacity":"0"});
       $scope.that = $(this);
@@ -75,7 +43,8 @@ $('.container').click(function() {
       },500);
 });
 $('#close').click(function(){
-      $scope.back=false;
+      $(".page-proshows .row").css({"background":"none"});
+      $scope.back_arrow=false;
       $scope.that.css({"left":$scope.pos.left,"top":$scope.pos.top});
       $("#name").css({"opacity":"1"});
       $('#info').animate({

@@ -128,11 +128,11 @@ a:active{
   display: block;
   position: absolute;
   width: 65%;
-  margin-top: 6px;
-  margin-bottom: -51px;
+  margin-top: 5%;
+  /*margin-bottom: -51px;*/
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 10px 10px 10px;
+  padding: 10% 10% 10% 10%;
   background-image: -webkit-linear-gradient(transparent 59%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 0.5)),
         -webkit-linear-gradient(0deg, transparent 100%, rgb(0, 0, 0) 59%, rgb(0, 0, 0));
     -webkit-transform: rotate(0deg);
@@ -200,6 +200,7 @@ nav
 /*Footer Images*/
 #iso,
 #iitm{
+  self-align : center;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -256,6 +257,9 @@ nav
   #small-logo{
     display: none;
     background:none; 
+  } 
+  html{
+    overflow: auto;
   }
   .container{
     max-width: 1024px;
@@ -263,7 +267,7 @@ nav
   .navLink{
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 17px;
+    font-size: 5px;
   }
 .header{
   width: 110%;
@@ -624,4 +628,24 @@ img{
 ::-webkit-scrollbar-corner {
       background-color: black;
 }
+/*Firefox*/
+::-moz-scrollbar {
+      width: 15px;
+}
+::-moz-scrollbar-track {
+      background-color: rgba(255, 255, 255, 0.2);
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-moz-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-moz-scrollbar-button {
+      display: none;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-moz-scrollbar-corner {
+      background-color: black;
+}
+
 

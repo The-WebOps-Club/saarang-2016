@@ -2,8 +2,13 @@
 	position: absolute;
 	background: rgba(0, 0, 0, 0.8);
 	color: white;
-	height: 75%;
+	height: 76%;
 	top: 15%;
+}
+.page-hospitality #hospi-container:hover{
+	-moz-box-shadow: 1px 1px 50px #999;
+	-webkit-box-shadow: 1px 1px 50px #999;
+	box-shadow: 1px 1px 50px #999;
 }
 .page-hospitality .left{
 	position: absolute;
@@ -14,7 +19,7 @@
 }
 .page-hospitality .tab-content{
 	position: absolute;
-	height: 410px;
+	height: 400px;
 	left: 18%;
 	font-size: 1.25em;
 	overflow-y: auto;
