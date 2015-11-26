@@ -145,12 +145,18 @@ a:active{
 }
 
 #navbar-1 .navLink{
-  font-size: 1.5em;
   /*margin-top: 15px;*/
   padding-top:12px;
   padding-bottom:8px;
 }
+#navbar-2 .navLink{
+  /*margin-top: 15px;*/
+  padding-top:5px;
+  padding-bottom:8px;
+  margin-bottom: -10px;
+}
 .navLink{
+  font-size: 1.5em;
     /*margin-top: ;*/
     z-index: 1000;
     font-family: gearedSlab;

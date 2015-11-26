@@ -27,8 +27,9 @@
 }
 .page-eventdetails .left{
 	/*left:3%;*/
+	position: relative;
 	height: 62%;
-	max-width: 25%;
+	max-width: 27%;
 	overflow-x: hidden; 
 	overflow-y: auto;
 }

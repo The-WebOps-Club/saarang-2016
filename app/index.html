@@ -47,8 +47,42 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse row" id="navbar-1">
             <div id="leftLinks">
-              <div class="col-md-1 navLink divider"><a href="#">LOGIN</a></div>
-              <div class="col-md-1 navLink"><a href="#">REGISTER</a></div>
+            <div class="col-md-2 navLink divider" data-toggle="modal" data-target="#login"><a href="#">LOGIN / REGISTER</a></div>
+            <!-- <div class="col-md-1 navLink" data-toggle="modal" data-target="#register"><a href="#">REGISTER</a></div> -->
+            </div>
+            <!-- <button type="button" class="btn btn-info btn-lg" >Open Modal</button> -->
+            <!-- Modal for Login -->
+            <div id="login" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- <h4 class="modal-title">LOGIN</h4> -->
+                  </div>
+                  <div class="modal-body">
+                      <div class="tabbable">
+                      <ul class="nav nav-tabs">
+                      <li class="active"><a href="#tab1" data-toggle="tab">LOGIN</a></li>
+                      <li><a href="#tab2" data-toggle="tab">REGISTER</a></li>
+                      </ul>
+                      <div class="tab-content">
+                      <div class="tab-pane active" id="tab1">
+                          Data 1
+                      </div>
+                      <div class="tab-pane" id="tab2">
+                        <p>Data 2.</p>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Login</button>
+                  </div>
+                </div>
+
+              </div>
             </div>
           <div class="col-md-7 nav navbar-nav">
             <div class="col-md-2 col-md-offset-2 navLink divider" ui-sref="events"><a href="#">EVENTS</a></div>
@@ -122,21 +156,21 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse row" id="collapse-2">
+        <div class="collapse navbar-collapse row" id="navbar-2">
             <div id="leftLinks" class="col-md-2 row" >
-              <div><a class="col-md-12 navLink text-center" href="#"><h4>MUSIC HERE</h4></a></div>
+              <div class="col-md-12 navLink text-center" href="#"><a>MUSIC HERE</a></div>
             </div>
             <div class="col-md-7 nav navbar-nav">
-              <div class="col-md-2 text-center col-md-offset-2 navLink divider" ui-sref="hospitality"><a><h4>HOSPITALITY</h4></a></div>
-              <!-- <div class="col-md-4 text-center navLink divider"><a><h4>SAARANG SOCIAL WING</h4></a></div> -->
-              <div class="col-md-2 text-center navLink divider" ui-sref="gallery"><a><h4>GALLERY</h4></a></div>
-              <div class="col-md-3 text-center navLink divider" ui-sref="contacts"><h4><a>CONTACT US</a></a></div>
-              <div class="col-md-2 text-center navLink " ui-sref="milan"><a><h4>MILAN</h4></a></div>
+              <div class="col-md-2 text-center col-md-offset-2 navLink divider" ui-sref="hospitality"><a>HOSPITALITY</a></div>
+              <!-- <div class="col-md-4 text-center navLink divider"><a>SAARANG SOCIAL WING</a></div> -->
+              <div class="col-md-2 text-center navLink divider" ui-sref="gallery"><a>GALLERY</a></div>
+              <div class="col-md-3 text-center navLink divider" ui-sref="contacts"><a>CONTACT US</a></a></div>
+              <div class="col-md-2 text-center navLink " ui-sref="milan"><a>MILAN</a></div>
             </div>
             <div class="nav navbar-nav navbar-right col-md-3">
-              <div class="col-md-6 navLink text-center divider"><h4><a href="http://www.shaastra.org/#/">SHAASTRA</a></h4></div>
-              <div class="col-md-3 navLink text-center divider"><a href="http://www.iitm.ac.in"><img src="images/iitm.png" id="iitm" ></a></div>
-              <div class="col-md-3 navLink text-center"><img src="images/iso.png" id="iso"></div>
+              <div class="col-md-6 navLink text-center divider"><a href="http://www.shaastra.org/#/">SHAASTRA</a></h4></div>
+              <div class="col-md-3 text-center divider"><a href="http://www.iitm.ac.in"><img src="images/iitm.png" id="iitm" ></a></div>
+              <div class="col-md-3 text-center"><img src="images/iso.png" id="iso"></div>
             </div>  
         </div><!-- /.navbar-collapse-->
       </div><!-- /.container-fluid -->
